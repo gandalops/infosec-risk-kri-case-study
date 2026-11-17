@@ -1,0 +1,101 @@
+risk_id,risk_title,risk_category,inherent_severity,risk_status,risk_owner,created_date,remediation_due_date,last_milestone,exception_id,exception_approval_status,exception_expiry_date,compensating_control
+RSK-00001,Unsupported software,Vulnerability,Critical,Open,owner02@example.invalid,02-04-2026,02-05-2026,Plan agreed,,,,
+RSK-00002,Unpatched critical asset,Identity & Access,Low,Closed,owner03@example.invalid,13-04-2026,27-04-2026,Remediated,,,,
+RSK-00003,Unpatched critical asset,Monitoring,Medium,In progress,owner04@example.invalid,31-07-2026,30-08-2026,Evidence collected,EXC-0003,Rejected,05-01-2027,Central logging and alerting
+RSK-00004,Recovery test gap,Vulnerability,Medium,In progress,owner05@example.invalid,28-09-2026,26-01-2027,Evidence collected,,,,
+RSK-00005,Privileged access gap,Cloud Security,Medium,Open,owner06@example.invalid,17-06-2026,01-07-2026,Plan agreed,,,,
+RSK-00006,Unpatched critical asset,Identity & Access,High,Accepted,owner07@example.invalid,13-06-2026,12-08-2026,Plan agreed,,,,
+RSK-00007,Unsupported software,Data Protection,High,In progress,owner08@example.invalid,22-06-2026,20-09-2026,Evidence collected,,,,
+RSK-00008,Privileged access gap,Resilience,Low,Open,owner09@example.invalid,05-07-2026,19-07-2026,Plan agreed,,,,
+RSK-00009,Cloud logging gap,Resilience,Medium,In progress,owner10@example.invalid,26-05-2026,25-06-2026,Evidence collected,,,,
+RSK-00010,Recovery test gap,Cloud Security,Low,Accepted,owner11@example.invalid,06-08-2026,05-09-2026,Plan agreed,,,,
+RSK-00011,Recovery test gap,Identity & Access,Medium,Closed,owner12@example.invalid,04-05-2026,02-08-2026,Remediated,,,,
+RSK-00012,Unsupported software,Identity & Access,Low,Closed,owner13@example.invalid,31-07-2026,29-10-2026,Remediated,,,,
+RSK-00013,Recovery test gap,Resilience,Critical,Open,owner14@example.invalid,23-07-2026,06-08-2026,Plan agreed,,,,
+RSK-00014,Data handling weakness,Monitoring,Low,Closed,owner15@example.invalid,06-04-2026,05-07-2026,Remediated,EXC-0014,Approved,07-11-2026,Central logging and alerting
+RSK-00015,Data handling weakness,Data Protection,Medium,In progress,owner16@example.invalid,22-07-2026,19-11-2026,Evidence collected,,,,
+RSK-00016,Cloud logging gap,Monitoring,High,In progress,owner17@example.invalid,09-09-2026,07-01-2027,Evidence collected,,,,
+RSK-00017,Data handling weakness,Monitoring,Low,Closed,owner18@example.invalid,16-10-2026,30-10-2026,Remediated,,,,
+RSK-00018,Privileged access gap,Vulnerability,High,Open,owner01@example.invalid,17-05-2026,31-05-2026,Plan agreed,,,,
+RSK-00019,Security monitoring gap,Cloud Security,Low,Accepted,owner02@example.invalid,11-05-2026,10-07-2026,Plan agreed,EXC-0019,Approved,10-11-2026,Central logging and alerting
+RSK-00020,Privileged access gap,Vulnerability,High,Open,owner03@example.invalid,24-09-2026,22-01-2027,Plan agreed,,,,
+RSK-00021,Recovery test gap,Resilience,Medium,Closed,owner04@example.invalid,01-05-2026,31-05-2026,Remediated,EXC-0021,Pending,28-11-2026,Central logging and alerting
+RSK-00022,Privileged access gap,Identity & Access,Critical,Closed,owner05@example.invalid,15-06-2026,15-07-2026,Remediated,EXC-0022,Approved,12-10-2026,Central logging and alerting
+RSK-00023,Unsupported software,Cloud Security,Medium,In progress,owner06@example.invalid,28-07-2026,11-08-2026,Evidence collected,EXC-0023,Pending,22-11-2026,Central logging and alerting
+RSK-00024,Unsupported software,Identity & Access,Low,Open,owner07@example.invalid,10-09-2026,09-12-2026,Plan agreed,EXC-0024,Rejected,05-11-2026,Central logging and alerting
+RSK-00025,Data handling weakness,Monitoring,Critical,In progress,owner08@example.invalid,23-08-2026,22-09-2026,Evidence collected,EXC-0025,Approved,08-12-2026,Central logging and alerting
+RSK-00026,Privileged access gap,Data Protection,High,In progress,owner09@example.invalid,22-04-2026,22-05-2026,Evidence collected,,,,
+RSK-00027,Unpatched critical asset,Vulnerability,Low,Closed,owner10@example.invalid,03-08-2026,02-10-2026,Remediated,,,,
+RSK-00028,Data handling weakness,Vulnerability,High,Open,owner11@example.invalid,16-07-2026,15-08-2026,Plan agreed,EXC-0028,Pending,31-12-2026,Central logging and alerting
+RSK-00029,Data handling weakness,Cloud Security,High,In progress,owner12@example.invalid,06-07-2026,05-08-2026,Evidence collected,,,,
+RSK-00030,Security monitoring gap,Monitoring,Medium,Closed,owner13@example.invalid,30-07-2026,13-08-2026 00:00,Remediated,EXC-0030,Pending,10-11-2026,Central logging and alerting
+RSK-00031,Data handling weakness,Vulnerability,Medium,Open,owner14@example.invalid,22-06-2026 00:00,21-08-2026,Plan agreed,EXC-0031,Pending,12-01-2027,Central logging and alerting
+RSK-00032,Unpatched critical asset,Monitoring,Low,Open,owner15@example.invalid,12-09-2026,11-11-2026,Plan agreed,EXC-0032,Rejected,10-01-2027,Central logging and alerting
+RSK-00033,Security monitoring gap,Cloud Security,Low,In progress,owner16@example.invalid,26-04-2026,24-08-2026,Evidence collected,,,,
+RSK-00034,Unsupported software,Identity & Access,Medium,Open,owner17@example.invalid,10-05-2026,08-08-2026,Plan agreed,EXC-0034,Rejected,08-11-2026,Central logging and alerting
+RSK-00035,Cloud logging gap,Resilience,Low,Open,owner18@example.invalid,14-06-2026,12-10-2026,Plan agreed,EXC-0035,Pending,04-10-2026,Central logging and alerting
+RSK-00036,Unpatched critical asset,Identity & Access,Medium,Open,owner01@example.invalid,21-10-2026,19-01-2027,Plan agreed,,,,
+RSK-00037,Cloud logging gap,Identity & Access,Medium,Accepted,owner02@example.invalid,21-08-2026,19-12-2026,Plan agreed,,,,
+RSK-00038,Recovery test gap,Data Protection,Medium,Open,owner03@example.invalid,12-07-2026,10-10-2026,Plan agreed,,,,
+RSK-00039,Data handling weakness,Resilience,Low,Closed,owner04@example.invalid,26-06-2026,24-10-2026,Remediated,EXC-0039,Approved,05-11-2026,Central logging and alerting
+RSK-00040,Data handling weakness,Cloud Security,Medium,Open,owner05@example.invalid,11-06-2026,09-10-2026,Plan agreed,EXC-0040,Pending,09-12-2026,Central logging and alerting
+RSK-00041,Privileged access gap,Identity & Access,Medium,Closed,owner06@example.invalid,15-08-2026,14-09-2026,Remediated,,,,
+RSK-00042,Unsupported software,Data Protection,Low,Closed,owner07@example.invalid,24-04-2026,23-07-2026,Remediated,,,,
+RSK-00043,Data handling weakness,Data Protection,Critical,Closed,owner08@example.invalid,18-08-2026,17-10-2026,Remediated,,,,
+RSK-00044,Unsupported software,Resilience,Medium,In progress,owner09@example.invalid,09-05-2026,08-06-2026,Evidence collected,,,,
+RSK-00045,Security monitoring gap,Monitoring,Critical,In progress,owner10@example.invalid,14-09-2026,13-12-2026,Evidence collected,,,,
+RSK-00046,Unsupported software,Identity & Access,Medium,Open,owner11@example.invalid,03-04-2026,01-08-2026,Plan agreed,EXC-0046,Pending,25-12-2026,Central logging and alerting
+RSK-00047,Privileged access gap,Data Protection,Low,In progress,owner12@example.invalid,20-08-2026,18-12-2026,Evidence collected,,,,
+RSK-00048,Security monitoring gap,Identity & Access,Medium,Accepted,owner13@example.invalid,06-10-2026,05-11-2026,Plan agreed,,,,
+RSK-00049,Security monitoring gap,Identity & Access,Low,Closed,owner14@example.invalid,18-05-2026,16-08-2026,Remediated,,,,
+RSK-00050,Recovery test gap,Cloud Security,Medium,In progress,owner15@example.invalid,21-09-2026,05-10-2026,Evidence collected,,,,
+RSK-00051,Unpatched critical asset,Vulnerability,Medium,In progress,owner16@example.invalid,08-09-2026,08-10-2026,Evidence collected,,,,
+RSK-00052,Unsupported software,Data Protection,Low,Accepted,owner17@example.invalid,02-04-2026,02-05-2026,Plan agreed,,,,
+RSK-00053,Data handling weakness,Monitoring,Low,Open,owner18@example.invalid,11-06-2026,25-06-2026,Plan agreed,EXC-0053,Rejected,03-11-2026,Central logging and alerting
+RSK-00054,Unsupported software,Identity & Access,Medium,In progress,owner01@example.invalid,16-07-2026,13-11-2026,Evidence collected,,,,
+RSK-00055,Recovery test gap,Resilience,Low,Closed,owner02@example.invalid,09-09-2026,23-09-2026,Remediated,,,,
+RSK-00056,Privileged access gap,Resilience,Low,Closed,owner03@example.invalid,20-09-2026,19-11-2026,Remediated,EXC-0056,Pending,09-11-2026,Central logging and alerting
+RSK-00057,Unpatched critical asset,Identity & Access,Low,Accepted,owner04@example.invalid,15-04-2026,29-04-2026,Plan agreed,,,,
+RSK-00058,Recovery test gap,Cloud Security,Medium,Open,owner05@example.invalid,15-07-2026,13-10-2026,Plan agreed,,,,
+RSK-00059,Data handling weakness,Vulnerability,Critical,Open,owner06@example.invalid,04-07-2026,18-07-2026,Plan agreed,EXC-0059,Approved,13-10-2026,Central logging and alerting
+RSK-00060,Privileged access gap,Monitoring,Medium,In progress,owner07@example.invalid,13-04-2026,12-07-2026,Evidence collected,,,,
+RSK-00061,Recovery test gap,Data Protection,Medium,Open,owner08@example.invalid,27-09-2026,25-01-2027 00:00,Plan agreed,,,,
+RSK-00062,Unsupported software,Identity & Access,Medium,Accepted,owner09@example.invalid,17-10-2026 00:00,16-12-2026,Plan agreed,,,,
+RSK-00063,Unpatched critical asset,Vulnerability,High,Closed,owner10@example.invalid,17-07-2026,15-10-2026,Remediated,,,,
+RSK-00064,Data handling weakness,Vulnerability,High,Closed,owner11@example.invalid,02-04-2026,31-07-2026,Remediated,EXC-0064,Rejected,26-11-2026,Central logging and alerting
+RSK-00065,Privileged access gap,Monitoring,Medium,Accepted,owner12@example.invalid,17-10-2026,16-12-2026,Plan agreed,,,,
+RSK-00066,Recovery test gap,Monitoring,High,In progress,owner13@example.invalid,08-04-2026,22-04-2026,Evidence collected,,,,
+RSK-00067,Cloud logging gap,Vulnerability,Low,In progress,owner14@example.invalid,18-05-2026,01-06-2026,Evidence collected,,,,
+RSK-00068,Cloud logging gap,Identity & Access,High,In progress,owner15@example.invalid,18-06-2026,18-07-2026,Evidence collected,EXC-0068,Rejected,24-11-2026,Central logging and alerting
+RSK-00069,Cloud logging gap,Monitoring,Critical,Open,owner16@example.invalid,31-07-2026,29-10-2026,Plan agreed,EXC-0069,Pending,21-09-2026,Central logging and alerting
+RSK-00070,Security monitoring gap,Identity & Access,Medium,Open,owner17@example.invalid,22-04-2026,20-08-2026,Plan agreed,EXC-0070,Pending,13-11-2026,Central logging and alerting
+RSK-00071,Security monitoring gap,Cloud Security,Low,Closed,owner18@example.invalid,24-07-2026,21-11-2026,Remediated,,,,
+RSK-00072,Privileged access gap,Monitoring,High,Closed,owner01@example.invalid,18-06-2026,16-09-2026,Remediated,,,,
+RSK-00073,Privileged access gap,Monitoring,High,Open,owner02@example.invalid,25-06-2026,23-10-2026,Plan agreed,EXC-0073,Approved,23-12-2026,Central logging and alerting
+RSK-00074,Data handling weakness,Vulnerability,Low,Closed,owner03@example.invalid,18-04-2026,18-05-2026,Remediated,,,,
+RSK-00075,Unsupported software,Data Protection,Low,Open,owner04@example.invalid,27-06-2026,25-09-2026,Plan agreed,EXC-0075,Approved,13-01-2027,Central logging and alerting
+RSK-00076,Security monitoring gap,Cloud Security,Medium,In progress,owner05@example.invalid,21-09-2026,21-10-2026,Evidence collected,,,,
+RSK-00077,Unsupported software,Monitoring,Low,Accepted,owner06@example.invalid,25-05-2026,22-09-2026,Plan agreed,EXC-0077,Rejected,18-12-2026,Central logging and alerting
+RSK-00078,Data handling weakness,Identity & Access,Medium,In progress,owner07@example.invalid,14-08-2026,12-12-2026,Evidence collected,,,,
+RSK-00079,Security monitoring gap,Identity & Access,Medium,In progress,owner08@example.invalid,27-07-2026,10-08-2026,Evidence collected,EXC-0079,Approved,29-11-2026,Central logging and alerting
+RSK-00080,Cloud logging gap,Monitoring,Medium,In progress,owner09@example.invalid,30-07-2026,28-10-2026,Evidence collected,,,,
+RSK-00081,Privileged access gap,Identity & Access,High,Open,owner10@example.invalid,14-06-2026,12-09-2026,Plan agreed,EXC-0081,Rejected,13-01-2027,Central logging and alerting
+RSK-00082,Data handling weakness,Identity & Access,Medium,Open,owner11@example.invalid,20-05-2026,03-06-2026,Plan agreed,,,,
+RSK-00083,Security monitoring gap,Resilience,Medium,Accepted,owner12@example.invalid,01-08-2026,29-11-2026,Plan agreed,,,,
+RSK-00084,Unpatched critical asset,Data Protection,Medium,Closed,owner13@example.invalid,20-04-2026,20-05-2026,Remediated,,,,
+RSK-00085,Privileged access gap,Vulnerability,Medium,In progress,owner14@example.invalid,05-10-2026,04-12-2026,Evidence collected,,,,
+RSK-00086,Recovery test gap,Resilience,Low,Open,owner15@example.invalid,03-08-2026,17-08-2026,Plan agreed,,,,
+RSK-00087,Cloud logging gap,Identity & Access,Low,Open,owner16@example.invalid,03-10-2026,02-12-2026,Plan agreed,,,,
+RSK-00088,Unpatched critical asset,Monitoring,High,Closed,owner17@example.invalid,03-05-2026,02-06-2026,Remediated,EXC-0088,Rejected,21-12-2026,Central logging and alerting
+RSK-00089,Recovery test gap,Monitoring,High,Closed,owner18@example.invalid,15-09-2026,13-01-2027,Remediated,,,,
+RSK-00090,Data handling weakness,Monitoring,High,Accepted,owner01@example.invalid,20-04-2026,20-05-2026,Plan agreed,,,,
+RSK-00091,Recovery test gap,Resilience,Medium,In progress,owner02@example.invalid,20-05-2026,18-08-2026,Evidence collected,,,,
+RSK-00092,Cloud logging gap,Cloud Security,High,Open,owner03@example.invalid,14-08-2026,13-09-2026 00:00,Plan agreed,EXC-0092,Approved,01-12-2026,Central logging and alerting
+RSK-00093,Unsupported software,Vulnerability,High,In progress,owner04@example.invalid,17-05-2026 00:00,16-06-2026,Evidence collected,,,,
+RSK-00094,Recovery test gap,Resilience,Medium,In progress,owner05@example.invalid,24-09-2026,23-12-2026,Evidence collected,,,,
+RSK-00095,Security monitoring gap,Cloud Security,Low,Open,owner06@example.invalid,20-05-2026,17-09-2026,Plan agreed,EXC-0095,Pending,14-10-2026,Central logging and alerting
+RSK-00096,Unsupported software,Resilience,Critical,Open,owner07@example.invalid,10-07-2026,08-10-2026,Plan agreed,,,,
+RSK-00097,Privileged access gap,Data Protection,Medium,Open,owner08@example.invalid,22-07-2026,05-08-2026,Plan agreed,,,,
+RSK-00098,Cloud logging gap,Monitoring,High,In progress,owner09@example.invalid,15-08-2026,13-11-2026,Evidence collected,EXC-0098,Pending,10-01-2027,Central logging and alerting
+RSK-00099,Security monitoring gap,Data Protection,Medium,Open,owner10@example.invalid,08-10-2026,07-11-2026,Plan agreed,,,,
+RSK-00100,Privileged access gap,Identity & Access,Medium,Open,owner11@example.invalid,24-06-2026,24-07-2026,Plan agreed,EXC-0100,Pending,13-11-2026,Central logging and alerting

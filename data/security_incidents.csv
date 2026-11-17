@@ -1,0 +1,121 @@
+incident_id,incident_category,severity,status,occurred_at,detected_at,response_started_at,contained_at,confirmed_data_breach,business_unit,source_team
+INC-00001,Malware,High,Closed,05-10-2026 22:00,05-10-2026 22:02,05-10-2026 22:55,06-10-2026 01:57,No,Retail,Service Desk
+INC-00002,Policy violation,Medium,Closed,30-08-2026 01:39,30-08-2026 01:47,30-08-2026 02:56,30-08-2026 03:21,No,Finance,Service Desk
+INC-00003,Phishing,Medium,Open,28-07-2026 15:37,28-07-2026 16:03,28-07-2026 16:16,28-07-2026 16:49,No,Operations,Employee Report
+INC-00004,Malware,Medium,Closed,03-07-2026 16:16,03-07-2026 16:23,03-07-2026 16:45,03-07-2026 17:14,No,Finance,Service Desk
+INC-00005,Policy violation,Medium,Open,16-10-2026 07:00,16-10-2026 07:03,16-10-2026 07:21,16-10-2026 08:00,No,Operations,Service Desk
+INC-00006,Unauthorized access,Critical,Closed,04-08-2026 15:12,04-08-2026 15:19,04-08-2026 15:40,04-08-2026 16:08,Yes,Retail,Service Desk
+INC-00007,Data loss,High,Open,28-08-2026 22:35,28-08-2026 22:50,28-08-2026 23:10,28-08-2026 23:59,No,Operations,SOC
+INC-00008,Phishing,Medium,Closed,09-10-2026 18:33,09-10-2026 18:38,09-10-2026 19:02,09-10-2026 19:49,No,Technology,Service Desk
+INC-00009,Phishing,Medium,Closed,31-07-2026 21:32,31-07-2026 21:36,31-07-2026 21:42,31-07-2026 22:19,No,People,Service Desk
+INC-00010,Data loss,Critical,Investigating,26-08-2026 16:56,26-08-2026 17:00,26-08-2026 18:29,26-08-2026 19:30,Yes,Retail,Employee Report
+INC-00011,Unauthorized access,Medium,Closed,23-08-2026 13:32,23-08-2026 13:34,23-08-2026 13:44,23-08-2026 15:07,No,Operations,SOC
+INC-00012,Data loss,Low,Closed,03-10-2026 14:03,03-10-2026 14:10,03-10-2026 14:23,03-10-2026 14:52,No,Technology,Employee Report
+INC-00013,Policy violation,Medium,Open,15-09-2026 12:46,15-09-2026 12:48,15-09-2026 13:46,15-09-2026 14:05,No,People,Service Desk
+INC-00014,Phishing,High,Closed,12-07-2026 19:46,12-07-2026 19:59,12-07-2026 20:13,12-07-2026 21:14,No,Retail,SOC
+INC-00015,Malware,High,Closed,14-08-2026 05:23,14-08-2026 05:25,14-08-2026 05:44,14-08-2026 07:13,No,People,Cloud Security
+INC-00016,Data loss,Medium,Open,31-07-2026 06:37,31-07-2026 06:44,31-07-2026 07:23,31-07-2026 08:51,No,Retail,SOC
+INC-00017,Data loss,Critical,Contained,21-10-2026 02:37,21-10-2026 02:46,21-10-2026 02:59,21-10-2026 03:46,Yes,People,Employee Report
+INC-00018,Phishing,High,Closed,20-08-2026 12:33,20-08-2026 12:43,20-08-2026 13:02,20-08-2026 14:28,No,Technology,Employee Report
+INC-00019,Cloud misconfiguration,Low,Closed,24-09-2026 11:10,24-09-2026 11:14,24-09-2026 11:55,24-09-2026 12:55,No,Customer,Employee Report
+INC-00020,Data loss,Medium,Closed,19-09-2026 00:19,19-09-2026 00:28,19-09-2026 00:30,19-09-2026 02:58,Yes,Retail,Employee Report
+INC-00021,Phishing,Low,Closed,31-08-2026 05:44,31-08-2026 06:06,31-08-2026 06:16,31-08-2026 06:53,No,Finance,Employee Report
+INC-00022,Phishing,Low,Open,11-09-2026 03:22,11-09-2026 03:23,11-09-2026 03:37,11-09-2026 04:04,No,Finance,SOC
+INC-00023,Phishing,Medium,Contained,06-10-2026 04:45,,,,No,Technology,SOC
+INC-00024,Unauthorized access,Medium,Open,09-09-2026 12:12,09-09-2026 12:18,09-09-2026 12:24,09-09-2026 13:10,No,Customer,Employee Report
+INC-00025,Availability,Medium,Closed,16-07-2026 06:31,16-07-2026 06:35,16-07-2026 07:22,16-07-2026 10:34,No,Finance,Employee Report
+INC-00026,Availability,Medium,Contained,21-08-2026 01:31,21-08-2026 01:34,21-08-2026 02:08,21-08-2026 03:26,No,Finance,SOC
+INC-00027,Cloud misconfiguration,Medium,Investigating,09-10-2026 19:09,09-10-2026 19:12,09-10-2026 19:28,09-10-2026 21:56,No,Technology,Cloud Security
+INC-00028,Policy violation,High,Investigating,23-07-2026 23:51,23-07-2026 23:52,24-07-2026 00:16,24-07-2026 01:37,No,Customer,Service Desk
+INC-00029,Policy violation,Medium,Contained,19-07-2026 23:39,19-07-2026 23:43,19-07-2026 23:49,20-07-2026 00:10,No,People,Cloud Security
+INC-00030,Policy violation,Critical,Open,22-09-2026 11:01,22-09-2026 11:04,22-09-2026 11:25,22-09-2026 11:57,No,Customer,Cloud Security
+INC-00031,Phishing,Medium,Open,18-07-2026 23:24,18-07-2026 23:57,19-07-2026 00:00,19-07-2026 01:36,No,Operations,SOC
+INC-00032,Cloud misconfiguration,Low,Investigating,06-07-2026 17:28,06-07-2026 17:33,06-07-2026 17:39,06-07-2026 18:45,No,Technology,Service Desk
+INC-00033,Cloud misconfiguration,Medium,Open,16-10-2026 01:55,16-10-2026 02:04,16-10-2026 02:15,16-10-2026 03:40,No,Finance,Service Desk
+INC-00034,Cloud misconfiguration,Low,Closed,28-07-2026 15:53,28-07-2026 15:59,28-07-2026 16:17,28-07-2026 20:24,No,People,Cloud Security
+INC-00035,Unauthorized access,High,Open,27-07-2026 13:59,27-07-2026 14:10,27-07-2026 14:20,27-07-2026 15:09,No,Customer,Service Desk
+INC-00036,Phishing,Critical,Closed,07-08-2026 05:07,07-08-2026 05:16,07-08-2026 06:07,07-08-2026 07:04,No,Technology,SOC
+INC-00037, data loss , low ,Closed,18-08-2026 04:28,18-08-2026 04:33,18-08-2026 04:44,18-08-2026 06:27,No,Retail,Service Desk
+INC-00038,Phishing,Low,Closed,21-09-2026 12:31,21-09-2026 12:32,21-09-2026 14:21,21-09-2026 15:35,No,Finance,Service Desk
+INC-00039,Availability,Low,Closed,19-08-2026 14:59,19-08-2026 15:03,19-08-2026 15:42,19-08-2026 16:27,No,Retail,Cloud Security
+INC-00040,Policy violation,Medium,Closed,28-09-2026 20:12,28-09-2026 20:15,28-09-2026 20:36,28-09-2026 21:21,No,Finance,Third Party
+INC-00041,CLOUD MISCONFIGURATION,MEDIUM,Closed,05-10-2026 05:31,05-10-2026 05:53,05-10-2026 05:57,05-10-2026 08:04,No,People,Cloud Security
+INC-00042,Phishing,Medium,Closed,07-10-2026 13:13,07-10-2026 13:20,07-10-2026 13:29,07-10-2026 13:44,No,Finance,Service Desk
+INC-00043,Policy violation,Medium,Closed,13-08-2026 16:17,13-08-2026 16:26,13-08-2026 16:47,13-08-2026 19:48,No,People,Service Desk
+INC-00044,Phishing,Medium,Closed,01-07-2026 01:42,01-07-2026 02:22,01-07-2026 02:39,01-07-2026 04:59,No,People,Cloud Security
+INC-00045,Availability,High,Contained,06-10-2026 19:30,06-10-2026 19:38,06-10-2026 19:44,06-10-2026 20:54,No,Retail,Employee Report
+INC-00046,Data loss,Medium,Open,02-10-2026 23:30,,,,Yes,People,Service Desk
+INC-00047,Data loss,Low,Closed,04-07-2026 23:15,04-07-2026 23:29,04-07-2026 23:40,05-07-2026 00:39,No,People,Cloud Security
+INC-00048,Unauthorized access,Medium,Closed,19-10-2026 10:08,19-10-2026 10:12,19-10-2026 10:21,19-10-2026 11:09,No,Technology,SOC
+INC-00049,Unauthorized access,Low,Contained,27-08-2026 06:35,27-08-2026 06:38,27-08-2026 06:49,27-08-2026 08:00,No,People,SOC
+INC-00050,Phishing,High,Closed,18-08-2026 21:07,18-08-2026 21:15,18-08-2026 21:32,18-08-2026 22:22,No,Customer,Employee Report
+INC-00051,Cloud misconfiguration,Medium,Closed,29-07-2026 19:44,29-07-2026 20:02,29-07-2026 20:25,29-07-2026 21:15,No,People,Cloud Security
+INC-00052,Unauthorized access,Medium,Contained,29-07-2026 14:45,29-07-2026 14:47,29-07-2026 15:12,29-07-2026 15:48,No,Technology,Service Desk
+INC-00053,Data loss,Medium,Closed,09-10-2026 20:40,09-10-2026 20:46,09-10-2026 20:59,09-10-2026 22:39,No,Finance,Service Desk
+INC-00054,Data loss,High,Contained,27-07-2026 09:27,27-07-2026 09:50,27-07-2026 10:21,27-07-2026 10:47,Yes,Retail,Third Party
+INC-00055,Data loss,Medium,Closed,10-08-2026 10:11,10-08-2026 10:18,10-08-2026 10:23,10-08-2026 11:05,No,Technology,Service Desk
+INC-00056,Malware,Medium,Closed,06-09-2026 22:40,06-09-2026 22:45,06-09-2026 23:04,07-09-2026 00:05,No,Customer,SOC
+INC-00057,Availability,High,Closed,03-08-2026 15:45,03-08-2026 15:53,03-08-2026 16:10,03-08-2026 17:01,No,Finance,Service Desk
+INC-00058,Malware,Low,Investigating,28-07-2026 16:06,28-07-2026 16:23,28-07-2026 17:35,28-07-2026 18:07,No,People,SOC
+INC-00059,Malware,High,Open,03-10-2026 05:21,03-10-2026 05:25,03-10-2026 06:18,03-10-2026 07:18,No,Technology,Cloud Security
+INC-00060,Policy violation,Low,Closed,31-07-2026 08:48,31-07-2026 08:52,31-07-2026 09:03,31-07-2026 09:39,No,People,SOC
+INC-00061,Availability,Medium,Investigating,21-10-2026 01:42,21-10-2026 01:50,21-10-2026 02:40,21-10-2026 03:12,No,Operations,Cloud Security
+INC-00062,Data loss,High,Investigating,30-09-2026 08:02,30-09-2026 08:18,30-09-2026 08:30,30-09-2026 11:14,No,Retail,Service Desk
+INC-00063,Malware,Low,Open,14-10-2026 16:37,14-10-2026 16:48,14-10-2026 16:53,14-10-2026 17:24,No,People,Employee Report
+INC-00064,Unauthorized access,Medium,Closed,09-07-2026 01:22,09-07-2026 01:40,09-07-2026 01:50,09-07-2026 03:23,Yes,People,Employee Report
+INC-00065,Availability,Medium,Open,23-07-2026 21:05,23-07-2026 21:09,23-07-2026 21:25,23-07-2026 22:12,No,Customer,SOC
+INC-00066,Unauthorized access,Medium,Closed,14-10-2026 20:41,14-10-2026 20:50,14-10-2026 20:55,14-10-2026 23:33,No,People,SOC
+INC-00067,Phishing,Low,Closed,04-07-2026 12:53,04-07-2026 12:59,04-07-2026 14:09,04-07-2026 15:31,No,Technology,SOC
+INC-00068,Malware,Low,Closed,04-10-2026 16:05,04-10-2026 16:09,04-10-2026 16:21,04-10-2026 17:08,No,Retail,Service Desk
+INC-00069,Data loss,Low,Closed,01-08-2026 03:56,,,,No,Operations,Service Desk
+INC-00070,Phishing,High,Investigating,18-08-2026 18:26,18-08-2026 18:44,18-08-2026 19:19,18-08-2026 20:18,No,Operations,SOC
+INC-00071,Cloud misconfiguration,Critical,Closed,14-08-2026 04:24,14-08-2026 04:31,14-08-2026 04:38,14-08-2026 05:10,No,Technology,Service Desk
+INC-00072,Unauthorized access,Low,Closed,02-10-2026 22:27,02-10-2026 22:34,02-10-2026 23:11,02-10-2026 23:48,No,Customer,Service Desk
+INC-00073,Cloud misconfiguration,High,Investigating,09-10-2026 16:13,09-10-2026 16:20,09-10-2026 16:31,09-10-2026 17:14,No,Technology,Employee Report
+INC-00074, availability , low ,Closed,15-07-2026 00:31,15-07-2026 00:41,15-07-2026 00:56,15-07-2026 03:12,No,Retail,Service Desk
+INC-00075,Cloud misconfiguration,High,Closed,28-07-2026 16:50,28-07-2026 17:01,28-07-2026 17:49,28-07-2026 18:32,No,Finance,SOC
+INC-00076,Availability,Critical,Closed,11-08-2026 15:36,11-08-2026 15:43,11-08-2026 16:14,11-08-2026 17:00,No,Customer,Cloud Security
+INC-00077,Data loss,High,Closed,28-08-2026 14:52,28-08-2026 14:54,28-08-2026 15:25,28-08-2026 16:40,No,Customer,Employee Report
+INC-00078,Malware,High,Investigating,28-09-2026 14:28,28-09-2026 14:32,28-09-2026 14:40,28-09-2026 15:10,No,Operations,Employee Report
+INC-00079,Data loss,High,Closed,07-07-2026 20:47,07-07-2026 20:51,07-07-2026 21:01,07-07-2026 21:25,No,Customer,Third Party
+INC-00080,Availability,Low,Investigating,12-07-2026 13:41,12-07-2026 13:44,12-07-2026 14:21,12-07-2026 14:51,No,People,Third Party
+INC-00081,Malware,High,Open,30-07-2026 20:28,30-07-2026 20:36,30-07-2026 20:45,30-07-2026 21:11,No,Finance,SOC
+INC-00082,DATA LOSS,MEDIUM,Closed,15-08-2026 23:52,16-08-2026 00:05,16-08-2026 00:30,16-08-2026 01:34,No,Retail,SOC
+INC-00083,Availability,High,Closed,07-07-2026 13:18,07-07-2026 13:25,07-07-2026 13:40,07-07-2026 14:51,No,Operations,Service Desk
+INC-00084,Malware,High,Open,01-07-2026 11:06,01-07-2026 11:17,01-07-2026 11:40,01-07-2026 13:33,No,Customer,Third Party
+INC-00085,Cloud misconfiguration,High,Investigating,26-09-2026 07:20,26-09-2026 07:21,26-09-2026 07:27,26-09-2026 09:15,No,Finance,SOC
+INC-00086,Policy violation,Low,Contained,02-08-2026 09:30,02-08-2026 09:32,02-08-2026 09:40,02-08-2026 10:05,No,Technology,SOC
+INC-00087,Policy violation,High,Closed,28-08-2026 13:29,28-08-2026 13:50,28-08-2026 14:05,28-08-2026 14:30,No,Retail,SOC
+INC-00088,Data loss,Medium,Closed,04-09-2026 14:28,04-09-2026 14:31,04-09-2026 14:46,04-09-2026 15:02,No,Retail,Third Party
+INC-00089,Cloud misconfiguration,Critical,Closed,29-07-2026 22:17,29-07-2026 22:26,29-07-2026 22:36,30-07-2026 00:22,No,Finance,Employee Report
+INC-00090,Policy violation,Low,Investigating,18-07-2026 22:12,18-07-2026 22:26,18-07-2026 22:37,18-07-2026 23:55,No,Customer,Service Desk
+INC-00091,Cloud misconfiguration,Critical,Investigating,30-09-2026 20:43,30-09-2026 20:48,30-09-2026 21:22,30-09-2026 21:52,No,Operations,Employee Report
+INC-00092,Unauthorized access,Low,Contained,13-07-2026 18:55,,,,No,Technology,Third Party
+INC-00093,Malware,Medium,Closed,02-07-2026 12:46,02-07-2026 12:50,02-07-2026 13:04,02-07-2026 13:32,No,People,Employee Report
+INC-00094,Malware,Medium,Closed,26-08-2026 09:34,26-08-2026 09:40,26-08-2026 09:44,26-08-2026 10:06,No,People,SOC
+INC-00095,Data loss,High,Investigating,07-09-2026 09:25,07-09-2026 09:39,07-09-2026 10:03,07-09-2026 11:17,No,Finance,Cloud Security
+INC-00096,Availability,High,Closed,11-09-2026 09:36,11-09-2026 09:48,11-09-2026 10:19,11-09-2026 10:27,No,Finance,Employee Report
+INC-00097,Phishing,Low,Investigating,08-10-2026 02:44,08-10-2026 02:50,08-10-2026 03:04,08-10-2026 03:31,No,Customer,SOC
+INC-00098,Availability,Medium,Investigating,19-07-2026 08:34,19-07-2026 08:54,19-07-2026 09:38,19-07-2026 11:02,No,People,SOC
+INC-00099,Data loss,Medium,Closed,20-07-2026 21:31,20-07-2026 22:17,20-07-2026 22:22,20-07-2026 23:21,No,Retail,Employee Report
+INC-00100,Cloud misconfiguration,Medium,Investigating,20-09-2026 22:49,20-09-2026 22:52,20-09-2026 23:04,20-09-2026 23:36,No,Operations,SOC
+INC-00101,Cloud misconfiguration,Low,Closed,12-08-2026 11:05,12-08-2026 11:14,12-08-2026 11:39,12-08-2026 13:54,No,Retail,SOC
+INC-00102,Cloud misconfiguration,Low,Closed,26-08-2026 00:25,26-08-2026 00:29,26-08-2026 00:42,26-08-2026 01:18,No,Retail,SOC
+INC-00103,Data loss,High,Contained,11-10-2026 22:24,11-10-2026 22:30,11-10-2026 22:41,11-10-2026 23:16,Yes,People,Employee Report
+INC-00104,Phishing,Low,Closed,01-08-2026 08:26,01-08-2026 08:29,01-08-2026 09:10,01-08-2026 10:23,No,Finance,SOC
+INC-00105,Phishing,Medium,Closed,15-10-2026 11:29,15-10-2026 11:46,15-10-2026 12:03,15-10-2026 13:04,No,Finance,Third Party
+INC-00106,Phishing,Medium,Open,09-08-2026 13:52,09-08-2026 14:12,09-08-2026 14:29,09-08-2026 15:13,No,Customer,Employee Report
+INC-00107,Unauthorized access,Medium,Closed,19-08-2026 05:35,19-08-2026 05:40,19-08-2026 05:49,19-08-2026 06:56,No,Customer,SOC
+INC-00108,Phishing,High,Closed,13-09-2026 20:36,13-09-2026 21:19,13-09-2026 21:34,13-09-2026 22:20,No,Finance,Employee Report
+INC-00109,Cloud misconfiguration,Medium,Closed,01-09-2026 00:30,01-09-2026 00:40,01-09-2026 00:47,01-09-2026 02:27,No,Finance,Service Desk
+INC-00110,Policy violation,High,Closed,14-07-2026 13:12,14-07-2026 13:18,14-07-2026 13:27,14-07-2026 14:16,No,Finance,Employee Report
+INC-00111, data loss , medium ,Investigating,15-07-2026 20:32,15-07-2026 20:35,15-07-2026 20:42,15-07-2026 21:44,No,Operations,Service Desk
+INC-00112,Data loss,Medium,Contained,25-08-2026 16:43,25-08-2026 16:48,25-08-2026 17:08,25-08-2026 17:22,No,Customer,Employee Report
+INC-00113,Data loss,Medium,Closed,28-08-2026 21:39,28-08-2026 21:52,28-08-2026 22:00,28-08-2026 23:58,No,Retail,SOC
+INC-00114,Policy violation,Medium,Closed,17-09-2026 15:56,17-09-2026 15:59,17-09-2026 16:18,17-09-2026 17:04,No,Customer,Employee Report
+INC-00115,Phishing,High,Closed,16-07-2026 01:55,,,,No,Retail,Third Party
+INC-00116,Unauthorized access,High,Open,24-08-2026 07:17,24-08-2026 07:27,24-08-2026 07:50,24-08-2026 09:27,No,Operations,Service Desk
+INC-00117,Availability,Medium,Closed,16-10-2026 20:44,16-10-2026 20:49,16-10-2026 20:53,16-10-2026 23:07,No,Operations,Third Party
+INC-00118,Unauthorized access,Medium,Closed,19-10-2026 13:21,19-10-2026 14:13,19-10-2026 14:22,19-10-2026 18:04,No,Customer,Employee Report
+INC-00119,Cloud misconfiguration,Low,Closed,12-07-2026 16:28,12-07-2026 16:50,12-07-2026 17:03,12-07-2026 17:57,No,Retail,SOC
+INC-00120,Cloud misconfiguration,Medium,Closed,26-09-2026 04:33,26-09-2026 04:49,26-09-2026 04:56,26-09-2026 05:57,No,Retail,Employee Report

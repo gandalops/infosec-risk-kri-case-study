@@ -1,0 +1,9 @@
+breach_id,incident_id,confirmation_status,discovered_date,severity,regulatory_notification_required,closure_date,data_subject_count,record_owner
+BR-0001,INC-00006,Confirmed,25-09-2026,Critical,Yes,30-09-2026,3284,Data Protection
+BR-0002,INC-00010,Confirmed,06-07-2026,Critical,No,,4331,Data Protection
+BR-0003,INC-00017,Under assessment,25-07-2026,Critical,No,,1088,Data Protection
+BR-0004,INC-00020,Under assessment,23-07-2026,Medium,No,07-09-2026,4366,Data Protection
+BR-0005,INC-00046,Confirmed,18-07-2026,Medium,No,07-08-2026,1520,Data Protection
+BR-0006,INC-00054,Confirmed,27-08-2026,High,Under review,21-09-2026,968,Data Protection
+BR-0007,INC-00064,Confirmed,10-07-2026,Medium,Yes,,3462,Data Protection
+BR-0008,INC-00103,Under assessment,26-07-2026,High,No,20-08-2026,534,Data Protection

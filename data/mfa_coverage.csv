@@ -1,0 +1,331 @@
+entity_id,entity_type,entity_name,eligible_for_mfa,mfa_enabled,criticality,business_unit,snapshot_date
+EMP-0001,Human account,employee0001@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0002,Human account,employee0002@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0003,Human account,employee0003@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0004,Human account,employee0004@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0005,Human account,employee0005@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0006,Human account,employee0006@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0007,Human account,employee0007@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0008,Human account,employee0008@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0009,Human account,employee0009@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0010,Human account,employee0010@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0011,Human account,employee0011@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0012,Human account,employee0012@example.invalid,No,No,High,Finance,20-10-2026
+EMP-0013,Human account,employee0013@example.invalid,Yes,No,High,Finance,20-10-2026
+EMP-0014,Human account,employee0014@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0015,Human account,employee0015@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0016,Human account,employee0016@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0017,Human account,employee0017@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0018,Human account,employee0018@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0019,Human account,employee0019@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0020,Human account,employee0020@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0021,Human account,employee0021@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0022,Human account,employee0022@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0023,Human account,employee0023@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0024,Human account,employee0024@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0025,Human account,employee0025@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0026,Human account,employee0026@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0027,Human account,employee0027@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0028,Human account,employee0028@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0029,Human account,employee0029@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0030,Human account,employee0030@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0031,Human account,employee0031@example.invalid,No,No,Low,Operations,20-10-2026
+EMP-0032,Human account,employee0032@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0033,Human account,employee0033@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0034,Human account,employee0034@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0035,Human account,employee0035@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0036,Human account,employee0036@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0037,Human account,employee0037@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0038,Human account,employee0038@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0039,Human account,employee0039@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0040,Human account,employee0040@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0041,Human account,employee0041@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0042,Human account,employee0042@example.invalid,Yes,No,High,Finance,20-10-2026
+EMP-0043,Human account,employee0043@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0044,Human account,employee0044@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0045,Human account,employee0045@example.invalid,Yes,No,High,People,20-10-2026
+EMP-0046,Human account,employee0046@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0047,Human account,employee0047@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0048,Human account,employee0048@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0049,Human account,employee0049@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0050,Human account,employee0050@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0051,Human account,employee0051@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0052,Human account,employee0052@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0053,Human account,employee0053@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0054,Human account,employee0054@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0055,Human account,employee0055@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0056,Human account,employee0056@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0057,Human account,employee0057@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0058,Human account,employee0058@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0059,Human account,employee0059@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0060,Human account,employee0060@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0061,Human account,employee0061@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0062,Human account,employee0062@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0063,Human account,employee0063@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0064,Human account,employee0064@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0065,Human account,employee0065@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0066,Human account,employee0066@example.invalid,Yes,No,High,Operations,20-10-2026
+EMP-0067,Human account,employee0067@example.invalid,Yes,No,Low,People,20-10-2026
+EMP-0068,Human account,employee0068@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0069,Human account,employee0069@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0070,Human account,employee0070@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0071,Human account,employee0071@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0072,Human account,employee0072@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0073,Human account,employee0073@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0074,Human account,employee0074@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0075,Human account,employee0075@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0076,Human account,employee0076@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0077,Human account,employee0077@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0078,Human account,employee0078@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0079,Human account,employee0079@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0080,Human account,employee0080@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0081,Human account,employee0081@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0082,Human account,employee0082@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0083,Human account,employee0083@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0084,Human account,employee0084@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0085,Human account,employee0085@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0086,Human account,employee0086@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0087,Human account,employee0087@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0088,Human account,employee0088@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0089,Human account,employee0089@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0090,Human account,employee0090@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0091,Human account,employee0091@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0092,Human account,employee0092@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0093,Human account,employee0093@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0094,Human account,employee0094@example.invalid,Yes,No,High,Finance,20-10-2026
+EMP-0095,Human account,employee0095@example.invalid,Yes,No,High,Operations,20-10-2026
+EMP-0096,Human account,employee0096@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0097,Human account,employee0097@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0098,Human account,employee0098@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0099,Human account,employee0099@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0100,Human account,employee0100@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0101,Human account,employee0101@example.invalid,Yes,Yes,Low,Technology,20-10-2026
+EMP-0102,Human account,employee0102@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0103,Human account,employee0103@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0104,Human account,employee0104@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0105,Human account,employee0105@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0106,Human account,employee0106@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0107,Human account,employee0107@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0108,Human account,employee0108@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0109,Human account,employee0109@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0110,Human account,employee0110@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0111,Human account,employee0111@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0112,Human account,employee0112@example.invalid,Yes,No,High,People,20-10-2026
+EMP-0113,Human account,employee0113@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0114,Human account,employee0114@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0115,Human account,employee0115@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0116,Human account,employee0116@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0117,Human account,employee0117@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0118,Human account,employee0118@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0119,Human account,employee0119@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0120,Human account,employee0120@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0121,Human account,employee0121@example.invalid,Yes,No,Medium,Operations,20-10-2026
+EMP-0122,Human account,employee0122@example.invalid,Yes,No,High,Customer,20-10-2026
+EMP-0123,Human account,employee0123@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0124,Human account,employee0124@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0125,Human account,employee0125@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0126,Human account,employee0126@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0127,Human account,employee0127@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0128,Human account,employee0128@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0129,Human account,employee0129@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0130,Human account,employee0130@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0131,Human account,employee0131@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0132,Human account,employee0132@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0133,Human account,employee0133@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0134,Human account,employee0134@example.invalid,Yes,No,High,Operations,20-10-2026
+EMP-0135,Human account,employee0135@example.invalid,Yes,Yes,Medium,Customer,20-10-2026
+EMP-0136,Human account,employee0136@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0137,Human account,employee0137@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0138,Human account,employee0138@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0139,Human account,employee0139@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0140,Human account,employee0140@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0141,Human account,employee0141@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0142,Human account,employee0142@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0143,Human account,employee0143@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0144,Human account,employee0144@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0145,Human account,employee0145@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0146,Human account,employee0146@example.invalid,Yes,No,High,Technology,20-10-2026
+EMP-0147,Human account,employee0147@example.invalid,Yes,No,Medium,Operations,20-10-2026
+EMP-0148,Human account,employee0148@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0149,Human account,employee0149@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0150,Human account,employee0150@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0151,Human account,employee0151@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0152,Human account,employee0152@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0153,Human account,employee0153@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0154,Human account,employee0154@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0155,Human account,employee0155@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0156,Human account,employee0156@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0157,Human account,employee0157@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0158,Human account,employee0158@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0159,Human account,employee0159@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0160,Human account,employee0160@example.invalid,Yes,No,High,Finance,20-10-2026
+EMP-0161,Human account,employee0161@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0162,Human account,employee0162@example.invalid,Yes,No,Low,Retail,20-10-2026
+EMP-0163,Human account,employee0163@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0164,Human account,employee0164@example.invalid,Yes,Yes,Medium,Technology,20-10-2026
+EMP-0165,Human account,employee0165@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0166,Human account,employee0166@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0167,Human account,employee0167@example.invalid,Yes,No,Medium,People,20-10-2026
+EMP-0168,Human account,employee0168@example.invalid,Yes,Yes,Low,Retail,20-10-2026
+EMP-0169,Human account,employee0169@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0170,Human account,employee0170@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0171,Human account,employee0171@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0172,Human account,employee0172@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0173,Human account,employee0173@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0174,Human account,employee0174@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0175,Human account,employee0175@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0176,Human account,employee0176@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0177,Human account,employee0177@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0178,Human account,employee0178@example.invalid,No,No,Medium,Operations,20-10-2026
+EMP-0179,Human account,employee0179@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0180,Human account,employee0180@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0181,Human account,employee0181@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0182,Human account,employee0182@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0183,Human account,employee0183@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0184,Human account,employee0184@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0185,Human account,employee0185@example.invalid,Yes,No,High,Retail,20-10-2026
+EMP-0186,Human account,employee0186@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0187,Human account,employee0187@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0188,Human account,employee0188@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0189,Human account,employee0189@example.invalid,Yes,Yes,High,Technology,20-10-2026
+EMP-0190,Human account,employee0190@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0191,Human account,employee0191@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0192,Human account,employee0192@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0193,Human account,employee0193@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0194,Human account,employee0194@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0195,Human account,employee0195@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0196,Human account,employee0196@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0197,Human account,employee0197@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0198,Human account,employee0198@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0199,Human account,employee0199@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0200,Human account,employee0200@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0201,Human account,employee0201@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0202,Human account,employee0202@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0203,Human account,employee0203@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0204,Human account,employee0204@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0205,Human account,employee0205@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0206,Human account,employee0206@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0207,Human account,employee0207@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0208,Human account,employee0208@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0209,Human account,employee0209@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0210,Human account,employee0210@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0211,Human account,employee0211@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0212,Human account,employee0212@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0213,Human account,employee0213@example.invalid,Yes,No,High,Operations,20-10-2026
+EMP-0214,Human account,employee0214@example.invalid,Yes,Yes,Low,Technology,20-10-2026
+EMP-0215,Human account,employee0215@example.invalid,Yes,No,Medium,Technology,20-10-2026
+EMP-0216,Human account,employee0216@example.invalid,Yes,No,Medium,Finance,20-10-2026
+EMP-0217,Human account,employee0217@example.invalid,Yes,No,Medium,Technology,20-10-2026
+EMP-0218,Human account,employee0218@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0219,Human account,employee0219@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0220,Human account,employee0220@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0221,Human account,employee0221@example.invalid,Yes,Yes,Medium,People,20-10-2026
+EMP-0222,Human account,employee0222@example.invalid,Yes,Yes,Low,Technology,20-10-2026
+EMP-0223,Human account,employee0223@example.invalid,Yes,Yes,Medium,Operations,20-10-2026
+EMP-0224,Human account,employee0224@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0225,Human account,employee0225@example.invalid,Yes,Yes,High,People,20-10-2026
+EMP-0226,Human account,employee0226@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0227,Human account,employee0227@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0228,Human account,employee0228@example.invalid,Yes,Yes,High,Finance,20-10-2026
+EMP-0229,Human account,employee0229@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0230,Human account,employee0230@example.invalid,Yes,Yes,Low,Customer,20-10-2026
+EMP-0231,Human account,employee0231@example.invalid,Yes,Yes,High,Retail,20-10-2026
+EMP-0232,Human account,employee0232@example.invalid,Yes,Yes,High,Operations,20-10-2026
+EMP-0233,Human account,employee0233@example.invalid,Yes,Yes,Medium,Finance,20-10-2026
+EMP-0234,Human account,employee0234@example.invalid,Yes,Yes,Medium,Retail,20-10-2026
+EMP-0235,Human account,employee0235@example.invalid,Yes,Yes,Low,People,20-10-2026
+EMP-0236,Human account,employee0236@example.invalid,Yes,Yes,Low,Operations,20-10-2026
+EMP-0237,Human account,employee0237@example.invalid,Yes,Yes,Low,Finance,20-10-2026
+EMP-0238,Human account,employee0238@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0239,Human account,employee0239@example.invalid,Yes,Yes,High,Customer,20-10-2026
+EMP-0240,Human account,employee0240@example.invalid,Yes,Yes,High,Technology,20-10-2026
+AST-0001,System account / application,Operations-Portal-001,Yes,Yes,High,Finance,20-10-2026
+AST-0002,System account / application,Payments-Portal-002,No,No,Low,People,20-10-2026
+AST-0003,System account / application,Identity-Portal-003,No,No,High,People,20-10-2026
+AST-0004,System account / application,Analytics-Service-004,Yes,Yes,High,Customer,20-10-2026
+AST-0005,System account / application,Payments-API-005,No,No,Medium,Technology,20-10-2026
+AST-0006,System account / application,Analytics-Portal-006,No,No,High,People,20-10-2026
+AST-0007,System account / application,Customer-Portal-007,Yes,Yes,High,Customer,20-10-2026
+AST-0008,System account / application,Customer-Portal-008,No,No,High,Finance,20-10-2026
+AST-0009,System account / application,Operations-API-009,Yes,Yes,Medium,Retail,20-10-2026
+AST-0010,System account / application,Identity-Platform-010,Yes,Yes,Medium,Operations,20-10-2026
+AST-0011,System account / application,Employee-Platform-011,Yes,Yes,Medium,Operations,20-10-2026
+AST-0012,System account / application,Identity-Portal-012,Yes,Yes,High,Retail,20-10-2026
+AST-0013,System account / application,Data-Platform-013,Yes,Yes,Medium,Technology,20-10-2026
+AST-0014,System account / application,Analytics-Platform-014,Yes,Yes,High,Finance,20-10-2026
+AST-0015,System account / application,Identity-Portal-015,Yes,Yes,High,Retail,20-10-2026
+AST-0016,System account / application,Identity-API-016,No,No,Medium,Customer,20-10-2026
+AST-0017,System account / application,Identity-API-017,Yes,Yes,Low,Customer,20-10-2026
+AST-0018,System account / application,Data-Portal-018,Yes,Yes,High,Customer,20-10-2026
+AST-0019,System account / application,Data-Gateway-019,Yes,Yes,Medium,Retail,20-10-2026
+AST-0020,System account / application,Analytics-Gateway-020,Yes,Yes,Medium,Finance,20-10-2026
+AST-0021,System account / application,Operations-Service-021,No,No,Critical,Retail,20-10-2026
+AST-0022,System account / application,Payments-API-022,No,No,Low,People,20-10-2026
+AST-0023,System account / application,Payments-Database-023,Yes,Yes,High,Finance,20-10-2026
+AST-0024,System account / application,Analytics-Platform-024,Yes,Yes,High,Technology,20-10-2026
+AST-0025,System account / application,Analytics-Portal-025,No,No,High,People,20-10-2026
+AST-0026,System account / application,Customer-Gateway-026,Yes,No,Low,Customer,20-10-2026
+AST-0027,System account / application,Data-Gateway-027,Yes,Yes,Medium,Retail,20-10-2026
+AST-0028,System account / application,Data-Portal-028,Yes,Yes,Critical,Customer,20-10-2026
+AST-0029,System account / application,Operations-API-029,Yes,Yes,Medium,People,20-10-2026
+AST-0030,System account / application,Payments-Portal-030,Yes,Yes,High,People,20-10-2026
+AST-0031,System account / application,Payments-Database-031,Yes,Yes,Medium,People,20-10-2026
+AST-0032,System account / application,Employee-Portal-032,Yes,Yes,Low,Retail,20-10-2026
+AST-0033,System account / application,Analytics-API-033,Yes,Yes,Critical,Finance,20-10-2026
+AST-0034,System account / application,Analytics-Gateway-034,Yes,No,High,People,20-10-2026
+AST-0035,System account / application,Operations-Portal-035,No,No,Low,Retail,20-10-2026
+AST-0036,System account / application,Identity-Service-036,No,No,Low,Operations,20-10-2026
+AST-0037,System account / application,Customer-API-037,No,No,High,Finance,20-10-2026
+AST-0038,System account / application,Customer-Service-038,Yes,Yes,Low,Technology,20-10-2026
+AST-0039,System account / application,Operations-API-039,Yes,Yes,Medium,Retail,20-10-2026
+AST-0040,System account / application,Analytics-Gateway-040,Yes,Yes,High,Customer,20-10-2026
+AST-0041,System account / application,Employee-Service-041,Yes,Yes,High,Retail,20-10-2026
+AST-0042,System account / application,Payments-Platform-042,No,No,Medium,Operations,20-10-2026
+AST-0043,System account / application,Operations-Portal-043,No,No,Critical,Finance,20-10-2026
+AST-0044,System account / application,Employee-Database-044,Yes,Yes,Medium,Operations,20-10-2026
+AST-0045,System account / application,Data-Database-045,Yes,No,High,Technology,20-10-2026
+AST-0046,System account / application,Data-API-046,Yes,Yes,Low,People,20-10-2026
+AST-0047,System account / application,Employee-Gateway-047,No,No,High,Retail,20-10-2026
+AST-0048,System account / application,Identity-Platform-048,Yes,No,High,Retail,20-10-2026
+AST-0049,System account / application,Analytics-Service-049,Yes,Yes,Low,Retail,20-10-2026
+AST-0050,System account / application,Identity-Portal-050,No,No,Low,Operations,20-10-2026
+AST-0051,System account / application,Payments-Portal-051,No,No,Medium,Customer,20-10-2026
+AST-0052,System account / application,Customer-Platform-052,Yes,Yes,Medium,Finance,20-10-2026
+AST-0053,System account / application,Employee-Database-053,No,No,Low,People,20-10-2026
+AST-0054,System account / application,Payments-Service-054,No,No,Medium,Finance,20-10-2026
+AST-0055,System account / application,Operations-Service-055,Yes,Yes,Critical,People,20-10-2026
+AST-0056,System account / application,Operations-Database-056,Yes,Yes,Medium,Technology,20-10-2026
+AST-0057,System account / application,Payments-Database-057,No,No,Medium,Finance,20-10-2026
+AST-0058,System account / application,Operations-API-058,Yes,Yes,Low,People,20-10-2026
+AST-0059,System account / application,Data-API-059,No,No,High,Operations,20-10-2026
+AST-0060,System account / application,Customer-Gateway-060,Yes,Yes,Medium,People,20-10-2026
+AST-0061,System account / application,Customer-Portal-061,No,No,Medium,Customer,20-10-2026
+AST-0062,System account / application,Customer-Gateway-062,No,No,High,Technology,20-10-2026
+AST-0063,System account / application,Identity-Gateway-063,No,No,Medium,Technology,20-10-2026
+AST-0064,System account / application,Employee-Platform-064,No,No,Critical,People,20-10-2026
+AST-0065,System account / application,Data-Service-065,No,No,Medium,Operations,20-10-2026
+AST-0066,System account / application,Operations-Portal-066,No,No,Medium,Operations,20-10-2026
+AST-0067,System account / application,Data-Gateway-067,Yes,Yes,Medium,People,20-10-2026
+AST-0068,System account / application,Customer-Platform-068,Yes,No,High,Finance,20-10-2026
+AST-0069,System account / application,Identity-Portal-069,Yes,Yes,High,People,20-10-2026
+AST-0070,System account / application,Operations-Database-070,Yes,Yes,Low,Technology,20-10-2026
+AST-0071,System account / application,Identity-Service-071,Yes,Yes,Medium,Customer,20-10-2026
+AST-0072,System account / application,Identity-Portal-072,No,No,Medium,Technology,20-10-2026
+AST-0073,System account / application,Operations-Platform-073,Yes,Yes,Low,Customer,20-10-2026
+AST-0074,System account / application,Operations-Gateway-074,No,No,Medium,Finance,20-10-2026
+AST-0075,System account / application,Operations-Gateway-075,No,No,Medium,Operations,20-10-2026
+AST-0076,System account / application,Data-Database-076,No,No,Medium,People,20-10-2026
+AST-0077,System account / application,Customer-Gateway-077,No,No,Low,Technology,20-10-2026
+AST-0078,System account / application,Customer-Platform-078,Yes,Yes,Critical,Customer,20-10-2026
+AST-0079,System account / application,Operations-Gateway-079,No,No,Medium,Retail,20-10-2026
+AST-0080,System account / application,Customer-Database-080,Yes,Yes,High,People,20-10-2026
+AST-0081,System account / application,Customer-Portal-081,No,No,Medium,Finance,20-10-2026
+AST-0082,System account / application,Employee-Database-082,Yes,No,High,People,20-10-2026
+AST-0083,System account / application,Identity-Platform-083,Yes,Yes,High,People,20-10-2026
+AST-0084,System account / application,Data-Database-084,No,No,Medium,Finance,20-10-2026
+AST-0085,System account / application,Operations-Database-085,No,No,High,People,20-10-2026
+AST-0086,System account / application,Employee-Service-086,Yes,Yes,Critical,Customer,20-10-2026
+AST-0087,System account / application,Identity-Platform-087,No,No,High,Customer,20-10-2026
+AST-0088,System account / application,Analytics-Service-088,No,No,Medium,Retail,20-10-2026
+AST-0089,System account / application,Operations-Service-089,No,No,Medium,Technology,20-10-2026
+AST-0090,System account / application,Analytics-API-090,Yes,Yes,High,Technology,20-10-2026

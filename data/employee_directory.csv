@@ -1,0 +1,241 @@
+employee_id,business_unit,employment_status,manager_email,work_email,role_group,eligible_for_mfa,required_training
+EMP-0001,Technology,Active,manager02@example.invalid,employee0001@example.invalid,Developer,Yes,Yes
+EMP-0002,Operations,Active,manager03@example.invalid,employee0002@example.invalid,Privileged IT,Yes,Yes
+EMP-0003,Retail,Active,manager04@example.invalid,employee0003@example.invalid,Service account owner,Yes,Yes
+EMP-0004,People,Active,manager05@example.invalid,employee0004@example.invalid,Developer,Yes,No
+EMP-0005,People,Active,manager06@example.invalid,employee0005@example.invalid,Business user,Yes,Yes
+EMP-0006,People,Active,manager07@example.invalid,employee0006@example.invalid,Business user,Yes,No
+EMP-0007,Operations,Leave,manager08@example.invalid,employee0007@example.invalid,Privileged IT,Yes,No
+EMP-0008,Finance,Terminated,manager09@example.invalid,employee0008@example.invalid,Business user,Yes,Yes
+EMP-0009,Finance,Active,manager10@example.invalid,employee0009@example.invalid,Service account owner,Yes,No
+EMP-0010,Retail,Active,manager11@example.invalid,employee0010@example.invalid,Service account owner,Yes,Yes
+EMP-0011,People,Active,manager12@example.invalid,employee0011@example.invalid,Security team,Yes,Yes
+EMP-0012,Finance,Active,manager13@example.invalid,employee0012@example.invalid,Privileged IT,No,Yes
+EMP-0013,Finance,Active,manager14@example.invalid,employee0013@example.invalid,Developer,Yes,Yes
+EMP-0014,Finance,Active,manager15@example.invalid,employee0014@example.invalid,Privileged IT,Yes,Yes
+EMP-0015,Finance,Active,manager16@example.invalid,employee0015@example.invalid,Developer,Yes,Yes
+EMP-0016,Customer,Active,manager17@example.invalid,employee0016@example.invalid,Security team,Yes,Yes
+EMP-0017,People,Active,manager18@example.invalid,employee0017@example.invalid,Security team,Yes,Yes
+EMP-0018,Customer,Active,manager19@example.invalid,employee0018@example.invalid,Security team,Yes,Yes
+EMP-0019,Finance,Active,manager20@example.invalid,employee0019@example.invalid,Privileged IT,Yes,Yes
+EMP-0020,Customer,Active,manager21@example.invalid,employee0020@example.invalid,Security team,Yes,Yes
+EMP-0021,Finance,Active,manager22@example.invalid,employee0021@example.invalid,Security team,Yes,No
+EMP-0022,Customer,Active,manager23@example.invalid,employee0022@example.invalid,Developer,Yes,Yes
+EMP-0023,Technology,Active,manager24@example.invalid,employee0023@example.invalid,Privileged IT,Yes,Yes
+EMP-0024,Finance,Active,manager01@example.invalid,employee0024@example.invalid,Business user,Yes,Yes
+EMP-0025,Operations,Active,manager02@example.invalid,employee0025@example.invalid,Developer,Yes,Yes
+EMP-0026,Operations,Active,manager03@example.invalid,employee0026@example.invalid,Business user,Yes,Yes
+EMP-0027,Customer,Active,manager04@example.invalid,employee0027@example.invalid,Privileged IT,Yes,Yes
+EMP-0028,Operations,Active,manager05@example.invalid,employee0028@example.invalid,Privileged IT,Yes,Yes
+EMP-0029,Retail,Active,manager06@example.invalid,employee0029@example.invalid,Business user,Yes,Yes
+EMP-0030,Operations,Active,manager07@example.invalid,employee0030@example.invalid,Privileged IT,Yes,Yes
+EMP-0031,Operations,Active,manager08@example.invalid,employee0031@example.invalid,Service account owner,No,Yes
+EMP-0032,Finance,Active,manager09@example.invalid,employee0032@example.invalid,Security team,Yes,Yes
+EMP-0033,Technology,Active,manager10@example.invalid,employee0033@example.invalid,Business user,Yes,Yes
+EMP-0034,People,Leave,manager11@example.invalid,employee0034@example.invalid,Privileged IT,Yes,Yes
+EMP-0035,People,Active,manager12@example.invalid,employee0035@example.invalid,Security team,Yes,Yes
+EMP-0036,Technology,Active,manager13@example.invalid,employee0036@example.invalid,Developer,Yes,Yes
+EMP-0037,Retail,Terminated,manager14@example.invalid,employee0037@example.invalid,Privileged IT,Yes,Yes
+EMP-0038,Finance,Active,manager15@example.invalid,employee0038@example.invalid,Service account owner,Yes,No
+EMP-0039,Finance,Active,manager16@example.invalid,employee0039@example.invalid,Service account owner,Yes,Yes
+EMP-0040,People,Active,manager17@example.invalid,employee0040@example.invalid,Service account owner,Yes,Yes
+EMP-0041,Retail,Terminated,manager18@example.invalid,employee0041@example.invalid,Business user,Yes,Yes
+EMP-0042,Finance,Active,manager19@example.invalid,employee0042@example.invalid,Privileged IT,Yes,No
+EMP-0043,Customer,Active,manager20@example.invalid,employee0043@example.invalid,Developer,Yes,Yes
+EMP-0044,Retail,Active,manager21@example.invalid,employee0044@example.invalid,Service account owner,Yes,Yes
+EMP-0045,People,Active,manager22@example.invalid,employee0045@example.invalid,Service account owner,Yes,No
+EMP-0046,Customer,Active,manager23@example.invalid,employee0046@example.invalid,Business user,Yes,Yes
+EMP-0047,Operations,Active,manager24@example.invalid,employee0047@example.invalid,Security team,Yes,Yes
+EMP-0048,Retail,Active,manager01@example.invalid,employee0048@example.invalid,Developer,Yes,Yes
+EMP-0049,Operations,Active,manager02@example.invalid,employee0049@example.invalid,Business user,Yes,Yes
+EMP-0050,Customer,Active,manager03@example.invalid,employee0050@example.invalid,Business user,Yes,Yes
+EMP-0051,Operations,Active,manager04@example.invalid,employee0051@example.invalid,Business user,Yes,Yes
+EMP-0052,Technology,Active,manager05@example.invalid,employee0052@example.invalid,Privileged IT,Yes,Yes
+EMP-0053,Finance,Leave,manager06@example.invalid,employee0053@example.invalid,Developer,Yes,Yes
+EMP-0054,Finance,Active,manager07@example.invalid,employee0054@example.invalid,Business user,Yes,Yes
+EMP-0055,Technology,Active,manager08@example.invalid,employee0055@example.invalid,Service account owner,Yes,No
+EMP-0056,Retail,Active,manager09@example.invalid,employee0056@example.invalid,Security team,Yes,Yes
+EMP-0057,People,Active,manager10@example.invalid,employee0057@example.invalid,Security team,Yes,No
+EMP-0058,Operations,Active,manager11@example.invalid,employee0058@example.invalid,Developer,Yes,Yes
+EMP-0059,Finance,Active,manager12@example.invalid,employee0059@example.invalid,Business user,Yes,Yes
+EMP-0060,Retail,Active,manager13@example.invalid,employee0060@example.invalid,Security team,Yes,Yes
+EMP-0061,People,Active,manager14@example.invalid,employee0061@example.invalid,Security team,Yes,Yes
+EMP-0062,Operations,Active,manager15@example.invalid,employee0062@example.invalid,Service account owner,Yes,Yes
+EMP-0063,Finance,Active,manager16@example.invalid,employee0063@example.invalid,Privileged IT,Yes,Yes
+EMP-0064,Finance,Active,manager17@example.invalid,employee0064@example.invalid,Security team,Yes,Yes
+EMP-0065,People,Terminated,manager18@example.invalid,employee0065@example.invalid,Developer,Yes,Yes
+EMP-0066,Operations,Active,manager19@example.invalid,employee0066@example.invalid,Business user,Yes,Yes
+EMP-0067,People,Active,manager20@example.invalid,employee0067@example.invalid,Developer,Yes,Yes
+EMP-0068,Finance,Active,manager21@example.invalid,employee0068@example.invalid,Business user,Yes,Yes
+EMP-0069,Finance,Active,manager22@example.invalid,employee0069@example.invalid,Privileged IT,Yes,Yes
+EMP-0070,People,Active,manager23@example.invalid,employee0070@example.invalid,Security team,Yes,Yes
+EMP-0071,People,Active,manager24@example.invalid,employee0071@example.invalid,Business user,Yes,Yes
+EMP-0072,Finance,Active,manager01@example.invalid,employee0072@example.invalid,Service account owner,Yes,Yes
+EMP-0073,Finance,Active,manager02@example.invalid,employee0073@example.invalid,Service account owner,Yes,No
+EMP-0074,Retail,Active,manager03@example.invalid,employee0074@example.invalid,Privileged IT,Yes,No
+EMP-0075,Technology,Active,manager04@example.invalid,employee0075@example.invalid,Service account owner,Yes,Yes
+EMP-0076,Finance,Active,manager05@example.invalid,employee0076@example.invalid,Business user,Yes,Yes
+EMP-0077,Customer,Active,manager06@example.invalid,employee0077@example.invalid,Security team,Yes,Yes
+EMP-0078,Operations,Active,manager07@example.invalid,employee0078@example.invalid,Service account owner,Yes,Yes
+EMP-0079,Technology,Active,manager08@example.invalid,employee0079@example.invalid,Security team,Yes,Yes
+EMP-0080,Customer,Leave,manager09@example.invalid,employee0080@example.invalid,Developer,Yes,Yes
+EMP-0081,Customer,Active,manager10@example.invalid,employee0081@example.invalid,Service account owner,Yes,Yes
+EMP-0082,Retail,Active,manager11@example.invalid,employee0082@example.invalid,Developer,Yes,Yes
+EMP-0083,Customer,Active,manager12@example.invalid,employee0083@example.invalid,Developer,Yes,Yes
+EMP-0084,Retail,Active,manager13@example.invalid,employee0084@example.invalid,Security team,Yes,Yes
+EMP-0085,Operations,Active,manager14@example.invalid,employee0085@example.invalid,Business user,Yes,No
+EMP-0086,Retail,Active,manager15@example.invalid,employee0086@example.invalid,Developer,Yes,Yes
+EMP-0087,Retail,Terminated,manager16@example.invalid,employee0087@example.invalid,Service account owner,Yes,Yes
+EMP-0088,Operations,Active,manager17@example.invalid,employee0088@example.invalid,Security team,Yes,No
+EMP-0089,Technology,Active,manager18@example.invalid,employee0089@example.invalid,Business user,Yes,Yes
+EMP-0090,Operations,Active,manager19@example.invalid,employee0090@example.invalid,Service account owner,Yes,Yes
+EMP-0091,Customer,Active,manager20@example.invalid,employee0091@example.invalid,Security team,Yes,Yes
+EMP-0092,Finance,Active,manager21@example.invalid,employee0092@example.invalid,Service account owner,Yes,Yes
+EMP-0093,Finance,Active,manager22@example.invalid,employee0093@example.invalid,Security team,Yes,Yes
+EMP-0094,Finance,Active,manager23@example.invalid,employee0094@example.invalid,Privileged IT,Yes,Yes
+EMP-0095,Operations,Active,manager24@example.invalid,employee0095@example.invalid,Developer,Yes,Yes
+EMP-0096,People,Active,manager01@example.invalid,employee0096@example.invalid,Developer,Yes,Yes
+EMP-0097,Technology,Active,manager02@example.invalid,employee0097@example.invalid,Security team,Yes,Yes
+EMP-0098,Operations,Leave,manager03@example.invalid,employee0098@example.invalid,Privileged IT,Yes,Yes
+EMP-0099,Finance,Active,manager04@example.invalid,employee0099@example.invalid,Developer,Yes,Yes
+EMP-0100,Technology,Active,manager05@example.invalid,employee0100@example.invalid,Privileged IT,Yes,Yes
+EMP-0101,Technology,Active,manager06@example.invalid,employee0101@example.invalid,Security team,Yes,Yes
+EMP-0102,Retail,Active,manager07@example.invalid,employee0102@example.invalid,Business user,Yes,Yes
+EMP-0103,Customer,Active,manager08@example.invalid,employee0103@example.invalid,Developer,Yes,Yes
+EMP-0104,Operations,Active,manager09@example.invalid,employee0104@example.invalid,Business user,Yes,Yes
+EMP-0105,Technology,Active,manager10@example.invalid,employee0105@example.invalid,Security team,Yes,Yes
+EMP-0106,Technology,Active,manager11@example.invalid,employee0106@example.invalid,Privileged IT,Yes,Yes
+EMP-0107,Technology,Active,manager12@example.invalid,employee0107@example.invalid,Security team,Yes,Yes
+EMP-0108,Technology,Active,manager13@example.invalid,employee0108@example.invalid,Security team,Yes,Yes
+EMP-0109,People,Active,manager14@example.invalid,employee0109@example.invalid,Service account owner,Yes,Yes
+EMP-0110,People,Active,manager15@example.invalid,employee0110@example.invalid,Security team,Yes,Yes
+EMP-0111,Operations,Active,manager16@example.invalid,employee0111@example.invalid,Privileged IT,Yes,Yes
+EMP-0112,People,Active,manager17@example.invalid,employee0112@example.invalid,Privileged IT,Yes,Yes
+EMP-0113,Customer,Active,manager18@example.invalid,employee0113@example.invalid,Service account owner,Yes,Yes
+EMP-0114,Retail,Active,manager19@example.invalid,employee0114@example.invalid,Security team,Yes,No
+EMP-0115,Technology,Active,manager20@example.invalid,employee0115@example.invalid,Privileged IT,Yes,Yes
+EMP-0116,Retail,Active,manager21@example.invalid,employee0116@example.invalid,Security team,Yes,Yes
+EMP-0117,People,Active,manager22@example.invalid,employee0117@example.invalid,Security team,Yes,Yes
+EMP-0118,Operations,Active,manager23@example.invalid,employee0118@example.invalid,Privileged IT,Yes,Yes
+EMP-0119,People,Active,manager24@example.invalid,employee0119@example.invalid,Business user,Yes,Yes
+EMP-0120,Operations,Active,manager01@example.invalid,employee0120@example.invalid,Security team,Yes,Yes
+EMP-0121,Operations,Active,manager02@example.invalid,employee0121@example.invalid,Developer,Yes,Yes
+EMP-0122,Customer,Active,manager03@example.invalid,employee0122@example.invalid,Privileged IT,Yes,Yes
+EMP-0123,People,Active,manager04@example.invalid,employee0123@example.invalid,Business user,Yes,Yes
+EMP-0124,Technology,Active,manager05@example.invalid,employee0124@example.invalid,Developer,Yes,Yes
+EMP-0125,Finance,Active,manager06@example.invalid,employee0125@example.invalid,Privileged IT,Yes,Yes
+EMP-0126,Operations,Active,manager07@example.invalid,employee0126@example.invalid,Service account owner,Yes,Yes
+EMP-0127,Technology,Active,manager08@example.invalid,employee0127@example.invalid,Privileged IT,Yes,Yes
+EMP-0128,People,Active,manager09@example.invalid,employee0128@example.invalid,Privileged IT,Yes,Yes
+EMP-0129,Customer,Leave,manager10@example.invalid,employee0129@example.invalid,Privileged IT,Yes,Yes
+EMP-0130,Customer,Active,manager11@example.invalid,employee0130@example.invalid,Security team,Yes,Yes
+EMP-0131,Operations,Active,manager12@example.invalid,employee0131@example.invalid,Business user,Yes,No
+EMP-0132,Operations,Active,manager13@example.invalid,employee0132@example.invalid,Developer,Yes,Yes
+EMP-0133,Customer,Active,manager14@example.invalid,employee0133@example.invalid,Service account owner,Yes,Yes
+EMP-0134,Operations,Active,manager15@example.invalid,employee0134@example.invalid,Privileged IT,Yes,Yes
+EMP-0135,Customer,Active,manager16@example.invalid,employee0135@example.invalid,Service account owner,Yes,Yes
+EMP-0136,Finance,Active,manager17@example.invalid,employee0136@example.invalid,Security team,Yes,Yes
+EMP-0137,Technology,Leave,manager18@example.invalid,employee0137@example.invalid,Security team,Yes,Yes
+EMP-0138,Operations,Leave,manager19@example.invalid,employee0138@example.invalid,Developer,Yes,Yes
+EMP-0139,Retail,Active,manager20@example.invalid,employee0139@example.invalid,Privileged IT,Yes,Yes
+EMP-0140,Operations,Active,manager21@example.invalid,employee0140@example.invalid,Developer,Yes,Yes
+EMP-0141,Finance,Active,manager22@example.invalid,employee0141@example.invalid,Developer,Yes,Yes
+EMP-0142,Retail,Active,manager23@example.invalid,employee0142@example.invalid,Service account owner,Yes,Yes
+EMP-0143,Finance,Active,manager24@example.invalid,employee0143@example.invalid,Security team,Yes,Yes
+EMP-0144,Customer,Active,manager01@example.invalid,employee0144@example.invalid,Service account owner,Yes,Yes
+EMP-0145,Finance,Active,manager02@example.invalid,employee0145@example.invalid,Business user,Yes,No
+EMP-0146,Technology,Active,manager03@example.invalid,employee0146@example.invalid,Privileged IT,Yes,No
+EMP-0147,Operations,Active,manager04@example.invalid,employee0147@example.invalid,Security team,Yes,Yes
+EMP-0148,Customer,Active,manager05@example.invalid,employee0148@example.invalid,Privileged IT,Yes,No
+EMP-0149,Finance,Active,manager06@example.invalid,employee0149@example.invalid,Service account owner,Yes,Yes
+EMP-0150,Finance,Active,manager07@example.invalid,employee0150@example.invalid,Developer,Yes,Yes
+EMP-0151,Retail,Active,manager08@example.invalid,employee0151@example.invalid,Service account owner,Yes,Yes
+EMP-0152,Customer,Active,manager09@example.invalid,employee0152@example.invalid,Privileged IT,Yes,Yes
+EMP-0153,Finance,Active,manager10@example.invalid,employee0153@example.invalid,Privileged IT,Yes,Yes
+EMP-0154,Retail,Active,manager11@example.invalid,employee0154@example.invalid,Service account owner,Yes,Yes
+EMP-0155,Customer,Active,manager12@example.invalid,employee0155@example.invalid,Privileged IT,Yes,Yes
+EMP-0156,Customer,Active,manager13@example.invalid,employee0156@example.invalid,Security team,Yes,No
+EMP-0157,People,Active,manager14@example.invalid,employee0157@example.invalid,Business user,Yes,Yes
+EMP-0158,People,Active,manager15@example.invalid,employee0158@example.invalid,Business user,Yes,Yes
+EMP-0159,Customer,Active,manager16@example.invalid,employee0159@example.invalid,Service account owner,Yes,Yes
+EMP-0160,Finance,Active,manager17@example.invalid,employee0160@example.invalid,Privileged IT,Yes,Yes
+EMP-0161,Retail,Active,manager18@example.invalid,employee0161@example.invalid,Security team,Yes,Yes
+EMP-0162,Retail,Active,manager19@example.invalid,employee0162@example.invalid,Business user,Yes,Yes
+EMP-0163,Finance,Active,manager20@example.invalid,employee0163@example.invalid,Security team,Yes,Yes
+EMP-0164,Technology,Active,manager21@example.invalid,employee0164@example.invalid,Developer,Yes,Yes
+EMP-0165,People,Active,manager22@example.invalid,employee0165@example.invalid,Developer,Yes,Yes
+EMP-0166,Operations,Active,manager23@example.invalid,employee0166@example.invalid,Privileged IT,Yes,Yes
+EMP-0167,People,Active,manager24@example.invalid,employee0167@example.invalid,Security team,Yes,Yes
+EMP-0168,Retail,Active,manager01@example.invalid,employee0168@example.invalid,Developer,Yes,No
+EMP-0169,People,Active,manager02@example.invalid,employee0169@example.invalid,Business user,Yes,No
+EMP-0170,Technology,Active,manager03@example.invalid,employee0170@example.invalid,Privileged IT,Yes,Yes
+EMP-0171,Retail,Active,manager04@example.invalid,employee0171@example.invalid,Service account owner,Yes,Yes
+EMP-0172,People,Active,manager05@example.invalid,employee0172@example.invalid,Business user,Yes,Yes
+EMP-0173,Retail,Active,manager06@example.invalid,employee0173@example.invalid,Service account owner,Yes,Yes
+EMP-0174,Retail,Active,manager07@example.invalid,employee0174@example.invalid,Privileged IT,Yes,No
+EMP-0175,Retail,Active,manager08@example.invalid,employee0175@example.invalid,Privileged IT,Yes,Yes
+EMP-0176,Finance,Leave,manager09@example.invalid,employee0176@example.invalid,Developer,Yes,Yes
+EMP-0177,People,Active,manager10@example.invalid,employee0177@example.invalid,Security team,Yes,Yes
+EMP-0178,Operations,Active,manager11@example.invalid,employee0178@example.invalid,Developer,No,Yes
+EMP-0179,Retail,Active,manager12@example.invalid,employee0179@example.invalid,Service account owner,Yes,Yes
+EMP-0180,Finance,Active,manager13@example.invalid,employee0180@example.invalid,Security team,Yes,Yes
+EMP-0181,Operations,Leave,manager14@example.invalid,employee0181@example.invalid,Developer,Yes,Yes
+EMP-0182,Customer,Active,manager15@example.invalid,employee0182@example.invalid,Privileged IT,Yes,Yes
+EMP-0183,People,Active,manager16@example.invalid,employee0183@example.invalid,Service account owner,Yes,Yes
+EMP-0184,Retail,Active,manager17@example.invalid,employee0184@example.invalid,Developer,Yes,Yes
+EMP-0185,Retail,Active,manager18@example.invalid,employee0185@example.invalid,Privileged IT,Yes,Yes
+EMP-0186,Finance,Active,manager19@example.invalid,employee0186@example.invalid,Security team,Yes,Yes
+EMP-0187,People,Active,manager20@example.invalid,employee0187@example.invalid,Service account owner,Yes,Yes
+EMP-0188,Technology,Active,manager21@example.invalid,employee0188@example.invalid,Privileged IT,Yes,Yes
+EMP-0189,Technology,Active,manager22@example.invalid,employee0189@example.invalid,Privileged IT,Yes,Yes
+EMP-0190,Customer,Active,manager23@example.invalid,employee0190@example.invalid,Developer,Yes,Yes
+EMP-0191,Operations,Active,manager24@example.invalid,employee0191@example.invalid,Privileged IT,Yes,Yes
+EMP-0192,Operations,Active,manager01@example.invalid,employee0192@example.invalid,Security team,Yes,Yes
+EMP-0193,Operations,Active,manager02@example.invalid,employee0193@example.invalid,Service account owner,Yes,Yes
+EMP-0194,Finance,Active,manager03@example.invalid,employee0194@example.invalid,Developer,Yes,Yes
+EMP-0195,People,Active,manager04@example.invalid,employee0195@example.invalid,Developer,Yes,Yes
+EMP-0196,Operations,Active,manager05@example.invalid,employee0196@example.invalid,Security team,Yes,Yes
+EMP-0197,Finance,Active,manager06@example.invalid,employee0197@example.invalid,Service account owner,Yes,Yes
+EMP-0198,Operations,Active,manager07@example.invalid,employee0198@example.invalid,Service account owner,Yes,Yes
+EMP-0199,People,Active,manager08@example.invalid,employee0199@example.invalid,Developer,Yes,Yes
+EMP-0200,Finance,Active,manager09@example.invalid,employee0200@example.invalid,Privileged IT,Yes,Yes
+EMP-0201,People,Terminated,manager10@example.invalid,employee0201@example.invalid,Developer,Yes,Yes
+EMP-0202,Operations,Active,manager11@example.invalid,employee0202@example.invalid,Privileged IT,Yes,Yes
+EMP-0203,People,Active,manager12@example.invalid,employee0203@example.invalid,Developer,Yes,Yes
+EMP-0204,Customer,Active,manager13@example.invalid,employee0204@example.invalid,Developer,Yes,Yes
+EMP-0205,Operations,Active,manager14@example.invalid,employee0205@example.invalid,Business user,Yes,No
+EMP-0206,Finance,Active,manager15@example.invalid,employee0206@example.invalid,Service account owner,Yes,Yes
+EMP-0207,Finance,Active,manager16@example.invalid,employee0207@example.invalid,Security team,Yes,Yes
+EMP-0208,Operations,Active,manager17@example.invalid,employee0208@example.invalid,Business user,Yes,Yes
+EMP-0209,Finance,Terminated,manager18@example.invalid,employee0209@example.invalid,Business user,Yes,Yes
+EMP-0210,Retail,Active,manager19@example.invalid,employee0210@example.invalid,Developer,Yes,Yes
+EMP-0211,Finance,Active,manager20@example.invalid,employee0211@example.invalid,Developer,Yes,Yes
+EMP-0212,Retail,Active,manager21@example.invalid,employee0212@example.invalid,Security team,Yes,Yes
+EMP-0213,Operations,Active,manager22@example.invalid,employee0213@example.invalid,Privileged IT,Yes,Yes
+EMP-0214,Technology,Active,manager23@example.invalid,employee0214@example.invalid,Business user,Yes,Yes
+EMP-0215,Technology,Active,manager24@example.invalid,employee0215@example.invalid,Developer,Yes,Yes
+EMP-0216,Finance,Active,manager01@example.invalid,employee0216@example.invalid,Security team,Yes,Yes
+EMP-0217,Technology,Active,manager02@example.invalid,employee0217@example.invalid,Service account owner,Yes,Yes
+EMP-0218,Customer,Active,manager03@example.invalid,employee0218@example.invalid,Security team,Yes,Yes
+EMP-0219,Finance,Active,manager04@example.invalid,employee0219@example.invalid,Developer,Yes,Yes
+EMP-0220,People,Active,manager05@example.invalid,employee0220@example.invalid,Privileged IT,Yes,Yes
+EMP-0221,People,Active,manager06@example.invalid,employee0221@example.invalid,Developer,Yes,Yes
+EMP-0222,Technology,Active,manager07@example.invalid,employee0222@example.invalid,Security team,Yes,Yes
+EMP-0223,Operations,Active,manager08@example.invalid,employee0223@example.invalid,Developer,Yes,Yes
+EMP-0224,Retail,Active,manager09@example.invalid,employee0224@example.invalid,Privileged IT,Yes,Yes
+EMP-0225,People,Active,manager10@example.invalid,employee0225@example.invalid,Privileged IT,Yes,Yes
+EMP-0226,Operations,Active,manager11@example.invalid,employee0226@example.invalid,Developer,Yes,Yes
+EMP-0227,Customer,Active,manager12@example.invalid,employee0227@example.invalid,Business user,Yes,Yes
+EMP-0228,Finance,Active,manager13@example.invalid,employee0228@example.invalid,Developer,Yes,Yes
+EMP-0229,People,Active,manager14@example.invalid,employee0229@example.invalid,Service account owner,Yes,Yes
+EMP-0230,Customer,Active,manager15@example.invalid,employee0230@example.invalid,Developer,Yes,No
+EMP-0231,Retail,Active,manager16@example.invalid,employee0231@example.invalid,Privileged IT,Yes,Yes
+EMP-0232,Operations,Active,manager17@example.invalid,employee0232@example.invalid,Developer,Yes,Yes
+EMP-0233,Finance,Active,manager18@example.invalid,employee0233@example.invalid,Business user,Yes,Yes
+EMP-0234,Retail,Active,manager19@example.invalid,employee0234@example.invalid,Security team,Yes,Yes
+EMP-0235,People,Active,manager20@example.invalid,employee0235@example.invalid,Developer,Yes,Yes
+EMP-0236,Operations,Active,manager21@example.invalid,employee0236@example.invalid,Developer,Yes,Yes
+EMP-0237,Finance,Leave,manager22@example.invalid,employee0237@example.invalid,Security team,Yes,Yes
+EMP-0238,Customer,Active,manager23@example.invalid,employee0238@example.invalid,Business user,Yes,Yes
+EMP-0239,Customer,Active,manager24@example.invalid,employee0239@example.invalid,Privileged IT,Yes,Yes
+EMP-0240,Technology,Active,manager01@example.invalid,employee0240@example.invalid,Privileged IT,Yes,Yes

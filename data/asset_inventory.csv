@@ -1,0 +1,91 @@
+asset_id,asset_name,asset_type,business_unit,criticality,internet_facing,asset_owner,environment,active_flag
+AST-0001,Operations-Portal-001,Identity platform,Finance,High,Yes,owner02@example.invalid,Production,Yes
+AST-0002,Payments-Portal-002,Endpoint fleet,People,Low,Yes,owner03@example.invalid,Development,Yes
+AST-0003,Identity-Portal-003,Cloud service,People,High,No,owner04@example.invalid,Development,Yes
+AST-0004,Analytics-Service-004,Endpoint fleet,Customer,High,No,owner05@example.invalid,Production,Yes
+AST-0005,Payments-API-005,Enterprise application,Technology,Medium,No,owner06@example.invalid,Development,Yes
+AST-0006,Analytics-Portal-006,Cloud service,People,High,Yes,owner07@example.invalid,Development,Yes
+AST-0007,Customer-Portal-007,Identity platform,Customer,High,No,owner08@example.invalid,Production,Yes
+AST-0008,Customer-Portal-008,Backup platform,Finance,High,No,owner09@example.invalid,Test,Yes
+AST-0009,Operations-API-009,Cloud service,Retail,Medium,Yes,owner10@example.invalid,Production,Yes
+AST-0010,Identity-Platform-010,Endpoint fleet,Operations,Medium,Yes,owner11@example.invalid,Production,Yes
+AST-0011,Employee-Platform-011,Database,Operations,Medium,Yes,owner12@example.invalid,Production,Yes
+AST-0012,Identity-Portal-012,Database,Retail,High,No,owner13@example.invalid,Production,Yes
+AST-0013,Data-Platform-013,Identity platform,Technology,Medium,No,owner14@example.invalid,Production,Yes
+AST-0014,Analytics-Platform-014,Identity platform,Finance,High,No,owner15@example.invalid,Production,Yes
+AST-0015,Identity-Portal-015,Endpoint fleet,Retail,High,No,owner16@example.invalid,Production,Yes
+AST-0016,Identity-API-016,Endpoint fleet,Customer,Medium,No,owner17@example.invalid,Test,Yes
+AST-0017,Identity-API-017,Cloud service,Customer,Low,No,owner18@example.invalid,Production,Yes
+AST-0018,Data-Portal-018,Endpoint fleet,Customer,High,Yes,owner01@example.invalid,Production,Yes
+AST-0019,Data-Gateway-019,Enterprise application,Retail,Medium,No,owner02@example.invalid,Production,Yes
+AST-0020,Analytics-Gateway-020,Enterprise application,Finance,Medium,Yes,owner03@example.invalid,Production,Yes
+AST-0021,Operations-Service-021,Enterprise application,Retail,Critical,Yes,owner04@example.invalid,Test,Yes
+AST-0022,Payments-API-022,Enterprise application,People,Low,No,owner05@example.invalid,Development,Yes
+AST-0023,Payments-Database-023,Enterprise application,Finance,High,Yes,owner06@example.invalid,Production,Yes
+AST-0024,Analytics-Platform-024,Database,Technology,High,Yes,owner07@example.invalid,Production,Yes
+AST-0025,Analytics-Portal-025,Database,People,High,No,owner08@example.invalid,Development,Yes
+AST-0026,Customer-Gateway-026,Database,Customer,Low,No,owner09@example.invalid,Production,Yes
+AST-0027,Data-Gateway-027,Database,Retail,Medium,Yes,owner10@example.invalid,Production,Yes
+AST-0028,Data-Portal-028,Database,Customer,Critical,No,owner11@example.invalid,Production,Yes
+AST-0029,Operations-API-029,Endpoint fleet,People,Medium,No,owner12@example.invalid,Production,Yes
+AST-0030,Payments-Portal-030,Database,People,High,No,owner13@example.invalid,Production,Yes
+AST-0031,Payments-Database-031,Identity platform,People,Medium,No,owner14@example.invalid,Production,Yes
+AST-0032,Employee-Portal-032,Identity platform,Retail,Low,No,owner15@example.invalid,Production,Yes
+AST-0033,Analytics-API-033,Endpoint fleet,Finance,Critical,No,owner16@example.invalid,Production,Yes
+AST-0034,Analytics-Gateway-034,Database,People,High,No,owner17@example.invalid,Production,Yes
+AST-0035,Operations-Portal-035,Identity platform,Retail,Low,No,owner18@example.invalid,Test,Yes
+AST-0036,Identity-Service-036,Backup platform,Operations,Low,No,owner01@example.invalid,Test,Yes
+AST-0037,Customer-API-037,Cloud service,Finance,High,No,owner02@example.invalid,Development,Yes
+AST-0038,Customer-Service-038,Backup platform,Technology,Low,No,owner03@example.invalid,Production,Yes
+AST-0039,Operations-API-039,Backup platform,Retail,Medium,Yes,owner04@example.invalid,Production,Yes
+AST-0040,Analytics-Gateway-040,Endpoint fleet,Customer,High,Yes,owner05@example.invalid,Production,Yes
+AST-0041,Employee-Service-041,Endpoint fleet,Retail,High,No,owner06@example.invalid,Production,Yes
+AST-0042,Payments-Platform-042,Enterprise application,Operations,Medium,No,owner07@example.invalid,Development,Yes
+AST-0043,Operations-Portal-043,Endpoint fleet,Finance,Critical,No,owner08@example.invalid,Test,Yes
+AST-0044,Employee-Database-044,Database,Operations,Medium,No,owner09@example.invalid,Production,Yes
+AST-0045,Data-Database-045,Cloud service,Technology,High,Yes,owner10@example.invalid,Production,Yes
+AST-0046,Data-API-046,Database,People,Low,No,owner11@example.invalid,Production,Yes
+AST-0047,Employee-Gateway-047,Cloud service,Retail,High,No,owner12@example.invalid,Test,Yes
+AST-0048,Identity-Platform-048,Enterprise application,Retail,High,No,owner13@example.invalid,Production,Yes
+AST-0049,Analytics-Service-049,Database,Retail,Low,Yes,owner14@example.invalid,Production,Yes
+AST-0050,Identity-Portal-050,Identity platform,Operations,Low,No,owner15@example.invalid,Test,Yes
+AST-0051,Payments-Portal-051,Enterprise application,Customer,Medium,Yes,owner16@example.invalid,Test,Yes
+AST-0052,Customer-Platform-052,Cloud service,Finance,Medium,No,owner17@example.invalid,Production,Yes
+AST-0053,Employee-Database-053,Database,People,Low,Yes,owner18@example.invalid,Development,Yes
+AST-0054,Payments-Service-054,Endpoint fleet,Finance,Medium,No,owner01@example.invalid,Development,Yes
+AST-0055,Operations-Service-055,Database,People,Critical,No,owner02@example.invalid,Production,Yes
+AST-0056,Operations-Database-056,Identity platform,Technology,Medium,Yes,owner03@example.invalid,Production,Yes
+AST-0057,Payments-Database-057,Identity platform,Finance,Medium,No,owner04@example.invalid,Test,Yes
+AST-0058,Operations-API-058,Identity platform,People,Low,Yes,owner05@example.invalid,Production,Yes
+AST-0059,Data-API-059,Backup platform,Operations,High,Yes,owner06@example.invalid,Development,Yes
+AST-0060,Customer-Gateway-060,Backup platform,People,Medium,No,owner07@example.invalid,Production,Yes
+AST-0061,Customer-Portal-061,Endpoint fleet,Customer,Medium,No,owner08@example.invalid,Development,Yes
+AST-0062,Customer-Gateway-062,Backup platform,Technology,High,No,owner09@example.invalid,Development,Yes
+AST-0063,Identity-Gateway-063,Backup platform,Technology,Medium,Yes,owner10@example.invalid,Development,Yes
+AST-0064,Employee-Platform-064,Identity platform,People,Critical,No,owner11@example.invalid,Test,Yes
+AST-0065,Data-Service-065,Backup platform,Operations,Medium,Yes,owner12@example.invalid,Development,Yes
+AST-0066,Operations-Portal-066,Endpoint fleet,Operations,Medium,Yes,owner13@example.invalid,Development,Yes
+AST-0067,Data-Gateway-067,Endpoint fleet,People,Medium,Yes,owner14@example.invalid,Production,Yes
+AST-0068,Customer-Platform-068,Identity platform,Finance,High,Yes,owner15@example.invalid,Production,Yes
+AST-0069,Identity-Portal-069,Identity platform,People,High,Yes,owner16@example.invalid,Production,Yes
+AST-0070,Operations-Database-070,Enterprise application,Technology,Low,No,owner17@example.invalid,Production,Yes
+AST-0071,Identity-Service-071,Identity platform,Customer,Medium,Yes,owner18@example.invalid,Production,Yes
+AST-0072,Identity-Portal-072,Enterprise application,Technology,Medium,No,owner01@example.invalid,Development,Yes
+AST-0073,Operations-Platform-073,Backup platform,Customer,Low,Yes,owner02@example.invalid,Production,Yes
+AST-0074,Operations-Gateway-074,Database,Finance,Medium,Yes,owner03@example.invalid,Development,Yes
+AST-0075,Operations-Gateway-075,Cloud service,Operations,Medium,No,owner04@example.invalid,Development,Yes
+AST-0076,Data-Database-076,Cloud service,People,Medium,No,owner05@example.invalid,Development,Yes
+AST-0077,Customer-Gateway-077,Identity platform,Technology,Low,Yes,owner06@example.invalid,Test,Yes
+AST-0078,Customer-Platform-078,Identity platform,Customer,Critical,Yes,owner07@example.invalid,Production,Yes
+AST-0079,Operations-Gateway-079,Database,Retail,Medium,No,owner08@example.invalid,Development,Yes
+AST-0080,Customer-Database-080,Cloud service,People,High,Yes,owner09@example.invalid,Production,Yes
+AST-0081,Customer-Portal-081,Backup platform,Finance,Medium,Yes,owner10@example.invalid,Development,Yes
+AST-0082,Employee-Database-082,Endpoint fleet,People,High,Yes,owner11@example.invalid,Production,Yes
+AST-0083,Identity-Platform-083,Database,People,High,No,owner12@example.invalid,Production,Yes
+AST-0084,Data-Database-084,Enterprise application,Finance,Medium,No,owner13@example.invalid,Test,Yes
+AST-0085,Operations-Database-085,Backup platform,People,High,No,owner14@example.invalid,Test,Yes
+AST-0086,Employee-Service-086,Cloud service,Customer,Critical,No,owner15@example.invalid,Production,Yes
+AST-0087,Identity-Platform-087,Cloud service,Customer,High,No,owner16@example.invalid,Development,Yes
+AST-0088,Analytics-Service-088,Database,Retail,Medium,Yes,owner17@example.invalid,Development,Yes
+AST-0089,Operations-Service-089,Backup platform,Technology,Medium,Yes,owner18@example.invalid,Test,Yes
+AST-0090,Analytics-API-090,Identity platform,Technology,High,Yes,owner01@example.invalid,Production,Yes

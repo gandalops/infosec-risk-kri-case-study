@@ -1,0 +1,601 @@
+campaign_id,campaign_date,employee_id,delivery_status,clicked_link,reported_phish,simulation_type,business_unit
+PH-001,15-07-2026,EMP-0100,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0162,Delivered,No,No,Credential harvest,Retail
+PH-001,15-07-2026,EMP-0023,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0061,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0199,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0130,Delivered,No,No,Credential harvest,Customer
+PH-001,15-07-2026,EMP-0068,Delivered,Yes,No,QR code,Finance
+PH-001,15-07-2026,EMP-0036,Delivered,No,No,Malicious attachment,Technology
+PH-001,15-07-2026,EMP-0203,Delivered,No,No,QR code,People
+PH-001,15-07-2026,EMP-0168,Delivered,No,Yes,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0239,Delivered,No,Yes,Malicious attachment,Customer
+PH-001,15-07-2026,EMP-0153,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0091,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0110,Delivered,No,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0165,Delivered,Yes,No,QR code,People
+PH-001,15-07-2026,EMP-0238,Delivered,No,No,Credential harvest,Customer
+PH-001,15-07-2026,EMP-0159,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0217,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0157,Delivered,No,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0182,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0127,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0020,Delivered,No,No,Malicious attachment,Customer
+PH-001,15-07-2026,EMP-0195,Delivered,Yes,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0102,Delivered,Yes,No,Credential harvest,Retail
+PH-001,15-07-2026,EMP-0131,Delivered,No,Yes,Malicious attachment,Operations
+PH-001,15-07-2026,EMP-0021,Delivered,No,No,Malicious attachment,Finance
+PH-001,15-07-2026,EMP-0224,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0072,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0025,Delivered,No,No,QR code,Operations
+PH-001,15-07-2026,EMP-0237,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0122,Delivered,No,Yes,QR code,Customer
+PH-001,15-07-2026,EMP-0114,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0209,Delivered,Yes,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0233,Delivered,No,No,Malicious attachment,Finance
+PH-001,15-07-2026,EMP-0050,Delivered,No,No,Credential harvest,Customer
+PH-001,15-07-2026,EMP-0082,Delivered,No,No,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0018,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0177,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0034,Delivered,No,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0098,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0013,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0134,Delivered,No,No,QR code,Operations
+PH-001,15-07-2026,EMP-0184,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0090,Delivered,No,No,QR code,Operations
+PH-001,15-07-2026,EMP-0146,Delivered,No,No,Business email compromise,Technology
+PH-001,15-07-2026,EMP-0077,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0143,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0054,Delivered,No,Yes,QR code,Finance
+PH-001,15-07-2026,EMP-0009,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0052,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0133,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0065,Delivered,No,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0190,Delivered,No,No,Credential harvest,Customer
+PH-001,15-07-2026,EMP-0225,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0048,Delivered,No,No,Credential harvest,Retail
+PH-001,15-07-2026,EMP-0210,Delivered,No,No,Credential harvest,Retail
+PH-001,15-07-2026,EMP-0056,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0004,Delivered,No,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0164,Delivered,Yes,No,Business email compromise,Technology
+PH-001,15-07-2026,EMP-0070,Delivered,No,No,QR code,People
+PH-001,15-07-2026,EMP-0229,Delivered,No,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0196,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0047,Delivered,No,No,QR code,Operations
+PH-001,15-07-2026,EMP-0215,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0079,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0137,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0059,Delivered,No,No,Malicious attachment,Finance
+PH-001,15-07-2026,EMP-0092,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0087,Delivered,Yes,No,Credential harvest,Retail
+PH-001,15-07-2026,EMP-0060,Delivered,No,No,QR code,Retail
+PH-001,15-07-2026,EMP-0096,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0227,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0093,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0166,Delivered,No,No,Credential harvest,Operations
+PH-001,15-07-2026,EMP-0218,Delivered,No,No,Malicious attachment,Customer
+PH-001,15-07-2026,EMP-0222,Delivered,No,No,Malicious attachment,Technology
+PH-001,15-07-2026,EMP-0106,Delivered,No,Yes,QR code,Technology
+PH-001,15-07-2026,EMP-0221,Delivered,No,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0037,Delivered,No,No,QR code,Retail
+PH-001,15-07-2026,EMP-0017,Bounced,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0149,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0204,Bounced,No,No,Malicious attachment,Customer
+PH-001,15-07-2026,EMP-0212,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0202,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0219,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0121,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0124,Delivered,No,No,Business email compromise,Technology
+PH-001,15-07-2026,EMP-0118,Delivered,No,No,Credential harvest,Operations
+PH-001,15-07-2026,EMP-0035,Delivered,No,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0115,Delivered,No,No,Credential harvest,Technology
+PH-001,15-07-2026,EMP-0181,Delivered,No,No,Credential harvest,Operations
+PH-001,15-07-2026,EMP-0019,Bounced,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0027,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0014,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0126,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0046,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0138,Delivered,No,Yes,Malicious attachment,Operations
+PH-001,15-07-2026,EMP-0216,Delivered,Yes,No,Malicious attachment,Finance
+PH-001,15-07-2026,EMP-0194,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0006,Bounced,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0206,Bounced,No,No,Malicious attachment,Finance
+PH-001,15-07-2026,EMP-0055,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0163,Delivered,Yes,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0207,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0173,Delivered,No,No,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0201,Delivered,No,No,Malicious attachment,People
+PH-001,15-07-2026,EMP-0236,Delivered,No,No,Malicious attachment,Operations
+PH-001,15-07-2026,EMP-0170,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0081,Delivered,No,No,Business email compromise,Customer
+PH-001,15-07-2026,EMP-0003,Delivered,Yes,No,QR code,Retail
+PH-001,15-07-2026,EMP-0223,Delivered,No,No,Malicious attachment,Operations
+PH-001,15-07-2026,EMP-0002,Delivered,Yes,No,QR code,Operations
+PH-001,15-07-2026,EMP-0008,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0042,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0012,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0161,Delivered,No,No,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0132,Delivered,No,No,Credential harvest,Operations
+PH-001,15-07-2026,EMP-0109,Delivered,No,No,Credential harvest,People
+PH-001,15-07-2026,EMP-0213,Delivered,Yes,No,QR code,Operations
+PH-001,15-07-2026,EMP-0044,Delivered,No,No,QR code,Retail
+PH-001,15-07-2026,EMP-0141,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0073,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0117,Delivered,Yes,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0041,Delivered,No,No,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0174,Delivered,No,No,QR code,Retail
+PH-001,15-07-2026,EMP-0156,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0169,Delivered,No,No,Business email compromise,People
+PH-001,15-07-2026,EMP-0197,Delivered,No,No,QR code,Finance
+PH-001,15-07-2026,EMP-0240,Delivered,No,No,QR code,Technology
+PH-001,15-07-2026,EMP-0155,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0140,Delivered,No,Yes,Credential harvest,Operations
+PH-001,15-07-2026,EMP-0145,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0151,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0043,Delivered,Yes,No,Credential harvest,Customer
+PH-001,15-07-2026,EMP-0226,Delivered,No,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0064,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0080,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0154,Delivered,No,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0167,Delivered,No,No,QR code,People
+PH-001,15-07-2026,EMP-0086,Delivered,Yes,No,Business email compromise,Retail
+PH-001,15-07-2026,EMP-0231,Delivered,No,No,Malicious attachment,Retail
+PH-001,15-07-2026,EMP-0136,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0103,Delivered,No,No,Malicious attachment,Customer
+PH-001,15-07-2026,EMP-0135,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0058,Delivered,Yes,No,Business email compromise,Operations
+PH-001,15-07-2026,EMP-0053,Delivered,No,No,Business email compromise,Finance
+PH-001,15-07-2026,EMP-0007,Delivered,No,No,QR code,Operations
+PH-001,15-07-2026,EMP-0032,Delivered,No,No,Credential harvest,Finance
+PH-001,15-07-2026,EMP-0083,Delivered,No,No,QR code,Customer
+PH-001,15-07-2026,EMP-0172,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0006,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0218,Delivered,No,No,QR code,Customer
+PH-002,19-08-2026,EMP-0110,Delivered,Yes,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0011,Delivered,No,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0159,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0004,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0134,Delivered,No,No,Business email compromise,Operations
+PH-002,19-08-2026,EMP-0067,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0094,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0224,Delivered,No,No,Malicious attachment,Retail
+PH-002,19-08-2026,EMP-0082,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0192,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0122,Delivered,No,No,Malicious attachment,Customer
+PH-002,19-08-2026,EMP-0130,Delivered,No,No,Malicious attachment,Customer
+PH-002,19-08-2026,EMP-0235,Delivered,No,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0225,Delivered,No,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0065,Delivered,Yes,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0227,Bounced,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0061,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0154,Delivered,No,No,Business email compromise,Retail
+PH-002,19-08-2026,EMP-0236,Delivered,No,No,Business email compromise,Operations
+PH-002,19-08-2026,EMP-0030,Delivered,No,No,Credential harvest,Operations
+PH-002,19-08-2026,EMP-0158,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0128,Delivered,Yes,No,Business email compromise,People
+PH-002,19-08-2026,EMP-0167,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0119,Delivered,No,No,Business email compromise,People
+PH-002,19-08-2026,EMP-0098,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0137,Delivered,No,No,Malicious attachment,Technology
+PH-002,19-08-2026,EMP-0131,Delivered,No,Yes,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0163,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0041,Delivered,No,No,Business email compromise,Retail
+PH-002,19-08-2026,EMP-0074,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0188,Delivered,No,No,Malicious attachment,Technology
+PH-002,19-08-2026,EMP-0038,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0206,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0012,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0021,Delivered,Yes,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0095,Delivered,No,No,Credential harvest,Operations
+PH-002,19-08-2026,EMP-0019,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0176,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0219,Delivered,Yes,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0185,Delivered,No,No,Malicious attachment,Retail
+PH-002,19-08-2026,EMP-0063,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0182,Delivered,Yes,No,Credential harvest,Customer
+PH-002,19-08-2026,EMP-0099,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0175,Delivered,No,Yes,QR code,Retail
+PH-002,19-08-2026,EMP-0002,Delivered,No,No,QR code,Operations
+PH-002,19-08-2026,EMP-0055,Delivered,No,No,QR code,Technology
+PH-002,19-08-2026,EMP-0071,Delivered,No,Yes,Malicious attachment,People
+PH-002,19-08-2026,EMP-0209,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0151,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0171,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0044,Delivered,No,No,Malicious attachment,Retail
+PH-002,19-08-2026,EMP-0221,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0202,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0124,Delivered,Yes,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0043,Delivered,Yes,No,Credential harvest,Customer
+PH-002,19-08-2026,EMP-0168,Delivered,No,No,Business email compromise,Retail
+PH-002,19-08-2026,EMP-0086,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0215,Bounced,No,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0047,Delivered,No,No,QR code,Operations
+PH-002,19-08-2026,EMP-0027,Delivered,No,No,Credential harvest,Customer
+PH-002,19-08-2026,EMP-0141,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0144,Delivered,No,No,QR code,Customer
+PH-002,19-08-2026,EMP-0142,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0060,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0228,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0121,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0198,Delivered,No,No,QR code,Operations
+PH-002,19-08-2026,EMP-0183,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0015,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0036,Delivered,No,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0107,Delivered,No,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0059,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0040,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0091,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0053,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0085,Delivered,No,No,Business email compromise,Operations
+PH-002,19-08-2026,EMP-0231,Delivered,No,No,Business email compromise,Retail
+PH-002,19-08-2026,EMP-0132,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0149,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0203,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0018,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0056,Delivered,Yes,No,QR code,Retail
+PH-002,19-08-2026,EMP-0165,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0033,Delivered,No,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0109,Delivered,No,No,QR code,People
+PH-002,19-08-2026,EMP-0014,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0115,Delivered,No,No,Business email compromise,Technology
+PH-002,19-08-2026,EMP-0145,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0051,Delivered,Yes,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0120,Delivered,No,No,Credential harvest,Operations
+PH-002,19-08-2026,EMP-0070,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0096,Delivered,No,No,Credential harvest,People
+PH-002,19-08-2026,EMP-0240,Delivered,No,No,Business email compromise,Technology
+PH-002,19-08-2026,EMP-0005,Delivered,No,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0178,Delivered,No,No,QR code,Operations
+PH-002,19-08-2026,EMP-0214,Delivered,No,No,QR code,Technology
+PH-002,19-08-2026,EMP-0105,Delivered,No,No,Credential harvest,Technology
+PH-002,19-08-2026,EMP-0193,Delivered,No,No,QR code,Operations
+PH-002,19-08-2026,EMP-0116,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0170,Delivered,No,Yes,Malicious attachment,Technology
+PH-002,19-08-2026,EMP-0003,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0146,Delivered,No,No,Malicious attachment,Technology
+PH-002,19-08-2026,EMP-0200,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0190,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0029,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0028,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0079,Delivered,No,No,QR code,Technology
+PH-002,19-08-2026,EMP-0080,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0156,Delivered,No,No,Malicious attachment,Customer
+PH-002,19-08-2026,EMP-0068,Delivered,Yes,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0174,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0032,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0232,Delivered,No,Yes,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0092,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0238,Delivered,No,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0216,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0210,Delivered,No,No,QR code,Retail
+PH-002,19-08-2026,EMP-0083,Delivered,No,No,Credential harvest,Customer
+PH-002,19-08-2026,EMP-0234,Delivered,Yes,No,Malicious attachment,Retail
+PH-002,19-08-2026,EMP-0025,Delivered,No,Yes,QR code,Operations
+PH-002,19-08-2026,EMP-0179,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0058,Delivered,No,No,Business email compromise,Operations
+PH-002,19-08-2026,EMP-0035,Delivered,Yes,No,Business email compromise,People
+PH-002,19-08-2026,EMP-0208,Delivered,No,Yes,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0064,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0042,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0084,Delivered,No,No,Malicious attachment,Retail
+PH-002,19-08-2026,EMP-0125,Delivered,No,No,Malicious attachment,Finance
+PH-002,19-08-2026,EMP-0076,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0239,Delivered,No,No,QR code,Customer
+PH-002,19-08-2026,EMP-0194,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0211,Delivered,No,Yes,QR code,Finance
+PH-002,19-08-2026,EMP-0037,Delivered,No,No,Credential harvest,Retail
+PH-002,19-08-2026,EMP-0180,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0129,Delivered,No,No,Credential harvest,Customer
+PH-002,19-08-2026,EMP-0022,Delivered,Yes,No,Business email compromise,Customer
+PH-002,19-08-2026,EMP-0237,Delivered,No,No,Business email compromise,Finance
+PH-002,19-08-2026,EMP-0186,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0133,Delivered,No,No,QR code,Customer
+PH-002,19-08-2026,EMP-0195,Delivered,No,No,Malicious attachment,People
+PH-002,19-08-2026,EMP-0010,Delivered,No,No,Business email compromise,Retail
+PH-002,19-08-2026,EMP-0008,Delivered,No,No,Credential harvest,Finance
+PH-002,19-08-2026,EMP-0017,Delivered,No,No,Business email compromise,People
+PH-002,19-08-2026,EMP-0161,Delivered,No,Yes,QR code,Retail
+PH-002,19-08-2026,EMP-0023,Delivered,No,No,Business email compromise,Technology
+PH-002,19-08-2026,EMP-0104,Delivered,No,No,Malicious attachment,Operations
+PH-002,19-08-2026,EMP-0039,Delivered,No,No,QR code,Finance
+PH-002,19-08-2026,EMP-0073,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0050,Delivered,No,No,Credential harvest,Customer
+PH-003,16-09-2026,EMP-0002,Delivered,No,No,Credential harvest,Operations
+PH-003,16-09-2026,EMP-0003,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0192,Delivered,No,No,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0021,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0067,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0132,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0171,Delivered,No,No,Business email compromise,Retail
+PH-003,16-09-2026,EMP-0174,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0099,Delivered,No,Yes,QR code,Finance
+PH-003,16-09-2026,EMP-0036,Delivered,Yes,No,QR code,Technology
+PH-003,16-09-2026,EMP-0196,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0167,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0149,Delivered,Yes,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0064,Delivered,No,Yes,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0054,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0048,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0223,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0232,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0128,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0125,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0139,Delivered,Yes,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0091,Delivered,No,No,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0060,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0180,Delivered,No,Yes,QR code,Finance
+PH-003,16-09-2026,EMP-0220,Delivered,No,No,QR code,People
+PH-003,16-09-2026,EMP-0224,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0032,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0172,Delivered,Yes,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0013,Delivered,No,Yes,QR code,Finance
+PH-003,16-09-2026,EMP-0168,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0001,Delivered,No,No,QR code,Technology
+PH-003,16-09-2026,EMP-0055,Delivered,No,No,QR code,Technology
+PH-003,16-09-2026,EMP-0085,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0191,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0237,Delivered,No,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0107,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0140,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0041,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0169,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0204,Delivered,No,No,QR code,Customer
+PH-003,16-09-2026,EMP-0045,Delivered,No,No,QR code,People
+PH-003,16-09-2026,EMP-0200,Delivered,No,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0101,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0076,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0206,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0110,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0222,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0038,Delivered,Yes,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0058,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0095,Delivered,No,No,Credential harvest,Operations
+PH-003,16-09-2026,EMP-0184,Delivered,No,No,Business email compromise,Retail
+PH-003,16-09-2026,EMP-0116,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0165,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0160,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0080,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0155,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0070,Delivered,No,No,Business email compromise,People
+PH-003,16-09-2026,EMP-0178,Bounced,No,No,Credential harvest,Operations
+PH-003,16-09-2026,EMP-0197,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0011,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0106,Delivered,No,No,QR code,Technology
+PH-003,16-09-2026,EMP-0104,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0112,Delivered,No,No,QR code,People
+PH-003,16-09-2026,EMP-0081,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0115,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0156,Delivered,No,Yes,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0072,Delivered,Yes,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0176,Delivered,No,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0162,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0049,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0201,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0153,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0086,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0098,Delivered,No,No,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0209,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0005,Delivered,Yes,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0144,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0120,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0195,Delivered,Yes,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0052,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0226,Delivered,No,No,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0034,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0133,Delivered,No,No,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0175,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0033,Delivered,No,Yes,QR code,Technology
+PH-003,16-09-2026,EMP-0040,Delivered,No,No,QR code,People
+PH-003,16-09-2026,EMP-0009,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0228,Delivered,No,Yes,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0053,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0157,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0164,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0090,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0143,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0114,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0010,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0194,Delivered,No,No,QR code,Finance
+PH-003,16-09-2026,EMP-0006,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0231,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0122,Delivered,No,No,QR code,Customer
+PH-003,16-09-2026,EMP-0043,Delivered,No,No,QR code,Customer
+PH-003,16-09-2026,EMP-0235,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0056,Delivered,No,No,Business email compromise,Retail
+PH-003,16-09-2026,EMP-0074,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0137,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0212,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0230,Delivered,No,Yes,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0240,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0105,Delivered,No,Yes,QR code,Technology
+PH-003,16-09-2026,EMP-0108,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0135,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0141,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0024,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0181,Delivered,No,No,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0216,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0035,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0190,Delivered,No,No,QR code,Customer
+PH-003,16-09-2026,EMP-0170,Delivered,No,No,QR code,Technology
+PH-003,16-09-2026,EMP-0026,Delivered,No,Yes,QR code,Operations
+PH-003,16-09-2026,EMP-0103,Delivered,No,Yes,Credential harvest,Customer
+PH-003,16-09-2026,EMP-0057,Delivered,No,Yes,Malicious attachment,People
+PH-003,16-09-2026,EMP-0146,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0117,Delivered,No,No,Credential harvest,People
+PH-003,16-09-2026,EMP-0188,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0211,Delivered,No,No,Malicious attachment,Finance
+PH-003,16-09-2026,EMP-0065,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0177,Delivered,No,No,Malicious attachment,People
+PH-003,16-09-2026,EMP-0014,Delivered,No,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0044,Delivered,No,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0121,Delivered,No,No,QR code,Operations
+PH-003,16-09-2026,EMP-0047,Delivered,No,No,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0082,Delivered,No,No,Malicious attachment,Retail
+PH-003,16-09-2026,EMP-0089,Delivered,No,No,Credential harvest,Technology
+PH-003,16-09-2026,EMP-0182,Delivered,No,No,QR code,Customer
+PH-003,16-09-2026,EMP-0234,Delivered,No,No,QR code,Retail
+PH-003,16-09-2026,EMP-0154,Delivered,Yes,No,Credential harvest,Retail
+PH-003,16-09-2026,EMP-0113,Delivered,No,No,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0124,Delivered,No,No,Business email compromise,Technology
+PH-003,16-09-2026,EMP-0068,Delivered,No,No,Credential harvest,Finance
+PH-003,16-09-2026,EMP-0018,Delivered,No,No,Business email compromise,Customer
+PH-003,16-09-2026,EMP-0066,Delivered,No,No,Malicious attachment,Operations
+PH-003,16-09-2026,EMP-0088,Delivered,No,Yes,QR code,Operations
+PH-003,16-09-2026,EMP-0062,Delivered,No,Yes,Business email compromise,Operations
+PH-003,16-09-2026,EMP-0022,Delivered,No,Yes,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0094,Delivered,No,Yes,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0214,Delivered,No,No,Malicious attachment,Technology
+PH-003,16-09-2026,EMP-0016,Delivered,No,No,Malicious attachment,Customer
+PH-003,16-09-2026,EMP-0163,Delivered,No,Yes,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0019,Delivered,No,No,Business email compromise,Finance
+PH-003,16-09-2026,EMP-0158,Delivered,No,No,QR code,People
+PH-004,14-10-2026,EMP-0137,Delivered,No,No,QR code,Technology
+PH-004,14-10-2026,EMP-0128,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0204,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0164,Delivered,Yes,No,Malicious attachment,Technology
+PH-004,14-10-2026,EMP-0158,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0130,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0091,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0085,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0057,Delivered,Yes,No,QR code,People
+PH-004,14-10-2026,EMP-0187,Delivered,No,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0055,Delivered,No,No,Malicious attachment,Technology
+PH-004,14-10-2026,EMP-0113,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0045,Delivered,No,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0078,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0169,Delivered,No,No,QR code,People
+PH-004,14-10-2026,EMP-0135,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0176,Delivered,Yes,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0121,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0028,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0202,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0139,Delivered,Yes,No,QR code,Retail
+PH-004,14-10-2026,EMP-0120,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0206,Delivered,No,Yes,Malicious attachment,Finance
+PH-004,14-10-2026,EMP-0153,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0107,Delivered,No,No,QR code,Technology
+PH-004,14-10-2026,EMP-0090,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0180,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0036,Delivered,No,No,Business email compromise,Technology
+PH-004,14-10-2026,EMP-0102,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0200,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0233,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0100,Delivered,No,No,Credential harvest,Technology
+PH-004,14-10-2026,EMP-0127,Delivered,No,No,Credential harvest,Technology
+PH-004,14-10-2026,EMP-0046,Delivered,No,No,Business email compromise,Customer
+PH-004,14-10-2026,EMP-0219,Delivered,Yes,No,QR code,Finance
+PH-004,14-10-2026,EMP-0021,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0156,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0159,Delivered,No,No,QR code,Customer
+PH-004,14-10-2026,EMP-0144,Bounced,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0182,Delivered,No,No,QR code,Customer
+PH-004,14-10-2026,EMP-0203,Delivered,Yes,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0052,Delivered,No,No,Business email compromise,Technology
+PH-004,14-10-2026,EMP-0064,Delivered,No,No,Malicious attachment,Finance
+PH-004,14-10-2026,EMP-0041,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0024,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0071,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0124,Delivered,No,No,Malicious attachment,Technology
+PH-004,14-10-2026,EMP-0108,Delivered,No,Yes,Business email compromise,Technology
+PH-004,14-10-2026,EMP-0132,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0056,Delivered,No,No,Credential harvest,Retail
+PH-004,14-10-2026,EMP-0015,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0103,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0145,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0072,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0184,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0198,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0011,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0073,Delivered,No,No,Malicious attachment,Finance
+PH-004,14-10-2026,EMP-0048,Delivered,Yes,No,Malicious attachment,Retail
+PH-004,14-10-2026,EMP-0076,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0077,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0040,Delivered,No,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0154,Delivered,No,No,QR code,Retail
+PH-004,14-10-2026,EMP-0070,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0131,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0086,Delivered,Yes,No,QR code,Retail
+PH-004,14-10-2026,EMP-0014,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0195,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0051,Delivered,No,Yes,QR code,Operations
+PH-004,14-10-2026,EMP-0043,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0111,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0143,Bounced,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0231,Delivered,No,No,Malicious attachment,Retail
+PH-004,14-10-2026,EMP-0110,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0142,Delivered,No,No,QR code,Retail
+PH-004,14-10-2026,EMP-0183,Delivered,No,Yes,QR code,People
+PH-004,14-10-2026,EMP-0147,Delivered,No,No,Business email compromise,Operations
+PH-004,14-10-2026,EMP-0032,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0177,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0168,Delivered,No,No,Credential harvest,Retail
+PH-004,14-10-2026,EMP-0239,Delivered,No,No,Business email compromise,Customer
+PH-004,14-10-2026,EMP-0163,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0221,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0039,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0217,Delivered,No,No,Credential harvest,Technology
+PH-004,14-10-2026,EMP-0019,Delivered,No,Yes,QR code,Finance
+PH-004,14-10-2026,EMP-0054,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0116,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0150,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0181,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0165,Delivered,No,No,QR code,People
+PH-004,14-10-2026,EMP-0191,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0097,Delivered,No,No,Business email compromise,Technology
+PH-004,14-10-2026,EMP-0022,Delivered,No,No,Business email compromise,Customer
+PH-004,14-10-2026,EMP-0152,Delivered,No,No,Credential harvest,Customer
+PH-004,14-10-2026,EMP-0238,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0155,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0106,Delivered,No,No,Malicious attachment,Technology
+PH-004,14-10-2026,EMP-0029,Delivered,No,No,QR code,Retail
+PH-004,14-10-2026,EMP-0126,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0066,Delivered,No,Yes,Malicious attachment,Operations
+PH-004,14-10-2026,EMP-0049,Delivered,No,No,Business email compromise,Operations
+PH-004,14-10-2026,EMP-0002,Delivered,No,No,Business email compromise,Operations
+PH-004,14-10-2026,EMP-0138,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0010,Delivered,No,No,Malicious attachment,Retail
+PH-004,14-10-2026,EMP-0020,Delivered,Yes,No,Business email compromise,Customer
+PH-004,14-10-2026,EMP-0084,Delivered,Yes,No,Credential harvest,Retail
+PH-004,14-10-2026,EMP-0134,Delivered,No,No,Malicious attachment,Operations
+PH-004,14-10-2026,EMP-0230,Delivered,No,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0098,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0208,Delivered,No,No,Business email compromise,Operations
+PH-004,14-10-2026,EMP-0216,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0067,Delivered,No,No,Business email compromise,People
+PH-004,14-10-2026,EMP-0025,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0197,Delivered,Yes,No,Malicious attachment,Finance
+PH-004,14-10-2026,EMP-0157,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0117,Delivered,No,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0035,Delivered,No,No,QR code,People
+PH-004,14-10-2026,EMP-0092,Delivered,No,No,Business email compromise,Finance
+PH-004,14-10-2026,EMP-0104,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0185,Delivered,No,No,Malicious attachment,Retail
+PH-004,14-10-2026,EMP-0240,Delivered,No,No,Credential harvest,Technology
+PH-004,14-10-2026,EMP-0133,Delivered,No,No,QR code,Customer
+PH-004,14-10-2026,EMP-0009,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0112,Delivered,No,No,Credential harvest,People
+PH-004,14-10-2026,EMP-0006,Delivered,No,Yes,QR code,People
+PH-004,14-10-2026,EMP-0096,Delivered,No,No,Malicious attachment,People
+PH-004,14-10-2026,EMP-0016,Delivered,No,No,QR code,Customer
+PH-004,14-10-2026,EMP-0186,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0213,Delivered,No,Yes,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0218,Delivered,Yes,No,Malicious attachment,Customer
+PH-004,14-10-2026,EMP-0223,Delivered,No,No,Business email compromise,Operations
+PH-004,14-10-2026,EMP-0087,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0232,Bounced,No,No,Malicious attachment,Operations
+PH-004,14-10-2026,EMP-0082,Delivered,No,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0044,Delivered,Yes,No,Business email compromise,Retail
+PH-004,14-10-2026,EMP-0146,Delivered,No,No,QR code,Technology
+PH-004,14-10-2026,EMP-0114,Delivered,Yes,No,QR code,Retail
+PH-004,14-10-2026,EMP-0196,Delivered,No,No,Credential harvest,Operations
+PH-004,14-10-2026,EMP-0209,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0188,Delivered,No,No,Credential harvest,Technology
+PH-004,14-10-2026,EMP-0211,Delivered,No,No,Credential harvest,Finance
+PH-004,14-10-2026,EMP-0099,Delivered,No,No,QR code,Finance
+PH-004,14-10-2026,EMP-0205,Delivered,No,Yes,QR code,Operations
+PH-004,14-10-2026,EMP-0003,Bounced,No,No,Malicious attachment,Retail
+PH-004,14-10-2026,EMP-0089,Delivered,No,No,Business email compromise,Technology
+PH-004,14-10-2026,EMP-0095,Delivered,No,No,QR code,Operations
+PH-004,14-10-2026,EMP-0053,Delivered,No,No,Malicious attachment,Finance
+PH-004,14-10-2026,EMP-0190,Delivered,No,No,QR code,Customer
+PH-004,14-10-2026,EMP-0004,Delivered,No,No,QR code,People

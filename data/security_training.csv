@@ -1,0 +1,456 @@
+training_record_id,employee_id,training_module,required_flag,assignment_date,due_date,completion_status,completion_date,business_unit
+TR-000001,EMP-0001,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-03-2026,Technology
+TR-000002,EMP-0001,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-03-2026,Technology
+TR-000003,EMP-0002,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Operations
+TR-000004,EMP-0002,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Operations
+TR-000005,EMP-0003,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,12-08-2026,Retail
+TR-000006,EMP-0003,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000007,EMP-0004,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-08-2026,People
+TR-000008,EMP-0005,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-04-2026,People
+TR-000009,EMP-0005,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,08-08-2026,People
+TR-000010,EMP-0006,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-09-2026,People
+TR-000011,EMP-0007,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-01-2026,Operations
+TR-000012,EMP-0008,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,19-04-2026,Finance
+TR-000013,EMP-0008,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-05-2026,Finance
+TR-000014,EMP-0009,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-02-2026,Finance
+TR-000015,EMP-0010,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-08-2026,Retail
+TR-000016,EMP-0010,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,22-05-2026,Retail
+TR-000017,EMP-0011,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,People
+TR-000018,EMP-0011,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-09-2026,People
+TR-000019,EMP-0012,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,19-10-2026,Finance
+TR-000020,EMP-0012,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,27-08-2026,Finance
+TR-000021,EMP-0013,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Finance
+TR-000022,EMP-0013,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-01-2026,Finance
+TR-000023,EMP-0014,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,28-02-2026,Finance
+TR-000024,EMP-0014,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000025,EMP-0015,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-03-2026,Finance
+TR-000026,EMP-0015,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,01-02-2026,Finance
+TR-000027,EMP-0016,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-09-2026,Customer
+TR-000028,EMP-0016,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-05-2026,Customer
+TR-000029,EMP-0017,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-08-2026,People
+TR-000030,EMP-0017,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,People
+TR-000031,EMP-0018,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,01-10-2026,Customer
+TR-000032,EMP-0018,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,19-08-2026,Customer
+TR-000033,EMP-0019,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Finance
+TR-000034,EMP-0019,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Finance
+TR-000035,EMP-0020,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,01-04-2026,Customer
+TR-000036,EMP-0020,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-04-2026,Customer
+TR-000037,EMP-0021,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-01-2026,Finance
+TR-000038,EMP-0022,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-08-2026,Customer
+TR-000039,EMP-0022,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-01-2026,Customer
+TR-000040,EMP-0023,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-04-2026,Technology
+TR-000041,EMP-0023,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Technology
+TR-000042,EMP-0024,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-01-2026,Finance
+TR-000043,EMP-0024,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-10-2026,Finance
+TR-000044,EMP-0025,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-07-2026,Operations
+TR-000045,EMP-0025,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,29-01-2026,Operations
+TR-000046,EMP-0026,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-06-2026,Operations
+TR-000047,EMP-0026,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-07-2026,Operations
+TR-000048,EMP-0027,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-04-2026,Customer
+TR-000049,EMP-0027,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-07-2026,Customer
+TR-000050,EMP-0028,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-02-2026,Operations
+TR-000051,EMP-0028,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Operations
+TR-000052,EMP-0029,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-10-2026,Retail
+TR-000053,EMP-0029,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,29-04-2026,Retail
+TR-000054,EMP-0030,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-07-2026,Operations
+TR-000055,EMP-0030,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-05-2026,Operations
+TR-000056,EMP-0031,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-04-2026,Operations
+TR-000057,EMP-0031,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,27-07-2026,Operations
+TR-000058,EMP-0032,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-09-2026,Finance
+TR-000059,EMP-0032,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-09-2026,Finance
+TR-000060,EMP-0033,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Technology
+TR-000061,EMP-0033,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,12-05-2026 00:00,Technology
+TR-000062,EMP-0034,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,17-04-2026,People
+TR-000063,EMP-0034,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-09-2026,People
+TR-000064,EMP-0035,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-04-2026,People
+TR-000065,EMP-0035,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,24-05-2026,People
+TR-000066,EMP-0036,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,08-09-2026,Technology
+TR-000067,EMP-0036,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,18-07-2026,Technology
+TR-000068,EMP-0037,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-03-2026,Retail
+TR-000069,EMP-0037,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-05-2026,Retail
+TR-000070,EMP-0038,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,01-04-2026,Finance
+TR-000071,EMP-0039,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-08-2026,Finance
+TR-000072,EMP-0039,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000073,EMP-0040,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-03-2026,People
+TR-000074,EMP-0040,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,22-02-2026,People
+TR-000075,EMP-0041,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-05-2026,Retail
+TR-000076,EMP-0041,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,05-05-2026,Retail
+TR-000077,EMP-0042,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-02-2026,Finance
+TR-000078,EMP-0043,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,28-03-2026,Customer
+TR-000079,EMP-0043,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Customer
+TR-000080,EMP-0044,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-09-2026,Retail
+TR-000081,EMP-0044,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,09-05-2026,Retail
+TR-000082,EMP-0045,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,People
+TR-000083,EMP-0046,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-02-2026,Customer
+TR-000084,EMP-0046,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,24-09-2026,Customer
+TR-000085,EMP-0047,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-07-2026,Operations
+TR-000086,EMP-0047,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-02-2026,Operations
+TR-000087,EMP-0048,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-10-2026,Retail
+TR-000088,EMP-0048,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000089,EMP-0049,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-06-2026,Operations
+TR-000090,EMP-0049,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-06-2026,Operations
+TR-000091,EMP-0050,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-07-2026,Customer
+TR-000092,EMP-0050,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Customer
+TR-000093,EMP-0051,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,19-02-2026,Operations
+TR-000094,EMP-0051,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,09-02-2026,Operations
+TR-000095,EMP-0052,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-08-2026,Technology
+TR-000096,EMP-0052,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-08-2026,Technology
+TR-000097,EMP-0053,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-02-2026,Finance
+TR-000098,EMP-0053,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-08-2026,Finance
+TR-000099,EMP-0054,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-07-2026,Finance
+TR-000100,EMP-0054,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,11-09-2026,Finance
+TR-000101,EMP-0055,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-07-2026,Technology
+TR-000102,EMP-0056,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-01-2026,Retail
+TR-000103,EMP-0056,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-03-2026,Retail
+TR-000104,EMP-0057,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-09-2026,People
+TR-000105,EMP-0058,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-03-2026,Operations
+TR-000106,EMP-0058,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-09-2026,Operations
+TR-000107,EMP-0059,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-04-2026,Finance
+TR-000108,EMP-0059,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-06-2026,Finance
+TR-000109,EMP-0060,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Retail
+TR-000110,EMP-0060,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Retail
+TR-000111,EMP-0061,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-07-2026,People
+TR-000112,EMP-0061,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-10-2026,People
+TR-000113,EMP-0062,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Operations
+TR-000114,EMP-0062,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,08-03-2026,Operations
+TR-000115,EMP-0063,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-09-2026,Finance
+TR-000116,EMP-0063,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,18-07-2026,Finance
+TR-000117,EMP-0064,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,12-04-2026,Finance
+TR-000118,EMP-0064,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,25-04-2026,Finance
+TR-000119,EMP-0065,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-08-2026,People
+TR-000120,EMP-0065,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-06-2026,People
+TR-000121,EMP-0066,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,24-01-2026,Operations
+TR-000122,EMP-0066,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-10-2026,Operations
+TR-000123,EMP-0067,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-06-2026 00:00,People
+TR-000124,EMP-0067,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,24-01-2026,People
+TR-000125,EMP-0068,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-09-2026,Finance
+TR-000126,EMP-0068,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,26-05-2026,Finance
+TR-000127,EMP-0069,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,19-07-2026,Finance
+TR-000128,EMP-0069,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-08-2026,Finance
+TR-000129,EMP-0070,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-02-2026,People
+TR-000130,EMP-0070,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-04-2026,People
+TR-000131,EMP-0071,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-10-2026,People
+TR-000132,EMP-0071,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-07-2026,People
+TR-000133,EMP-0072,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,16-04-2026,Finance
+TR-000134,EMP-0072,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,25-04-2026,Finance
+TR-000135,EMP-0073,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-06-2026,Finance
+TR-000136,EMP-0074,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,08-07-2026,Retail
+TR-000137,EMP-0075,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-05-2026,Technology
+TR-000138,EMP-0075,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Technology
+TR-000139,EMP-0076,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,24-08-2026,Finance
+TR-000140,EMP-0076,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,20-05-2026,Finance
+TR-000141,EMP-0077,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Customer
+TR-000142,EMP-0077,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,26-08-2026,Customer
+TR-000143,EMP-0078,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-03-2026,Operations
+TR-000144,EMP-0078,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-04-2026,Operations
+TR-000145,EMP-0079,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-08-2026,Technology
+TR-000146,EMP-0079,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Technology
+TR-000147,EMP-0080,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-07-2026,Customer
+TR-000148,EMP-0080,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,10-04-2026,Customer
+TR-000149,EMP-0081,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-07-2026,Customer
+TR-000150,EMP-0081,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000151,EMP-0082,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-06-2026,Retail
+TR-000152,EMP-0082,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000153,EMP-0083,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-01-2026,Customer
+TR-000154,EMP-0083,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,22-07-2026 00:00,Customer
+TR-000155,EMP-0084,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,23-06-2026,Retail
+TR-000156,EMP-0084,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-08-2026,Retail
+TR-000157,EMP-0085,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Operations
+TR-000158,EMP-0086,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-01-2026,Retail
+TR-000159,EMP-0086,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-05-2026,Retail
+TR-000160,EMP-0087,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-06-2026,Retail
+TR-000161,EMP-0087,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Retail
+TR-000162,EMP-0088,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-06-2026,Operations
+TR-000163,EMP-0089,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-02-2026,Technology
+TR-000164,EMP-0089,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,19-09-2026,Technology
+TR-000165,EMP-0090,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-03-2026,Operations
+TR-000166,EMP-0090,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000167,EMP-0091,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,05-02-2026,Customer
+TR-000168,EMP-0091,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-07-2026,Customer
+TR-000169,EMP-0092,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-01-2026,Finance
+TR-000170,EMP-0092,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000171,EMP-0093,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-08-2026,Finance
+TR-000172,EMP-0093,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-10-2026,Finance
+TR-000173,EMP-0094,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-07-2026,Finance
+TR-000174,EMP-0094,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-06-2026,Finance
+TR-000175,EMP-0095,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,14-05-2026,Operations
+TR-000176,EMP-0095,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,12-05-2026,Operations
+TR-000177,EMP-0096,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-03-2026,People
+TR-000178,EMP-0096,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-03-2026,People
+TR-000179,EMP-0097,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-01-2026,Technology
+TR-000180,EMP-0097,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-03-2026,Technology
+TR-000181,EMP-0098,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-04-2026,Operations
+TR-000182,EMP-0098,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,01-05-2026,Operations
+TR-000183,EMP-0099,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Finance
+TR-000184,EMP-0099,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-08-2026,Finance
+TR-000185,EMP-0100,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,08-05-2026 00:00,Technology
+TR-000186,EMP-0100,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,07-05-2026,Technology
+TR-000187,EMP-0101,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-07-2026,Technology
+TR-000188,EMP-0101,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-08-2026,Technology
+TR-000189,EMP-0102,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-07-2026,Retail
+TR-000190,EMP-0102,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-07-2026,Retail
+TR-000191,EMP-0103,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-08-2026,Customer
+TR-000192,EMP-0103,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000193,EMP-0104,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-03-2026,Operations
+TR-000194,EMP-0104,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-08-2026,Operations
+TR-000195,EMP-0105,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Technology
+TR-000196,EMP-0105,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,08-07-2026,Technology
+TR-000197,EMP-0106,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-08-2026,Technology
+TR-000198,EMP-0106,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Technology
+TR-000199,EMP-0107,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-07-2026,Technology
+TR-000200,EMP-0107,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,08-09-2026,Technology
+TR-000201,EMP-0108,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Technology
+TR-000202,EMP-0108,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-07-2026,Technology
+TR-000203,EMP-0109,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-07-2026,People
+TR-000204,EMP-0109,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,08-02-2026,People
+TR-000205,EMP-0110,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-08-2026,People
+TR-000206,EMP-0110,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-01-2026,People
+TR-000207,EMP-0111,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,14-05-2026,Operations
+TR-000208,EMP-0111,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,24-03-2026,Operations
+TR-000209,EMP-0112,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,14-10-2026,People
+TR-000210,EMP-0112,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-09-2026,People
+TR-000211,EMP-0113,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-08-2026,Customer
+TR-000212,EMP-0113,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Customer
+TR-000213,EMP-0114,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,09-02-2026,Retail
+TR-000214,EMP-0115,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-06-2026,Technology
+TR-000215,EMP-0115,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,20-03-2026,Technology
+TR-000216,EMP-0116,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-04-2026 00:00,Retail
+TR-000217,EMP-0116,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,13-03-2026,Retail
+TR-000218,EMP-0117,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-06-2026,People
+TR-000219,EMP-0117,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,29-08-2026,People
+TR-000220,EMP-0118,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-06-2026,Operations
+TR-000221,EMP-0118,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000222,EMP-0119,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-08-2026,People
+TR-000223,EMP-0119,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-09-2026,People
+TR-000224,EMP-0120,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Operations
+TR-000225,EMP-0120,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000226,EMP-0121,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-05-2026,Operations
+TR-000227,EMP-0121,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-10-2026,Operations
+TR-000228,EMP-0122,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-09-2026,Customer
+TR-000229,EMP-0122,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,12-10-2026,Customer
+TR-000230,EMP-0123,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-07-2026,People
+TR-000231,EMP-0123,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-08-2026,People
+TR-000232,EMP-0124,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,05-10-2026,Technology
+TR-000233,EMP-0124,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,22-02-2026,Technology
+TR-000234,EMP-0125,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,05-07-2026,Finance
+TR-000235,EMP-0125,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-01-2026,Finance
+TR-000236,EMP-0126,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-05-2026,Operations
+TR-000237,EMP-0126,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,11-06-2026,Operations
+TR-000238,EMP-0127,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-09-2026,Technology
+TR-000239,EMP-0127,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-01-2026,Technology
+TR-000240,EMP-0128,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-07-2026,People
+TR-000241,EMP-0128,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,People
+TR-000242,EMP-0129,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,16-01-2026,Customer
+TR-000243,EMP-0129,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000244,EMP-0130,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,12-04-2026,Customer
+TR-000245,EMP-0130,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000246,EMP-0131,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-01-2026,Operations
+TR-000247,EMP-0132,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Operations
+TR-000248,EMP-0132,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,18-08-2026,Operations
+TR-000249,EMP-0133,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-06-2026,Customer
+TR-000250,EMP-0133,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-02-2026,Customer
+TR-000251,EMP-0134,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-05-2026,Operations
+TR-000252,EMP-0134,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000253,EMP-0135,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-07-2026,Customer
+TR-000254,EMP-0135,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,22-02-2026,Customer
+TR-000255,EMP-0136,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-02-2026,Finance
+TR-000256,EMP-0136,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,04-04-2026,Finance
+TR-000257,EMP-0137,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-09-2026,Technology
+TR-000258,EMP-0137,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-02-2026,Technology
+TR-000259,EMP-0138,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-04-2026,Operations
+TR-000260,EMP-0138,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,20-01-2026,Operations
+TR-000261,EMP-0139,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Retail
+TR-000262,EMP-0139,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,27-02-2026,Retail
+TR-000263,EMP-0140,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-06-2026,Operations
+TR-000264,EMP-0140,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-06-2026,Operations
+TR-000265,EMP-0141,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-01-2026,Finance
+TR-000266,EMP-0141,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Finance
+TR-000267,EMP-0142,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-03-2026,Retail
+TR-000268,EMP-0142,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,19-08-2026,Retail
+TR-000269,EMP-0143,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,14-09-2026,Finance
+TR-000270,EMP-0143,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-08-2026,Finance
+TR-000271,EMP-0144,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Customer
+TR-000272,EMP-0144,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,29-08-2026,Customer
+TR-000273,EMP-0145,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-06-2026,Finance
+TR-000274,EMP-0146,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-05-2026,Technology
+TR-000275,EMP-0147,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-10-2026,Operations
+TR-000276,EMP-0147,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000277,EMP-0148,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,28-09-2026,Customer
+TR-000278,EMP-0149,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Finance
+TR-000279,EMP-0149,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Not started,,Finance
+TR-000280,EMP-0150,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,28-07-2026,Finance
+TR-000281,EMP-0150,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Finance
+TR-000282,EMP-0151,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-02-2026,Retail
+TR-000283,EMP-0151,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000284,EMP-0152,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Customer
+TR-000285,EMP-0152,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-08-2026,Customer
+TR-000286,EMP-0153,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-04-2026,Finance
+TR-000287,EMP-0153,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,07-07-2026,Finance
+TR-000288,EMP-0154,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-07-2026,Retail
+TR-000289,EMP-0154,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-05-2026,Retail
+TR-000290,EMP-0155,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-01-2026,Customer
+TR-000291,EMP-0155,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,07-04-2026,Customer
+TR-000292,EMP-0156,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Customer
+TR-000293,EMP-0157,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,People
+TR-000294,EMP-0157,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,People
+TR-000295,EMP-0158,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-06-2026,People
+TR-000296,EMP-0158,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-01-2026,People
+TR-000297,EMP-0159,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-09-2026,Customer
+TR-000298,EMP-0159,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-07-2026,Customer
+TR-000299,EMP-0160,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-08-2026,Finance
+TR-000300,EMP-0160,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,20-03-2026,Finance
+TR-000301,EMP-0161,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-02-2026,Retail
+TR-000302,EMP-0161,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-10-2026,Retail
+TR-000303,EMP-0162,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-03-2026,Retail
+TR-000304,EMP-0162,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000305,EMP-0163,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,09-10-2026,Finance
+TR-000306,EMP-0163,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,30-05-2026,Finance
+TR-000307,EMP-0164,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-05-2026,Technology
+TR-000308,EMP-0164,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,18-09-2026,Technology
+TR-000309,EMP-0165,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-06-2026 00:00,People
+TR-000310,EMP-0165,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,27-09-2026,People
+TR-000311,EMP-0166,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,09-02-2026,Operations
+TR-000312,EMP-0166,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,12-01-2026,Operations
+TR-000313,EMP-0167,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,People
+TR-000314,EMP-0167,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-06-2026,People
+TR-000315,EMP-0168,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,08-01-2026,Retail
+TR-000316,EMP-0169,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-04-2026,People
+TR-000317,EMP-0170,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Technology
+TR-000318,EMP-0170,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-06-2026,Technology
+TR-000319,EMP-0171,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-06-2026,Retail
+TR-000320,EMP-0171,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000321,EMP-0172,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,31-07-2026,People
+TR-000322,EMP-0172,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-10-2026,People
+TR-000323,EMP-0173,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-05-2026,Retail
+TR-000324,EMP-0173,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,29-05-2026,Retail
+TR-000325,EMP-0174,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-06-2026,Retail
+TR-000326,EMP-0175,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,24-01-2026,Retail
+TR-000327,EMP-0175,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000328,EMP-0176,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Finance
+TR-000329,EMP-0176,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-06-2026,Finance
+TR-000330,EMP-0177,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-08-2026,People
+TR-000331,EMP-0177,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,11-02-2026,People
+TR-000332,EMP-0178,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,23-07-2026,Operations
+TR-000333,EMP-0178,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,25-07-2026,Operations
+TR-000334,EMP-0179,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-06-2026,Retail
+TR-000335,EMP-0179,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-05-2026,Retail
+TR-000336,EMP-0180,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-09-2026,Finance
+TR-000337,EMP-0180,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-03-2026,Finance
+TR-000338,EMP-0181,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-08-2026,Operations
+TR-000339,EMP-0181,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-03-2026,Operations
+TR-000340,EMP-0182,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,12-10-2026 00:00,Customer
+TR-000341,EMP-0182,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,11-07-2026,Customer
+TR-000342,EMP-0183,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-02-2026,People
+TR-000343,EMP-0183,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,People
+TR-000344,EMP-0184,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,16-10-2026,Retail
+TR-000345,EMP-0184,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Retail
+TR-000346,EMP-0185,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-07-2026,Retail
+TR-000347,EMP-0185,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Retail
+TR-000348,EMP-0186,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,17-07-2026,Finance
+TR-000349,EMP-0186,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,18-02-2026,Finance
+TR-000350,EMP-0187,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,People
+TR-000351,EMP-0187,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,03-04-2026,People
+TR-000352,EMP-0188,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-06-2026,Technology
+TR-000353,EMP-0188,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Technology
+TR-000354,EMP-0189,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,05-02-2026,Technology
+TR-000355,EMP-0189,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Technology
+TR-000356,EMP-0190,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,Customer
+TR-000357,EMP-0190,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-07-2026,Customer
+TR-000358,EMP-0191,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Operations
+TR-000359,EMP-0191,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-07-2026,Operations
+TR-000360,EMP-0192,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,22-03-2026,Operations
+TR-000361,EMP-0192,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-05-2026,Operations
+TR-000362,EMP-0193,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,04-04-2026,Operations
+TR-000363,EMP-0193,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-07-2026,Operations
+TR-000364,EMP-0194,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,09-04-2026,Finance
+TR-000365,EMP-0194,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000366,EMP-0195,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-01-2026,People
+TR-000367,EMP-0195,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-01-2026,People
+TR-000368,EMP-0196,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-09-2026,Operations
+TR-000369,EMP-0196,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-08-2026,Operations
+TR-000370,EMP-0197,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,10-08-2026,Finance
+TR-000371,EMP-0197,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-03-2026 00:00,Finance
+TR-000372,EMP-0198,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,22-08-2026,Operations
+TR-000373,EMP-0198,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,23-06-2026,Operations
+TR-000374,EMP-0199,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,People
+TR-000375,EMP-0199,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,04-05-2026,People
+TR-000376,EMP-0200,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,22-02-2026,Finance
+TR-000377,EMP-0200,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,16-09-2026,Finance
+TR-000378,EMP-0201,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,People
+TR-000379,EMP-0201,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,People
+TR-000380,EMP-0202,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,08-03-2026,Operations
+TR-000381,EMP-0202,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000382,EMP-0203,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,People
+TR-000383,EMP-0203,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-02-2026,People
+TR-000384,EMP-0204,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,18-06-2026,Customer
+TR-000385,EMP-0204,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Customer
+TR-000386,EMP-0205,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Operations
+TR-000387,EMP-0206,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,12-08-2026,Finance
+TR-000388,EMP-0206,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000389,EMP-0207,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,28-07-2026,Finance
+TR-000390,EMP-0207,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,19-10-2026,Finance
+TR-000391,EMP-0208,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,05-02-2026,Operations
+TR-000392,EMP-0208,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Operations
+TR-000393,EMP-0209,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,24-05-2026,Finance
+TR-000394,EMP-0209,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-02-2026,Finance
+TR-000395,EMP-0210,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,19-08-2026,Retail
+TR-000396,EMP-0210,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,15-07-2026,Retail
+TR-000397,EMP-0211,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,07-02-2026,Finance
+TR-000398,EMP-0211,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-02-2026,Finance
+TR-000399,EMP-0212,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-07-2026,Retail
+TR-000400,EMP-0212,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,27-08-2026,Retail
+TR-000401,EMP-0213,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,30-05-2026,Operations
+TR-000402,EMP-0213,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-08-2026 00:00,Operations
+TR-000403,EMP-0214,Annual Security Awareness,Yes,01-07-2026,30-09-2026 00:00,Completed,01-01-2026,Technology
+TR-000404,EMP-0214,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Technology
+TR-000405,EMP-0215,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,21-01-2026,Technology
+TR-000406,EMP-0215,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Technology
+TR-000407,EMP-0216,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-08-2026,Finance
+TR-000408,EMP-0216,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Finance
+TR-000409,EMP-0217,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-04-2026,Technology
+TR-000410,EMP-0217,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-02-2026,Technology
+TR-000411,EMP-0218,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-07-2026,Customer
+TR-000412,EMP-0218,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000413,EMP-0219,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-06-2026,Finance
+TR-000414,EMP-0219,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Finance
+TR-000415,EMP-0220,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,11-07-2026,People
+TR-000416,EMP-0220,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-06-2026,People
+TR-000417,EMP-0221,Annual Security Awareness,Yes,01-07-2026,30-09-2026,In progress,,People
+TR-000418,EMP-0221,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,People
+TR-000419,EMP-0222,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Technology
+TR-000420,EMP-0222,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-08-2026,Technology
+TR-000421,EMP-0223,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,27-09-2026,Operations
+TR-000422,EMP-0223,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-10-2026,Operations
+TR-000423,EMP-0224,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,09-09-2026,Retail
+TR-000424,EMP-0224,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-10-2026,Retail
+TR-000425,EMP-0225,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,15-08-2026,People
+TR-000426,EMP-0225,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,People
+TR-000427,EMP-0226,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-04-2026,Operations
+TR-000428,EMP-0226,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,06-07-2026,Operations
+TR-000429,EMP-0227,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,23-09-2026,Customer
+TR-000430,EMP-0227,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Customer
+TR-000431,EMP-0228,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,25-02-2026,Finance
+TR-000432,EMP-0228,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,17-07-2026,Finance
+TR-000433,EMP-0229,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,13-05-2026 00:00,People
+TR-000434,EMP-0229,Phishing Refresher,Yes,01-07-2026,31-10-2026 00:00,Completed,03-07-2026,People
+TR-000435,EMP-0230,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,16-10-2026,Customer
+TR-000436,EMP-0231,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Retail
+TR-000437,EMP-0231,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,21-09-2026,Retail
+TR-000438,EMP-0232,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,16-08-2026,Operations
+TR-000439,EMP-0232,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,02-08-2026,Operations
+TR-000440,EMP-0233,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,20-08-2026,Finance
+TR-000441,EMP-0233,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,14-05-2026,Finance
+TR-000442,EMP-0234,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Not started,,Retail
+TR-000443,EMP-0234,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,28-08-2026,Retail
+TR-000444,EMP-0235,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,26-08-2026,People
+TR-000445,EMP-0235,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,People
+TR-000446,EMP-0236,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,22-09-2026,Operations
+TR-000447,EMP-0236,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,18-08-2026,Operations
+TR-000448,EMP-0237,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,29-01-2026,Finance
+TR-000449,EMP-0237,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,12-01-2026,Finance
+TR-000450,EMP-0238,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,02-10-2026,Customer
+TR-000451,EMP-0238,Phishing Refresher,Yes,01-07-2026,31-10-2026,In progress,,Customer
+TR-000452,EMP-0239,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,03-05-2026,Customer
+TR-000453,EMP-0239,Phishing Refresher,Yes,01-07-2026,31-10-2026,Completed,13-01-2026,Customer
+TR-000454,EMP-0240,Annual Security Awareness,Yes,01-07-2026,30-09-2026,Completed,06-01-2026,Technology
+TR-000455,EMP-0240,Phishing Refresher,Yes,01-07-2026,31-10-2026,Not started,,Technology
