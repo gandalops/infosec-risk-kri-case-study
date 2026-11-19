@@ -10,6 +10,7 @@ recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are
 - 11 of 12 accepted risks have no approved exception.
 - 5 exceptions have already expired, and 10 more expire within 30 days. 3 of the 5 were never decided.
 - None of the 34 exceptions records an approver, so no approval can be audited.
+- ![Page 1: risk and exception register](screenshots/01-risk-exception-register.png)
 
 Each number can be recounted from the raw files. The steps are in [method/kpi-definitions.md](method/kpi-definitions.md).
 
@@ -20,7 +21,7 @@ Each number can be recounted from the raw files. The steps are in [method/kpi-de
 | [findings](findings) | A risk assessment of 6 risks, and a log of data problems with counts |
 | [method](method) | How the data model is built and how each KPI is calculated |
 | [data](data) | The 18 source files, grouped, with row counts and known issues |
-| [screenshots](screenshots) | Report pages (coming) |
+| [screenshots](screenshots) | Model view and report page screenshots |
 | [report](report) | The Power BI report file (coming) |
 
 If you have two minutes: read the findings above, then [findings/risk-assessment.md](findings/risk-assessment.md).
@@ -29,7 +30,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 
 | Page | Status |
 |---|---|
-| 1 Risk and exception register | built |
+| 1 Risk and exception register | done |
 | 2 Remediation tracking | in progress |
 | 3 to 9: KRI summary, vulnerability, identity and MFA, resilience, incidents and breaches, human risk, AI risk and controls | planned |
 
