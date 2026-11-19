@@ -6,7 +6,7 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 |---|---|---|---|
 | [00-model-view.png](00-model-view.png) | Model | Star schema, phase 1 | Done |
 | [01-risk-exception-register.png](01-risk-exception-register.png) | 1 Risk and exception register | Risks, exceptions, KRI-12 to KRI-15 | Done |
-| 02-remediation-tracking.png | 2 Remediation tracking | | In progress |
+| [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
 | 03 to 09 | Pages 3 to 9 | | Planned |
 
 ## 00 Model view
@@ -32,3 +32,14 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 - KRI-15 Exceptions expiring within 30 days: 10.
 - Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
 - Owner addresses are synthetic placeholders (example.invalid).
+
+## 02 Remediation tracking
+
+![Page 2](02-remediation-tracking.png)
+
+- KRI-12 Overdue risk remediation: 68.8% (44 of 64 open risks), the same value as Page 1.
+- Average days overdue: 74.9.
+- By age: 10 risks at 1 to 30 days, 6 at 31 to 60, 13 at 61 to 90, 15 over 90.
+- By owner: all 18 owners have at least one overdue risk. The most is 4 (owner06, owner08, owner11).
+- By milestone: 34 open risks are at Plan agreed (25 overdue) and 30 at Evidence collected (19 overdue). None has reached Remediated.
+- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
