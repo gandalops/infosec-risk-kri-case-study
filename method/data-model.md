@@ -1,5 +1,7 @@
 # Data model
 
+Model view screenshot: [screenshots/00-model-view.png](../screenshots/00-model-view.png)
+
 One Power BI model with a star schema: fact tables hold records that are counted, dimension tables
 hold descriptive lists, and each dimension filters facts in one direction (one-to-many).
 Fact tables are never connected to each other.
