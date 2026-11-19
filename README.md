@@ -12,6 +12,14 @@ recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are
 - None of the 34 exceptions records an approver, so no approval can be audited.
 - ![Page 1: risk and exception register](screenshots/01-risk-exception-register.png)
 
+## What I found (Page 2: remediation tracking)
+
+- The 44 overdue risks are 75 days late on average. 28 are more than 60 days late, and 15 are more than 90 days late.
+- All 18 risk owners have at least one overdue risk. No owner has more than 4.
+- None of the 64 open risks has reached the Remediated milestone.
+
+![Page 2: remediation tracking](screenshots/02-remediation-tracking.png)
+
 Each number can be recounted from the raw files. The steps are in [method/kpi-definitions.md](method/kpi-definitions.md).
 
 ## Where to look
@@ -31,7 +39,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 | Page | Status |
 |---|---|
 | 1 Risk and exception register | done |
-| 2 Remediation tracking | in progress |
+| 2 Remediation tracking | done |
 | 3 to 9: KRI summary, vulnerability, identity and MFA, resilience, incidents and breaches, human risk, AI risk and controls | planned |
 
 ## Limits
@@ -40,6 +48,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 - The main risk register has only a severity. Likelihood, impact, threats and treatments in the risk assessment are my assumptions, and they are labelled.
 - Regulation references (DORA, ISO 27001, NIST CSF) in `control_mapping.csv` are drafts and need Compliance review.
 - Several fields in the exception file are empty ("TO FILL"). I report this as a finding and did not fill them in.
+- The milestone column in the risk register repeats the status column (Open = Plan agreed, In progress = Evidence collected). It is not an independent progress measure.
 
 ## Tools
 
