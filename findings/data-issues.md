@@ -21,8 +21,11 @@ Note: pages 5 to 9 are not built yet. For tables used only there, "handling" is 
 | A8 | `risk_governance.csv` | Closed risks that still carry an exception record | 8 of 24 closed risks (RSK-00014, 21, 22, 30, 39, 56, 64, 88). 3 of them are still Pending (RSK-00021, 30, 56) | The register disagrees with itself: a closed risk should not have a pending decision |
 | A9 | `risk_governance.csv` | Risk accepted although its exception was rejected | RSK-00077 | Acceptance has no valid approval |
 | A10 | `risk_governance.csv` | Exception expiry date before the snapshot | 5 exceptions: EXC-0022 and EXC-0059 (Approved), EXC-0035, EXC-0069, EXC-0095 (Pending) | 3 of the 5 were never decided before they expired |
+| A11 | risk_governance.csv | last_milestone has no date | all 100 risks | We cannot tell how long a risk has been at its stage, or whether a milestone was missed |
+| A12 | risk_governance.csv | last_milestone repeats risk_status: Open = Plan agreed (34), In progress = Evidence collected (30), Closed = Remediated (24), Accepted = Plan agreed (12) | 100 of 100 risks | The milestone chart on Page 2 is the same split as Open against In progress. It is not an independent progress measure |
 
 Positive check: for all 34 exceptions, category, severity and approval status are the same in `risk_governance.csv` and `exception_request_details.csv`.
+Positive check: all 64 open risks have a remediation_due_date, so no open risk is counted as overdue because of a blank date.
 
 ## B. Cleaning issues: technical problems in the raw files
 
