@@ -51,5 +51,7 @@ Positive check: for all 34 exceptions, category, severity and approval status ar
 | C5 | KRI thresholds | Proposed, not approved. |
 | C6 | Control mapping | Regulation references are draft and need Compliance review. |
 | C7 | Vulnerability SLA targets | Illustrative only (Critical 7, High 14, Medium 30, Low 90 days). |
+| C8 | KRI-15 scope | Should "Exceptions expiring within 30 days" count only Approved exceptions? Of the 10 in the window, 3 are Rejected (EXC-0053, EXC-0024, EXC-0034), 4 are Pending and 3 are Approved. A Rejected exception is not in force, so it is unclear what "expiring" means for it. The report currently counts all 10. |
+| C9 | KRI-15 window | The window (22 Oct to 21 Nov 2026, snapshot date plus 30 days) is set in the DAX measure. The rulebook does not define it. |
 
 Static values are not used. All KRI values are recalculated from the raw data.
