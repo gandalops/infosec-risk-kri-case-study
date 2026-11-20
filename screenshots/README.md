@@ -7,7 +7,9 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 | [00-model-view.png](00-model-view.png) | Model | Star schema, phase 1 | Done |
 | [01-risk-exception-register.png](01-risk-exception-register.png) | 1 Risk and exception register | Risks, exceptions, KRI-12 to KRI-15 | Done |
 | [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
-| 03 to 09 | Pages 3 to 9 | | Planned |
+| 03 | 3 KRI executive summary | | Planned |
+| [04-vulnerability-patch-risk.png](04-vulnerability-patch-risk.png) | 4 Vulnerability and patch risk | KRI-02, KRI-11, open and overdue findings | Done |
+| 05 to 09 | Pages 5 to 9 | | Planned |
 
 ## 00 Model view
 
@@ -42,4 +44,16 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 - By age: 10 risks at 1 to 30 days, 6 at 31 to 60, 13 at 61 to 90, 15 over 90.
 - By owner: all 18 owners have at least one overdue risk. The most is 4 (owner06, owner08, owner11).
 - By milestone: 34 open risks are at Plan agreed (25 overdue) and 30 at Evidence collected (19 overdue). None has reached Remediated.
+- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+
+## 04 Vulnerability and patch risk
+
+![Page 4](04-vulnerability-patch-risk.png)
+
+- Open findings (Open + In progress): 234. Overdue: 166.
+- KRI-02 Overdue Critical findings: 16.
+- KRI-11 Vulnerability SLA compliance: 35.8% (120 of 335). Risk-accepted findings are left out (assumption).
+- 19 open Critical and High findings are on internet-facing production assets.
+- 25 findings are risk-accepted and reported separately.
+- By age: 47 findings at 1 to 30 days, 42 at 31 to 60, 41 at 61 to 90, 36 over 90.
 - Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
