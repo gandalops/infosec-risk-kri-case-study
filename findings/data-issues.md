@@ -23,9 +23,12 @@ Note: pages 5 to 9 are not built yet. For tables used only there, "handling" is 
 | A10 | `risk_governance.csv` | Exception expiry date before the snapshot | 5 exceptions: EXC-0022 and EXC-0059 (Approved), EXC-0035, EXC-0069, EXC-0095 (Pending) | 3 of the 5 were never decided before they expired |
 | A11 | risk_governance.csv | last_milestone has no date | all 100 risks | We cannot tell how long a risk has been at its stage, or whether a milestone was missed |
 | A12 | risk_governance.csv | last_milestone repeats risk_status: Open = Plan agreed (34), In progress = Evidence collected (30), Closed = Remediated (24), Accepted = Plan agreed (12) | 100 of 100 risks | The milestone chart on Page 2 is the same split as Open against In progress. It is not an independent progress measure |
+| A13 | vulnerability_findings.csv vs exception_request_details.csv | All 25 risk-accepted findings carry an exception ID, and no other finding does. 17 of the 25 point to IDs that do not exist in the exception file (10 distinct IDs, the same gap as A7). Of the 8 that exist: 3 Approved and not expired, 1 Approved but expired, 3 Pending, 1 Rejected | 25 findings | Only 3 of 25 risk-accepted findings have a valid approved exception. The other 22 are accepted without valid approval, the same governance gap as KRI-14 for risks |
 
-Positive check: for all 34 exceptions, category, severity and approval status are the same in `risk_governance.csv` and `exception_request_details.csv`.
-Positive check: all 64 open risks have a remediation_due_date, so no open risk is counted as overdue because of a blank date.
+Positive check: 
+- for all 34 exceptions, category, severity and approval status are the same in `risk_governance.csv` and `exception_request_details.csv`.
+- all 64 open risks have a remediation_due_date, so no open risk is counted as overdue because of a blank date.
+- for all 360 findings, the due date equals the discovery date plus the illustrative SLA target for its severity (Critical 7, High 14, Medium 30, Low 90 days).
 
 ## B. Cleaning issues: technical problems in the raw files
 
@@ -41,13 +44,14 @@ Positive check: all 64 open risks have a remediation_due_date, so no open risk i
 | B8 | `recovery_tests.csv` | Result "Pass" but integrity check "Fail" | 10 of 60 tests | Report as its own count; do not call them clean passes |
 | B9 | `risk_governance.csv` | Dates with a trailing "00:00" | 6 rows | Convert with locale English (UK), then to date |
 | B10 | All CSVs | Dates are text in DD-MM-YYYY | all date columns | Convert with locale English (UK) so 05-10 is not read as 10 May |
-| B11 | `vulnerability_findings.csv` | `Flag` column (values Ok, Review) with no documented meaning | all rows | Not used until its meaning is known |
+| B11 | `vulnerability_findings.csv` | `Flag` column (values Ok, Review) with no documented meaning | 6 Review, 355 Ok (all 6 Review are on Open findings) | Not used until its meaning is known |
+
 
 ## C. Definition questions still open
 
 | # | Topic | Question |
 |---|---|---|
-| C1 | Vulnerability SLA compliance | How to treat risk-accepted findings. The recalculated value is 35.8%; the static value in `kri_thresholds_rag.csv` is 34.3. |
+| C1 | Vulnerability SLA compliance | How to treat risk-accepted findings. The report leaves them out (assumption): 35.8% (120 of 335). Counted as compliant: 40.3%. Counted as non-compliant: 33.3%. All three are Red. The static value in kri_thresholds_rag.csv (34.3) does not match any of them. |
 | C2 | Overdue risk remediation (KRI-12) | Recalculated 68.8%; static value 67.2. |
 | C3 | Training compliance (KRI-05) | Recalculated 85.4%; static value 85.0. |
 | C4 | Suspicious authentication (KRI-04) | Which event classifications count as suspicious. |
