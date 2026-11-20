@@ -1,4 +1,4 @@
-# KPI definitions: Pages 1 and 2
+# KPI definitions: Pages 1,2 and 4
 
 Snapshot date: 22 Oct 2026. All values are recalculated from the raw data. The static Current_Value column in kri_thresholds_rag.csv is not used. Thresholds in that file are proposed, not approved.
 
@@ -138,6 +138,112 @@ RETURN
     SWITCH (
         TRUE (),
         ISBLANK ( FactRisk[remediation_due_date] ), BLANK (),
+        _days <= 0, "Not overdue",
+        _days <= 30, "1-30 days",
+        _days <= 60, "31-60 days",
+        _days <= 90, "61-90 days",
+        "Over 90 days"
+    )
+```
+
+## Page 4 (Vulnerability and patch risk)
+
+Same snapshot date (22 Oct 2026). Source: vulnerability_findings.csv (360 findings after removing one exact duplicate, VUL-000017) and asset_inventory.csv. Open means workflow status Open or In progress.
+
+| KPI | Rule | Power BI measure | Value (checked by hand) |
+|---|---|---|---|
+| Open findings | Status Open or In progress | Open Findings | 234 |
+| Overdue findings | Open findings with due date before the snapshot | Overdue Findings | 166 |
+| KRI-02 Overdue Critical findings | Overdue findings with severity Critical | Overdue Critical Findings | 16 |
+| KRI-11 Vulnerability SLA compliance % | (Closed on or before the due date + open not yet due) divided by (closed + open). Risk-accepted findings are left out. | Compliant Findings, SLA Findings In Scope, KRI-11 SLA Compliance % | 35.8% (120 of 335) |
+| Critical/High, internet-facing | Open Critical and High findings on assets with internet_facing = Yes and environment = Production | Critical High Internet Facing Open | 19 |
+| Risk-accepted findings | Status Risk accepted | Risk Accepted Findings | 25 |
+| Overdue findings by age | Overdue findings in bands 1-30, 31-60, 61-90, over 90 days | Overdue Findings, column Finding Age Bucket | 47, 42, 41, 36 (total 166) |
+| Open findings by severity | Open and overdue findings split by severity | Open Findings, Overdue Findings | Critical 18/16, High 64/56, Medium 101/78, Low 51/16 |
+| Top assets by open findings | Open findings per asset, top 10 by value, ties included | Open Findings | Analytics-API-033 = 8; 12 assets shown because of ties at 5 |
+| Most overdue findings | Days between due date and snapshot, open findings past due | Finding Days Overdue | VUL-000086: 134, VUL-000227: 132, VUL-000248: 129 |
+
+### Notes
+
+- Risk-accepted findings are left out of Open Findings, KRI-02 and KRI-11. This is an assumption, because the rulebook does not say how to treat them. See [findings/data-issues.md](../findings/data-issues.md), section C.
+- A finding due exactly on the snapshot date is not overdue (1 finding).
+- KRI-11 uses the due date stored in each finding. The SLA targets in illustrative_vulnerability_sla_rules.csv are not applied again, and they are illustrative only.
+- The KRI-02 card counts Critical findings only, so it is blank when the Severity slicer is set to another severity.
+
+### DAX: Page 4
+
+```dax
+Open Findings =
+CALCULATE (
+    COUNTROWS ( FactVulnerability ),
+    FactVulnerability[workflow_status] IN { "Open", "In progress" }
+)
+
+Overdue Findings =
+VAR _snap = [Snapshot Date]
+RETURN
+    CALCULATE ( [Open Findings], FactVulnerability[remediation_due_date] < _snap )
+
+Overdue Critical Findings =
+CALCULATE ( [Overdue Findings], FactVulnerability[severity] = "Critical" )
+
+Compliant Findings =
+VAR _snap = [Snapshot Date]
+RETURN
+    CALCULATE (
+        COUNTROWS ( FactVulnerability ),
+        FILTER (
+            FactVulnerability,
+            ( FactVulnerability[workflow_status] = "Closed"
+                && FactVulnerability[closed_date] <= FactVulnerability[remediation_due_date] )
+                || ( FactVulnerability[workflow_status] IN { "Open", "In progress" }
+                    && FactVulnerability[remediation_due_date] >= _snap )
+        )
+    )
+
+SLA Findings In Scope =
+CALCULATE (
+    COUNTROWS ( FactVulnerability ),
+    FactVulnerability[workflow_status] IN { "Closed", "Open", "In progress" }
+)
+
+KRI-11 SLA Compliance % =
+DIVIDE ( [Compliant Findings], [SLA Findings In Scope] )
+
+Critical High Internet Facing Open =
+CALCULATE (
+    [Open Findings],
+    FactVulnerability[severity] IN { "Critical", "High" },
+    DimAsset[internet_facing] = "Yes",
+    DimAsset[environment] = "Production"
+)
+
+Risk Accepted Findings =
+CALCULATE (
+    COUNTROWS ( FactVulnerability ),
+    FactVulnerability[workflow_status] = "Risk accepted"
+)
+
+Finding Days Overdue =
+VAR _snap = [Snapshot Date]
+VAR _due = MAX ( FactVulnerability[remediation_due_date] )
+RETURN
+    IF (
+        [Open Findings] > 0 && NOT ISBLANK ( _due ) && _due < _snap,
+        DATEDIFF ( _due, _snap, DAY )
+    )
+```
+
+Calculated column in FactVulnerability:
+
+```dax
+Finding Age Bucket =
+VAR _snap = MAX ( Params[SnapshotDate] )
+VAR _days = DATEDIFF ( FactVulnerability[remediation_due_date], _snap, DAY )
+RETURN
+    SWITCH (
+        TRUE (),
+        ISBLANK ( FactVulnerability[remediation_due_date] ), BLANK (),
         _days <= 0, "Not overdue",
         _days <= 30, "1-30 days",
         _days <= 60, "31-60 days",
