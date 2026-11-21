@@ -27,6 +27,15 @@ recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are
 - 19 open Critical and High findings sit on internet-facing production assets.
 ![Page 4: vulnerability and patch risk](screenshots/04-vulnerability-patch-risk.png)
 
+## What I found (Page 5: identity and MFA)
+
+- MFA coverage (KRI-07) is 90.6% (261 of 288 eligible entities). The proposed green limit is 98%.
+- 27 eligible entities have no MFA: 18 High, 6 Medium, 3 Low. None is Critical.
+- No Critical entity is without MFA only because three Critical system accounts are marked not eligible, and the file gives no reason.
+- Coverage is lowest in Operations (87.5%) and highest in Customer (95.6%).
+- Suspicious authentication events (KRI-04) were 6.1% in September 2026 (26 of 424), after 8.6% in July and 10.4% in August. What counts as suspicious is my assumption.
+![Page 5: identity and MFA](screenshots/05-identity-mfa.png)
+
 Each number can be recounted from the raw files. The steps are in [method/kpi-definitions.md](method/kpi-definitions.md).
 
 ## Where to look
@@ -49,7 +58,8 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 | 2 Remediation tracking | done |
 | 3 KRI executive summary | planned |
 | 4 Vulnerability and patch risk | done |
-| 5 to 9: identity and MFA, resilience, incidents and breaches, human risk, AI risk and controls | planned |
+| 5 Identity and MFA | done |
+| 6 to 9: resilience, incidents and breaches, human risk, AI risk and controls | planned |
 
 ## Limits
 
@@ -59,6 +69,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 - Several fields in the exception file are empty ("TO FILL"). I report this as a finding and did not fill them in.
 - The milestone column in the risk register repeats the status column (Open = Plan agreed, In progress = Evidence collected). It is not an independent progress measure.
 - KRI-11 leaves risk-accepted findings out. That is my assumption, because the rulebook does not say. The SLA targets are illustrative.
+- KRI-04 counts four authentication event classifications as suspicious. That definition is my assumption and is not confirmed with policy. The directory has no termination date, so events from Terminated and Leave accounts are not reported as findings.
   
 ## Tools
 
