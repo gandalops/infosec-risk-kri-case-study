@@ -9,7 +9,8 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 | [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
 | 03 | 3 KRI executive summary | | Planned |
 | [04-vulnerability-patch-risk.png](04-vulnerability-patch-risk.png) | 4 Vulnerability and patch risk | KRI-02, KRI-11, open and overdue findings | Done |
-| 05 to 09 | Pages 5 to 9 | | Planned |
+| [05-identity-mfa.png](05-identity-mfa.png) | 5 Identity and MFA | KRI-07 MFA coverage, KRI-04 suspicious authentication events | Done |
+| 06 to 09 | Pages 6 to 9 | | Planned |
 
 ## 00 Model view
 
@@ -56,4 +57,20 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 - 19 open Critical and High findings are on internet-facing production assets.
 - 25 findings are risk-accepted and reported separately.
 - By age: 47 findings at 1 to 30 days, 42 at 31 to 60, 41 at 61 to 90, 36 over 90.
+- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+
+
+## 05 Identity and MFA
+
+![Page 5](05-identity-mfa.png)
+
+- KRI-07 MFA coverage: 90.6% (261 of 288 eligible entities), snapshot 20 Oct 2026. The gauge shows the proposed 98% target.
+- No Critical eligible entity is without MFA (0). Three Critical system accounts are marked not eligible in the source file, so they are outside KRI-07. The file gives no reason.
+- 27 eligible entities have no MFA: High 18, Medium 6, Low 3, Critical 0. By type, 21 are human accounts and 6 are system accounts.
+- Coverage by criticality: Critical 100.0%, High 86.5%, Medium 93.2%, Low 95.2%.
+- Coverage by business unit: Customer 95.6%, Retail 93.5%, Finance 89.7%, Technology 89.2%, People 88.9%, Operations 87.5%.
+- KRI-04 suspicious authentication events: 6.1% in September 2026 (26 of 424 events), the latest full month before the snapshot. The definition counts four classifications and is not confirmed with policy.
+- By month: July 8.6%, August 10.4%, September 6.1%, October 10.3%. October is partial (data ends 21 Oct).
+- Suspicious events by type, July to October: password spray 41, impossible travel 35, disabled account attempt 34, MFA fatigue 30 (140 in total).
+- The business unit slicer applies to the MFA visuals only. The authentication visuals are not connected to it.
 - Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
