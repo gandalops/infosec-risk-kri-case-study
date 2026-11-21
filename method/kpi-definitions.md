@@ -1,4 +1,4 @@
-# KPI definitions: Pages 1,2 and 4
+# KPI definitions: Pages 1,2,4 and 5
 
 Snapshot date: 22 Oct 2026. All values are recalculated from the raw data. The static Current_Value column in kri_thresholds_rag.csv is not used. Thresholds in that file are proposed, not approved.
 
@@ -251,3 +251,113 @@ RETURN
         "Over 90 days"
     )
 ```
+
+
+## Page 5 (Identity and MFA)
+
+Sources: mfa_coverage.csv (330 rows, one row per account or asset), authentication_events.csv (1,600 rows, one row per event) and employee_directory.csv (240 rows). KRI-07 uses the MFA snapshot of 20 Oct 2026. KRI-04 uses the latest full month before the report snapshot of 22 Oct 2026, which is September 2026.
+
+| KPI | Rule | Power BI measure | Value (checked by hand) |
+|---|---|---|---|
+| Eligible entities | Rows with eligible_for_mfa = Yes | Eligible Entities | 288 |
+| KRI-07 MFA coverage % | Eligible entities with MFA enabled, divided by eligible entities | Eligible With MFA, KRI-07 MFA Coverage % | 261 of 288 = 90.6% |
+| Critical eligible without MFA | Eligible, mfa_enabled = No, criticality = Critical. Automatic Red if above 0 | Critical Eligible Without MFA | 0 |
+| Eligible without MFA | Eligible entities with mfa_enabled = No | Eligible Without MFA | 27 (High 18, Medium 6, Low 3, Critical 0) |
+| MFA coverage by criticality | KRI-07 split by criticality | KRI-07 MFA Coverage % | Critical 100.0%, High 86.5%, Medium 93.2%, Low 95.2% |
+| MFA coverage by business unit | KRI-07 split by business_unit | KRI-07 MFA Coverage % | Customer 95.6%, Retail 93.5%, Finance 89.7%, Technology 89.2%, People 88.9%, Operations 87.5% |
+| KRI-04 Suspicious authentication events % | Suspicious events divided by all events, latest full month | Suspicious Events (Latest Full Month), Auth Events (Latest Full Month), KRI-04 Suspicious % | Sep 2026: 26 of 424 = 6.1% |
+| Suspicious events by type | Events per suspicious classification, all months | Total Auth Events with a visual-level filter | Password spray 41, impossible travel 35, disabled account attempt 34, MFA fatigue 30 (total 140) |
+| Suspicious % by month | Suspicious events divided by all events, per month | Suspicious Auth % | Jul 8.6%, Aug 10.4%, Sep 6.1%, Oct 10.3% (partial, data ends 21 Oct) |
+
+### Notes
+
+- Proposed thresholds, not approved. KRI-07: Green at 98% or above, Amber at 95% or above, Red below 95%, and automatic Red if a Critical eligible entity has no MFA. KRI-04: Green at 5% or below, Amber at 10% or below, Red above 10%. At 90.6%, KRI-07 would be Red. At 6.1%, KRI-04 would be Amber.
+- Suspicious means one of four event classifications: Password spray suspected, Impossible travel, Disabled account attempt, MFA fatigue suspected. This definition is not confirmed with policy. See [findings/data-issues.md](../findings/data-issues.md), section C.
+- Three Critical system accounts (AST-0021, AST-0043, AST-0064) are marked not eligible in the source file, so they are outside KRI-07. The file gives no reason. This is why Critical eligible without MFA is 0.
+- entity_id in mfa_coverage.csv holds both employee keys (EMP) and asset keys (AST). Two key columns, employee_id and asset_id, were created in Power Query so each can relate to its own dimension. The 90 system accounts have no employee_id.
+- The business unit and criticality visuals on the MFA side use columns of FactMFA, not of DimEmployee. A DimEmployee slicer would drop the 90 system accounts. This is a deliberate exception to the rule that slicers come from dimensions.
+- criticality_order is a Power Query column used only to sort criticality (Critical, High, Medium, Low). It is hidden and not used on any chart.
+- FactAuth relates to DimDate through event_date (date only), not through the timestamp.
+- Events from accounts whose employee status is Terminated (51) or Leave (88) exist. The directory has no termination date, so these cannot be judged as post-termination activity.
+- October 2026 is partial, so it is not used for KRI-04.
+
+### DAX: Page 5
+
+```dax
+Eligible Entities =
+CALCULATE ( COUNTROWS ( FactMFA ), FactMFA[eligible_for_mfa] = "Yes" )
+
+Eligible With MFA =
+CALCULATE (
+    COUNTROWS ( FactMFA ),
+    FactMFA[eligible_for_mfa] = "Yes",
+    FactMFA[mfa_enabled] = "Yes"
+)
+
+KRI-07 MFA Coverage % = DIVIDE ( [Eligible With MFA], [Eligible Entities] )
+
+KRI-07 Target = 0.98
+
+Eligible Without MFA =
+COALESCE (
+    CALCULATE (
+        COUNTROWS ( FactMFA ),
+        FactMFA[eligible_for_mfa] = "Yes",
+        FactMFA[mfa_enabled] = "No"
+    ),
+    0
+)
+
+Critical Eligible Without MFA =
+COALESCE (
+    CALCULATE (
+        COUNTROWS ( FactMFA ),
+        FactMFA[eligible_for_mfa] = "Yes",
+        FactMFA[mfa_enabled] = "No",
+        FactMFA[criticality] = "Critical"
+    ),
+    0
+)
+
+Total Auth Events = COUNTROWS ( FactAuth )
+
+Suspicious Auth Events =
+CALCULATE (
+    COUNTROWS ( FactAuth ),
+    FactAuth[event_classification] IN {
+        "Password spray suspected",
+        "Impossible travel",
+        "Disabled account attempt",
+        "MFA fatigue suspected"
+    }
+)
+
+Suspicious Auth % = DIVIDE ( [Suspicious Auth Events], [Total Auth Events] )
+
+Auth Events (Latest Full Month) =
+VAR SnapDate = [Snapshot Date]
+VAR MonthStart = EOMONTH ( SnapDate, -2 ) + 1
+VAR MonthEnd = EOMONTH ( SnapDate, -1 )
+RETURN
+    CALCULATE (
+        [Total Auth Events],
+        DimDate[Date] >= MonthStart,
+        DimDate[Date] <= MonthEnd
+    )
+
+Suspicious Events (Latest Full Month) =
+VAR SnapDate = [Snapshot Date]
+VAR MonthStart = EOMONTH ( SnapDate, -2 ) + 1
+VAR MonthEnd = EOMONTH ( SnapDate, -1 )
+RETURN
+    CALCULATE (
+        [Suspicious Auth Events],
+        DimDate[Date] >= MonthStart,
+        DimDate[Date] <= MonthEnd
+    )
+
+KRI-04 Suspicious % =
+DIVIDE ( [Suspicious Events (Latest Full Month)], [Auth Events (Latest Full Month)] )
+```
+
+`Suspicious Auth Events` must not be split by event_classification. CALCULATE overrides the filter on that column, so every type would show 140. The treemap uses `Total Auth Events` with a visual-level filter on the four classifications instead.
