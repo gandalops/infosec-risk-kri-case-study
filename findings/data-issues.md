@@ -5,7 +5,7 @@ Scenario: a fictional bank. All data is synthetic. Snapshot date: 22 Oct 2026.
 Purpose: a list of what is wrong, missing or unclear in the data, how often, and what the report does about it.
 Nothing was silently fixed. Where a value is missing, the report shows it as missing.
 
-Note: pages 5 to 9 are not built yet. For tables used only there, "handling" is the plan.
+Note: pages 6 to 9 are not built yet. For tables used only there, "handling" is the plan.
 
 ## A. Governance records: gaps a risk analyst should report
 
@@ -24,11 +24,15 @@ Note: pages 5 to 9 are not built yet. For tables used only there, "handling" is 
 | A11 | risk_governance.csv | last_milestone has no date | all 100 risks | We cannot tell how long a risk has been at its stage, or whether a milestone was missed |
 | A12 | risk_governance.csv | last_milestone repeats risk_status: Open = Plan agreed (34), In progress = Evidence collected (30), Closed = Remediated (24), Accepted = Plan agreed (12) | 100 of 100 risks | The milestone chart on Page 2 is the same split as Open against In progress. It is not an independent progress measure |
 | A13 | vulnerability_findings.csv vs exception_request_details.csv | All 25 risk-accepted findings carry an exception ID, and no other finding does. 17 of the 25 point to IDs that do not exist in the exception file (10 distinct IDs, the same gap as A7). Of the 8 that exist: 3 Approved and not expired, 1 Approved but expired, 3 Pending, 1 Rejected | 25 findings | Only 3 of 25 risk-accepted findings have a valid approved exception. The other 22 are accepted without valid approval, the same governance gap as KRI-14 for risks |
+| A14 | `mfa_coverage.csv` | Three Critical system accounts (AST-0021, AST-0043, AST-0064) are marked not eligible for MFA, with no reason documented | 3 of 330 rows | They fall outside KRI-07, so "Critical eligible without MFA" shows 0. A Critical account exempt from MFA without a recorded reason is a governance question |
+| A15 | `authentication_events.csv` vs `employee_directory.csv` | Authentication events exist for accounts whose employee status is Terminated or Leave. The directory has no termination date | 51 events from Terminated accounts, 88 from Leave accounts (of 1,600) | We cannot tell whether activity happened after leaving, so it is not reported as a finding. It needs a termination date to be assessed |
 
 Positive check: 
 - for all 34 exceptions, category, severity and approval status are the same in `risk_governance.csv` and `exception_request_details.csv`.
 - all 64 open risks have a remediation_due_date, so no open risk is counted as overdue because of a blank date.
 - for all 360 findings, the due date equals the discovery date plus the illustrative SLA target for its severity (Critical 7, High 14, Medium 30, Low 90 days).
+- for MFA, the numbers reconcile: 288 eligible entities = 261 with MFA + 27 without (High 18, Medium 6, Low 3, Critical 0).
+- for authentication events, the four suspicious types add up to the total: 41 + 35 + 34 + 30 = 140 of 1,600 events.
 
 ## B. Cleaning issues: technical problems in the raw files
 
@@ -45,6 +49,7 @@ Positive check:
 | B9 | `risk_governance.csv` | Dates with a trailing "00:00" | 6 rows | Convert with locale English (UK), then to date |
 | B10 | All CSVs | Dates are text in DD-MM-YYYY | all date columns | Convert with locale English (UK) so 05-10 is not read as 10 May |
 | B11 | `vulnerability_findings.csv` | `Flag` column (values Ok, Review) with no documented meaning | 6 Review, 355 Ok (all 6 Review are on Open findings) | Not used until its meaning is known |
+| B12 | `mfa_coverage.csv` | `entity_id` mixes employee keys (EMP) and asset keys (AST) in one column | all 330 rows (90 system accounts have no employee key) | Split into two nullable key columns, `employee_id` and `asset_id`, in Power Query. MFA visuals use the business unit and criticality columns of the MFA table, because a DimEmployee slicer would drop the 90 system accounts |
 
 
 ## C. Definition questions still open
@@ -54,7 +59,7 @@ Positive check:
 | C1 | Vulnerability SLA compliance | How to treat risk-accepted findings. The report leaves them out (assumption): 35.8% (120 of 335). Counted as compliant: 40.3%. Counted as non-compliant: 33.3%. All three are Red. The static value in kri_thresholds_rag.csv (34.3) does not match any of them. |
 | C2 | Overdue risk remediation (KRI-12) | Recalculated 68.8%; static value 67.2. |
 | C3 | Training compliance (KRI-05) | Recalculated 85.4%; static value 85.0. |
-| C4 | Suspicious authentication (KRI-04) | Which event classifications count as suspicious. |
+| C4 | Suspicious authentication (KRI-04) | Which event classifications count as suspicious. The report counts four: Password spray suspected, Impossible travel, Disabled account attempt, MFA fatigue suspected (140 of 1,600 events). September 2026: 6.1% (26 of 424). Other classifications are not counted. The definition is not confirmed with policy. |
 | C5 | KRI thresholds | Proposed, not approved. |
 | C6 | Control mapping | Regulation references are draft and need Compliance review. |
 | C7 | Vulnerability SLA targets | Illustrative only (Critical 7, High 14, Medium 30, Low 90 days). |
