@@ -2,7 +2,9 @@
 
 Scenario: a fictional bank. All data is synthetic. Snapshot date: 22 Oct 2026 (MFA snapshot 20 Oct 2026). KRI thresholds are proposed, not approved.
 
-This page lists the five risks I would raise first, based on Pages 1, 2, 4 and 5 of the report. Every number can be recounted from the raw files: [method/kpi-definitions.md](../method/kpi-definitions.md).
+This page lists the five risks I would raise first, based on Pages 1, 2, 4 and 5 of the report. Every number can be recounted from the raw files: [method/kpi-definitions.md](../method/kpi-definitions.md). 
+
+**KRI status (Page 3, proposed limits):** 7 of the 8 KRIs with a report page are Red, 1 is Amber (KRI-04) and none is Green. The other 10 KRIs have no page and are not rated. See [screenshots/README.md](../screenshots/README.md) for the page.
 
 The ranking, the recommended actions and the suggested owners are my judgment, not facts from the data. The data has no owner for these actions, so the owners are roles I suggest.
 
@@ -20,3 +22,4 @@ The ranking, the recommended actions and the suggested owners are my judgment, n
 - Risk-accepted findings are left out of KRI-11. The rulebook does not say how to treat them. See [findings/data-issues.md](data-issues.md), section C.
 - The report does not show whether any of these risks has led to a real incident. Incident data (Page 7) is not part of this case study.
 - Regulation links in `control_mapping.csv` (DORA, ISO 27001, NIST CSF) are drafts and are not used here. They need Compliance review.
+- The Red and Amber statuses depend on proposed limits that nobody has approved. Seven Reds may also mean the limits are strict. See [data-issues.md](data-issues.md), C10.
