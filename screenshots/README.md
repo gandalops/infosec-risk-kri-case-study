@@ -7,7 +7,7 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 | [00-model-view.png](00-model-view.png) | Model | Star schema, phase 1 | Done |
 | [01-risk-exception-register.png](01-risk-exception-register.png) | 1 Risk and exception register | Risks, exceptions, KRI-12 to KRI-15 | Done |
 | [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
-| 03 | 3 KRI executive summary | | Planned |
+| [03-kri-executive-summary.png](03-kri-executive-summary.png) | 3 KRI executive summary | Status of the 8 KRIs that have a page; the other 10 show as Not built | Done |
 | [04-vulnerability-patch-risk.png](04-vulnerability-patch-risk.png) | 4 Vulnerability and patch risk | KRI-02, KRI-11, open and overdue findings | Done |
 | [05-identity-mfa.png](05-identity-mfa.png) | 5 Identity and MFA | KRI-07 MFA coverage, KRI-04 suspicious authentication events | Done |
 | 06 to 09 | Pages 6 to 9 | | Planned |
@@ -45,6 +45,19 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 - By age: 10 risks at 1 to 30 days, 6 at 31 to 60, 13 at 61 to 90, 15 over 90.
 - By owner: all 18 owners have at least one overdue risk. The most is 4 (owner06, owner08, owner11).
 - By milestone: 34 open risks are at Plan agreed (25 overdue) and 30 at Evidence collected (19 overdue). None has reached Remediated.
+- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+
+## 03 KRI executive summary
+
+![Page 3](03-kri-executive-summary.png)
+
+- 8 of 18 KRIs have a report page. The other 10 (incidents, breaches, phishing, training, backup and recovery) show as Not built.
+- Status under the proposed thresholds: 7 Red, 1 Amber (KRI-04), 0 Green.
+- KRI-02 Overdue Critical findings: 16, Red. KRI-04 Suspicious authentication events: 6.1%, Amber. KRI-07 MFA coverage: 90.6%, Red. KRI-11 Vulnerability SLA compliance: 35.8%, Red.
+- KRI-12 Overdue risk remediation: 68.8%, Red. KRI-13 Expired security exceptions: 5, Red. KRI-14 Accepted risks without approved exception: 91.7%, Red. KRI-15 Exceptions expiring within 30 days: 10, Red.
+- Every value comes from the same measures as Pages 1, 2, 4 and 5. Limits and direction are read from `kri_thresholds_rag.csv`. The static `Current_Value` column is not used.
+- KRI-07 is automatically Red if a Critical eligible entity has no MFA. This is not triggered today (0).
+- The limits are proposed, not approved. Seven of eight KRIs being Red says something about the data, and it may also say that the limits are strict. That is my reading, and it needs a risk-appetite decision.
 - Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
 
 ## 04 Vulnerability and patch risk
