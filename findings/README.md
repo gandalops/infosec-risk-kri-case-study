@@ -1,13 +1,11 @@
 # Findings
 
-What I found in the data and how I judged it. Fictional bank, synthetic data, snapshot date 22 Oct 2026.
+The analysis behind the report: what I would raise with management, how I judged each risk, and what is wrong with the data.
 
-| File | What it contains |
+| File | What it gives you |
 |---|---|
-| [risk-assessment.md](risk-assessment.md) | 6 risks judged one by one: threat, likelihood and impact, controls, treatment, residual risk. Each fact is tagged with its source file or marked as an assumption. |
-| [data-issues.md](data-issues.md) | What is wrong, missing or unclear in the data, with counts: governance gaps, cleaning issues and open definition questions. |
-| [management-summary.md](management-summary.md) | The 5 risks I would raise first, each with a number, why it matters, a recommended action and a suggested owner. Recommendations and owners are my judgment, not data. |  
+| [management-summary.md](management-summary.md) | The five risks I would raise first, each with the evidence, why it matters, a recommended action and a suggested owner. |
+| [risk-assessment.md](risk-assessment.md) | Six risks judged one by one, the way an analyst would: threat, likelihood and impact, controls, treatment and residual risk. It shows how I reason when the data is incomplete. Every fact is tagged with its source or marked as an assumption. |
+| [data-issues.md](data-issues.md) | Everything wrong, missing or unclear in the 18 files, with counts, why each gap matters to a risk function, and how the report handles it. |
 
-Start with `management-summary.md` if you have two minutes. 
-Read `data-issues.md` first if you want to see the problems. 
-Read `risk-assessment.md` first if you want to see the judgment.
+Read the summary for the conclusions, the risk assessment for the reasoning, and the data issues log for the limits of the evidence.
