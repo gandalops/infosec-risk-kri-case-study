@@ -1,4 +1,4 @@
-# KPI definitions: Pages 1,2,4 and 5
+# KPI definitions: Pages 1 to 5
 
 Snapshot date: 22 Oct 2026. All values are recalculated from the raw data. The static Current_Value column in kri_thresholds_rag.csv is not used. Thresholds in that file are proposed, not approved.
 
@@ -145,6 +145,133 @@ RETURN
         "Over 90 days"
     )
 ```
+
+## Page 3 (KRI executive summary)
+
+Same snapshot date (22 Oct 2026). Page 3 adds no new calculation. It reads each KRI from the measures of Pages 1, 2, 4 and 5 and compares it with the limits in `kri_thresholds_rag.csv` (proposed, not approved). The static `Current_Value` and `Current_RAG` columns are removed in Power Query and are never used.
+
+| Item | Rule | Power BI measure | Value (checked by hand) |
+|---|---|---|---|
+| KRI value | Value of the selected KRI, in the same unit as the limits (percentages in points, counts as counts) | KRI Value | KRI-02 16, KRI-04 6.1, KRI-07 90.6, KRI-11 35.8, KRI-12 68.8, KRI-13 5, KRI-14 91.7, KRI-15 10 |
+| KRI status | Green, Amber or Red from the direction and the two limits. Not built if the KRI has no page | KRI RAG Status | KRI-04 Amber. KRI-02, 07, 11, 12, 13, 14, 15 Red. 10 KRIs Not built |
+| Status counts | Number of KRIs per status | KRIs Red, KRIs Amber, KRIs Green, KRIs Not Built | 7, 1, 0, 10 (total 18) |
+
+### Notes
+
+- DimKRI has one row per KRI (18 rows) and no relationships. Measures read its limits directly with SELECTEDVALUE.
+- Direction decides the rule. Lower is better: Green if the value is at or below the green limit, Amber if at or below the amber limit, else Red. Higher is better: Green if at or above the green limit, Amber if at or above the amber limit, else Red.
+- The limits in the file are in percentage points (5 means 5%), but the percentage measures are fractions (0.061). The percentage KRIs are multiplied by 100 so both sides use the same unit.
+- KRI-07 is automatically Red if a Critical eligible entity has no MFA, whatever the percentage. It is not triggered today (0).
+- KRI-02 is wrapped in COALESCE so that zero overdue Critical findings shows as 0 and not as Not built.
+- Report Page is a Power Query column that records which page shows each KRI. The 10 KRIs without a page (KRI-01, 03, 05, 06, 08, 09, 10a to 10d) are shown as Not built and are not calculated.
+- The total row of the table is switched off. No single KRI is selected there, so the status is blank.
+- Seven of eight KRIs are Red under the proposed limits. This may also mean the limits are strict. They need a risk-appetite decision. See [findings/data-issues.md](../findings/data-issues.md), section C.
+
+### DAX: Page 3
+
+```dax
+KRI Value =
+VAR _id = SELECTEDVALUE ( DimKRI[KRI_ID] )
+RETURN
+    SWITCH (
+        _id,
+        "KRI-02", COALESCE ( [Overdue Critical Findings], 0 ),
+        "KRI-04", [KRI-04 Suspicious %] * 100,
+        "KRI-07", [KRI-07 MFA Coverage %] * 100,
+        "KRI-11", [KRI-11 SLA Compliance %] * 100,
+        "KRI-12", [Overdue %] * 100,
+        "KRI-13", [Expired Exceptions],
+        "KRI-14", [Accepted Without Approval %] * 100,
+        "KRI-15", [Exceptions Expiring 30d],
+        BLANK ()
+    )
+
+KRI RAG Status =
+VAR _id = SELECTEDVALUE ( DimKRI[KRI_ID] )
+VAR _v = [KRI Value]
+VAR _dir = SELECTEDVALUE ( DimKRI[Direction] )
+VAR _green = SELECTEDVALUE ( DimKRI[Green_Limit] )
+VAR _amber = SELECTEDVALUE ( DimKRI[Amber_Limit] )
+VAR _override = _id = "KRI-07" && [Critical Eligible Without MFA] > 0
+RETURN
+    IF (
+        ISBLANK ( _id ), BLANK (),
+        IF (
+            ISBLANK ( _v ), "Not built",
+            IF (
+                _override, "Red",
+                IF (
+                    _dir = "Lower is better",
+                    IF ( _v <= _green, "Green", IF ( _v <= _amber, "Amber", "Red" ) ),
+                    IF ( _v >= _green, "Green", IF ( _v >= _amber, "Amber", "Red" ) )
+                )
+            )
+        )
+    )
+
+KRIs Red = COALESCE ( COUNTROWS ( FILTER ( DimKRI, [KRI RAG Status] = "Red" ) ), 0 )
+
+KRIs Amber = COALESCE ( COUNTROWS ( FILTER ( DimKRI, [KRI RAG Status] = "Amber" ) ), 0 )
+
+KRIs Green = COALESCE ( COUNTROWS ( FILTER ( DimKRI, [KRI RAG Status] = "Green" ) ), 0 )
+
+KRIs Not Built = COALESCE ( COUNTROWS ( FILTER ( DimKRI, [KRI RAG Status] = "Not built" ) ), 0 )
+```
+
+Display measures (text, for reading only, not used in any calculation):
+
+```dax
+KRI Value (display) =
+VAR _v = [KRI Value]
+VAR _unit = SELECTEDVALUE ( DimKRI[Unit] )
+RETURN
+    IF (
+        ISBLANK ( _v ), BLANK (),
+        SWITCH (
+            _unit,
+            "%", FORMAT ( _v, "0.0" ) & " %",
+            "count", FORMAT ( _v, "0" ),
+            FORMAT ( _v, "0.0" )
+        )
+    )
+
+KRI Limits (proposed) =
+VAR _dir = SELECTEDVALUE ( DimKRI[Direction] )
+VAR _g = SELECTEDVALUE ( DimKRI[Green_Limit] )
+VAR _a = SELECTEDVALUE ( DimKRI[Amber_Limit] )
+VAR _u = IF ( SELECTEDVALUE ( DimKRI[Unit] ) = "%", " %", "" )
+RETURN
+    IF (
+        ISBLANK ( _dir ), BLANK (),
+        IF (
+            _dir = "Lower is better",
+            "Green ≤ " & FORMAT ( _g, "0" ) & _u & " · Amber ≤ " & FORMAT ( _a, "0" ) & _u,
+            "Green ≥ " & FORMAT ( _g, "0" ) & _u & " · Amber ≥ " & FORMAT ( _a, "0" ) & _u
+        )
+    )
+
+KRI RAG Colour =
+SWITCH (
+    [KRI RAG Status],
+    "Red", "#C62828",
+    "Amber", "#F9A825",
+    "Green", "#2E7D32",
+    "Not built", "#E0E0E0",
+    BLANK ()
+)
+
+KRI RAG Font Colour =
+SWITCH (
+    [KRI RAG Status],
+    "Red", "#FFFFFF",
+    "Amber", "#1A1A1A",
+    "Green", "#FFFFFF",
+    "Not built", "#666666",
+    BLANK ()
+)
+```
+
+Colour is never the only signal. The status word is always shown in the cell.
 
 ## Page 4 (Vulnerability and patch risk)
 
