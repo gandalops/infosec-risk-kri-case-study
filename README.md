@@ -4,7 +4,7 @@ A self-initiated learning project, not work experience. I built a Power BI risk 
 fictional bank, then read it like a risk analyst: what is wrong, why it matters, and what I would
 recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
 
-**Scope:** four report pages are built (1, 2, 4 and 5). The other pages were left out on purpose. Four pages checked against the raw data seemed more useful than nine rushed ones.
+**Scope:** five report pages are built (1 to 5). The other pages were left out on purpose. Five pages checked against the raw data seemed more useful than nine rushed ones.
 
 **Start here:** [findings/management-summary.md](findings/management-summary.md), the 5 risks I would raise first, each with a number, a recommended action and a suggested owner.
 
@@ -22,6 +22,14 @@ recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are
 - All 18 risk owners have at least one overdue risk. No owner has more than 4.
 - None of the 64 open risks has reached the Remediated milestone.
 ![Page 2: remediation tracking](screenshots/02-remediation-tracking.png)
+
+## What I found (Page 3: KRI executive summary)
+
+- 8 of the 18 KRIs have a report page. Under the proposed limits, 7 are Red, 1 is Amber (KRI-04) and none is Green.
+- The 10 KRIs without a page (incidents, breaches, phishing, training, backup and recovery) are shown as Not built and are not rated.
+- Seven Reds may also mean the proposed limits are strict. They need a risk-appetite decision before anyone escalates on them.
+- Every value on this page comes from the measures behind Pages 1, 2, 4 and 5. The static values in the threshold file are not used.
+![Page 3: KRI executive summary](screenshots/03-kri-executive-summary.png)
 
 ## What I found (Page 4: vulnerability and patch risk)
 
@@ -50,7 +58,7 @@ Each number can be recounted from the raw files. The steps are in [method/kpi-de
 | [method](method) | How the data model is built and how each KPI is calculated |
 | [data](data) | The 18 source files, grouped, with row counts and known issues |
 | [screenshots](screenshots) | Model view and report page screenshots |
-| [report](report) | PDF export of the four report pages |
+| [report](report) | PDF export of the five report pages |
 
 If you have two minutes: read [findings/management-summary.md](findings/management-summary.md). For the judgment behind it, read [findings/risk-assessment.md](findings/risk-assessment.md).
 
@@ -60,7 +68,7 @@ If you have two minutes: read [findings/management-summary.md](findings/manageme
 |---|---|
 | 1 Risk and exception register | done |
 | 2 Remediation tracking | done |
-| 3 KRI executive summary | planned |
+| 3 KRI executive summary | done |
 | 4 Vulnerability and patch risk | done |
 | 5 Identity and MFA | done |
 | 6 to 9: resilience, incidents and breaches, human risk, AI risk and controls | not built |
@@ -75,6 +83,7 @@ If you have two minutes: read [findings/management-summary.md](findings/manageme
 - KRI-11 leaves risk-accepted findings out. That is my assumption, because the rulebook does not say. The SLA targets are illustrative.
 - KRI-04 counts four authentication event classifications as suspicious. That definition is my assumption and is not confirmed with policy. The directory has no termination date, so events from Terminated and Leave accounts are not reported as findings.
 - The recommended actions and suggested owners in the management summary are my judgment, not facts from the data. The data names no owner for them.
+- Under the proposed limits, 7 of the 8 rated KRIs are Red. The limits are not approved and may be strict, so the colours show direction, not an approved judgment.
   
 ## Tools
 
