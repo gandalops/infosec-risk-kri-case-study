@@ -1,90 +1,50 @@
 # Screenshots
 
-Screenshots of the Power BI report and its data model. All data is synthetic. KRI thresholds are proposed, not approved. Snapshot date: 22 Oct 2026.
+The images behind the report: the data model, then one screenshot per page. This file says what to look at in each one. The results of each page are in [report/README.md](../report/README.md), and the definitions behind every number are in [method/kpi-definitions.md](../method/kpi-definitions.md).
 
-| File | Page | What it shows | Status |
-|---|---|---|---|
-| [00-model-view.png](00-model-view.png) | Model | Star schema with the tables of all five report pages | Done |
-| [01-risk-exception-register.png](01-risk-exception-register.png) | 1 Risk and exception register | Risks, exceptions, KRI-12 to KRI-15 | Done |
-| [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
-| [03-kri-executive-summary.png](03-kri-executive-summary.png) | 3 KRI executive summary | Status of the 8 KRIs that have a page; the other 10 show as Not built | Done |
-| [04-vulnerability-patch-risk.png](04-vulnerability-patch-risk.png) | 4 Vulnerability and patch risk | KRI-02, KRI-11, open and overdue findings | Done |
-| [05-identity-mfa.png](05-identity-mfa.png) | 5 Identity and MFA | KRI-07 MFA coverage, KRI-04 suspicious authentication events | Done |
-| 06 to 09 | Pages 6 to 9 | | Planned |
-
-## 00 Model view
+## Model view (`00-model-view.png`)
 
 ![Model view](00-model-view.png)
 
-- Facts in the centre: FactRisk, FactVulnerability, FactMFA, FactAuth.
-- Dimensions around them: DimAsset, DimOwner, DimSeverity, DimDate, DimEmployee.
-- Params (one row, the snapshot date) and DimKRI (KRI limits and direction, used by Page 3) are helper tables. They have no relationships.
-- Relationships are one-to-many, single direction, from dimension to fact. Fact tables are not connected to each other.
-- Dotted lines are inactive relationships (DimDate links to several date columns, only one is active per fact).
-- Known gap: the risk register has no asset ID, so FactRisk is not linked to DimAsset.
-- FactMFA has two nullable keys, employee_id (to DimEmployee) and asset_id (to DimAsset), because mfa_coverage.csv holds employee and asset IDs in one column. FactAuth relates to DimDate through a date-only column.
-- Facts for Pages 6 to 9 are not built. See [method/data-model.md](../method/data-model.md).
+- The shape is the point: four fact tables in the centre, with FactRisk, FactVulnerability, FactMFA and FactAuth never connected to each other, and the dimensions around them filtering in one direction.
+- Params and DimKRI sit apart on purpose. They hold the snapshot date and the KRI limits, and the measures read them directly, so they need no relationships.
+- The dotted lines are inactive relationships: DimDate links to several date columns, and only one is active per fact. Two design choices are explained in [data-model.md](../method/data-model.md): why FactMFA has two nullable keys, and why FactRisk is not linked to DimAsset.
 
-## 01 Risk and exception register
+## Page 1: Risk and exception register (`01-risk-exception-register.png`)
 
 ![Page 1](01-risk-exception-register.png)
 
-- 100 risks, 64 open (Open + In progress), 34 with an exception.
-- KRI-12 Overdue risk remediation: 68.8% (44 of 64).
-- KRI-13 Expired security exceptions: 5.
-- KRI-14 Accepted risks without approved exception: 91.7% (11 of 12).
-- KRI-15 Exceptions expiring within 30 days: 10.
-- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
-- Owner addresses are synthetic placeholders (example.invalid).
+- The page pairs one remediation KRI with three exception KRIs, because both are about whether risk decisions are followed through.
+- The finding is that most open risks are late, and that nearly every accepted risk lacks an approved exception. Most of the exceptions that are about to expire are not approved either.
 
-## 02 Remediation tracking
+## Page 2: Remediation tracking (`02-remediation-tracking.png`)
 
 ![Page 2](02-remediation-tracking.png)
 
-- KRI-12 Overdue risk remediation: 68.8% (44 of 64 open risks), the same value as Page 1.
-- Average days overdue: 74.9.
-- By age: 10 risks at 1 to 30 days, 6 at 31 to 60, 13 at 61 to 90, 15 over 90.
-- By owner: all 18 owners have at least one overdue risk. The most is 4 (owner06, owner08, owner11).
-- By milestone: 34 open risks are at Plan agreed (25 overdue) and 30 at Evidence collected (19 overdue). None has reached Remediated.
-- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+- This page explains the overdue figure on Page 1. The three breakdowns show the lateness is widespread, not local: every one of the 18 owners has at least one overdue risk, most overdue risks are more than 60 days late, and no open risk has got past the first two milestones.
 
-## 03 KRI executive summary
+## Page 3: KRI executive summary (`03-kri-executive-summary.png`)
 
 ![Page 3](03-kri-executive-summary.png)
 
-- 8 of 18 KRIs have a report page. The other 10 (incidents, breaches, phishing, training, backup and recovery) show as Not built.
-- Status under the proposed thresholds: 7 Red, 1 Amber (KRI-04), 0 Green.
-- KRI-02 Overdue Critical findings: 16, Red. KRI-04 Suspicious authentication events: 6.1%, Amber. KRI-07 MFA coverage: 90.6%, Red. KRI-11 Vulnerability SLA compliance: 35.8%, Red.
-- KRI-12 Overdue risk remediation: 68.8%, Red. KRI-13 Expired security exceptions: 5, Red. KRI-14 Accepted risks without approved exception: 91.7%, Red. KRI-15 Exceptions expiring within 30 days: 10, Red.
-- Every value comes from the same measures as Pages 1, 2, 4 and 5. Limits and direction are read from `kri_thresholds_rag.csv`. The static `Current_Value` column is not used.
-- KRI-07 is automatically Red if a Critical eligible entity has no MFA. This is not triggered today (0).
-- The limits are proposed, not approved. Seven of eight KRIs being Red says something about the data, and it may also say that the limits are strict. That is my reading, and it needs a risk-appetite decision.
-- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+- The finding is that nearly every KRI that can be calculated is Red. Three things on the page are not visible in the image.
+- KRI-07 turns Red automatically if any Critical eligible entity has no MFA, whatever the percentage.
+- Every value comes from the same measures as the page it belongs to, so the numbers match across pages.
+- The Not built rows are the areas I did not build.
 
-## 04 Vulnerability and patch risk
+## Page 4: Vulnerability and patch risk (`04-vulnerability-patch-risk.png`)
 
 ![Page 4](04-vulnerability-patch-risk.png)
 
-- Open findings (Open + In progress): 234. Overdue: 166.
-- KRI-02 Overdue Critical findings: 16.
-- KRI-11 Vulnerability SLA compliance: 35.8% (120 of 335). Risk-accepted findings are left out (assumption).
-- 19 open Critical and High findings are on internet-facing production assets.
-- 25 findings are risk-accepted and reported separately.
-- By age: 47 findings at 1 to 30 days, 42 at 31 to 60, 41 at 61 to 90, 36 over 90.
-- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
+- The page shows a large overdue backlog and a low share of findings fixed on time, and the backlog is old, not recent.
+- The internet-facing Critical and High findings are the group to fix first.
+- Risk-accepted findings are left out of the open, overdue and SLA figures and shown on their own.
 
-
-## 05 Identity and MFA
+## Page 5: Identity and MFA (`05-identity-mfa.png`)
 
 ![Page 5](05-identity-mfa.png)
 
-- KRI-07 MFA coverage: 90.6% (261 of 288 eligible entities), snapshot 20 Oct 2026. The gauge shows the proposed 98% target.
-- No Critical eligible entity is without MFA (0). Three Critical system accounts are marked not eligible in the source file, so they are outside KRI-07. The file gives no reason.
-- 27 eligible entities have no MFA: High 18, Medium 6, Low 3, Critical 0. By type, 21 are human accounts and 6 are system accounts.
-- Coverage by criticality: Critical 100.0%, High 86.5%, Medium 93.2%, Low 95.2%.
-- Coverage by business unit: Customer 95.6%, Retail 93.5%, Finance 89.7%, Technology 89.2%, People 88.9%, Operations 87.5%.
-- KRI-04 suspicious authentication events: 6.1% in September 2026 (26 of 424 events), the latest full month before the snapshot. The definition counts four classifications and is not confirmed with policy.
-- By month: July 8.6%, August 10.4%, September 6.1%, October 10.3%. October is partial (data ends 21 Oct).
-- Suspicious events by type, July to October: password spray 41, impossible travel 35, disabled account attempt 34, MFA fatigue 30 (140 in total).
+- The MFA gap sits in High-criticality accounts and in three business units, and most of the 27 accounts without MFA are human accounts (21), not system accounts (6).
+- The Critical figure of zero depends on three Critical system accounts that the source file marks as not eligible without giving a reason.
+- The gauge marks the proposed 98% target. On the authentication side, the suspicious rate changes from month to month, and October is partial, so it is not used for KRI-04.
 - The business unit slicer applies to the MFA visuals only. The authentication visuals are not connected to it.
-- Definitions and formulas: [method/kpi-definitions.md](../method/kpi-definitions.md).
