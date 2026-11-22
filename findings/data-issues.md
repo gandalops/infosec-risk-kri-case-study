@@ -5,7 +5,7 @@ Scenario: a fictional bank. All data is synthetic. Snapshot date: 22 Oct 2026.
 Purpose: a list of what is wrong, missing or unclear in the data, how often, and what the report does about it.
 Nothing was silently fixed. Where a value is missing, the report shows it as missing.
 
-Note: pages 6 to 9 are not built yet. For tables used only there, "handling" is the plan.
+Note: pages 6 to 9 are not built. For tables used only there (backup, recovery, incident, breach, training, phishing, AI register, control mapping), the issues below come from profiling the files. They are not loaded in the model, so "handling" is the plan.
 
 ## A. Governance records: gaps a risk analyst should report
 
@@ -33,6 +33,8 @@ Positive check:
 - for all 360 findings, the due date equals the discovery date plus the illustrative SLA target for its severity (Critical 7, High 14, Medium 30, Low 90 days).
 - for MFA, the numbers reconcile: 288 eligible entities = 261 with MFA + 27 without (High 18, Medium 6, Low 3, Critical 0).
 - for authentication events, the four suspicious types add up to the total: 41 + 35 + 34 + 30 = 140 of 1,600 events.
+- on Page 3, every KRI value equals the value on its own page (KRI-02 16, KRI-04 6.1%, KRI-07 90.6%, KRI-11 35.8%, KRI-12 68.8%, KRI-13 5, KRI-14 91.7%, KRI-15 10).
+- in `kri_thresholds_rag.csv`, the limits are consistent with the direction for all 18 KRIs: Green is below Amber for the 15 "Lower is better" KRIs, and above Amber for the 3 "Higher is better" KRIs (KRI-05, KRI-07, KRI-11).
 
 ## B. Cleaning issues: technical problems in the raw files
 
@@ -65,5 +67,7 @@ Positive check:
 | C7 | Vulnerability SLA targets | Illustrative only (Critical 7, High 14, Medium 30, Low 90 days). |
 | C8 | KRI-15 scope | Should "Exceptions expiring within 30 days" count only Approved exceptions? Of the 10 in the window, 3 are Rejected (EXC-0053, EXC-0024, EXC-0034), 4 are Pending and 3 are Approved. A Rejected exception is not in force, so it is unclear what "expiring" means for it. The report currently counts all 10. |
 | C9 | KRI-15 window | The window (22 Oct to 21 Nov 2026, snapshot date plus 30 days) is set in the DAX measure. The rulebook does not define it. |
+| C10 | KRI limit calibration | Under the proposed limits, 7 of the 8 KRIs with a page are Red and 1 is Amber (KRI-04). None is Green. This may reflect the data, and it may also mean the limits are strict (for example KRI-14 is Red for any accepted risk without approval). The limits need a risk-appetite decision before the status is used for escalation. |
+| C11 | KRI scope | 10 of the 18 KRIs have no report page (KRI-01, 03, 05, 06, 08, 09, 10a to 10d). Page 3 shows them as Not built and does not calculate them. |
 
 Static values are not used. All KRI values are recalculated from the raw data.
