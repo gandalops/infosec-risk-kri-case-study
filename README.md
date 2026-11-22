@@ -1,6 +1,6 @@
 # InfoSec risk and KRI reporting: a financial sector case study
 
-A self-initiated learning project, not work experience. I took the role of an information security risk analyst at a fictional bank and built a Power BI report from 18 synthetic data files. Then I read the report as an analyst would: what is wrong, why it matters, and what I would recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
+A self-initiated learning project, not work experience: a Power BI risk report built on synthetic data for a fictional bank. I took the role of an information security risk analyst, built the report from 18 files, and then read it as an analyst would: what is wrong, why it matters, and what I would recommend. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
 
 **Start here:** [findings/management-summary.md](findings/management-summary.md) lists the five risks I would raise first, each with a number, why it matters, a recommended action and a suggested owner.
 
@@ -20,7 +20,7 @@ It also shows how I deal with weak data: I report gaps as findings, record every
 
 ## The data
 
-The 18 files are synthetic and fit four groups:
+The 18 files fit four groups:
 
 | Group | Files | Purpose |
 |---|---|---|
@@ -29,7 +29,7 @@ The 18 files are synthetic and fit four groups:
 | Lookup lists | `asset_inventory`, `employee_directory`, `illustrative_vulnerability_sla_rules` | Context: which asset, which person, which SLA target |
 | Rulebooks | `kri_thresholds_rag`, `KRI_CATALOGUE`, `control_mapping` | How each KRI is defined, its proposed limits, and links to controls |
 
-Nine files feed the report: the risk register and exception file, vulnerabilities, assets and SLA rules, authentication events, MFA coverage, the employee directory, and the KRI thresholds. `KRI_CATALOGUE` gives the KRI definitions I followed. The other files (incidents, breaches, backup and recovery, training, phishing, AI risk, control mapping) are in [data](data) but not in the report.
+Nine files feed the report: the risk register and exception file, vulnerabilities, assets and SLA rules, authentication events, MFA coverage, the employee directory, and the KRI thresholds. `KRI_CATALOGUE` gives the KRI definitions I followed. 
 
 ## How it is built
 
@@ -106,14 +106,11 @@ This is the page for management: one table with each KRI's value, its status, it
 
 ## Judgment calls and limits
 
-- The data is synthetic. Findings describe this dataset, not a real company.
-- KRI thresholds are proposed, not approved. Treat every status colour as provisional.
 - The risk register holds only a severity. The likelihood, impact, threats and treatments in the risk assessment are my assumptions, and they are labelled.
 - KRI-11 leaves risk-accepted findings out, because the rulebook does not say how to treat them. The SLA targets are illustrative.
-- KRI-04 counts four authentication classifications as suspicious. That definition is not confirmed with policy.
 - Several fields in the exception file are empty ("TO FILL"). I report this as a finding and did not fill them in.
 - Regulation references (DORA, ISO 27001, NIST CSF) in `control_mapping.csv` are drafts and need Compliance review.
-- The recommendations and suggested owners in the management summary are my judgment. The data names no owner for them.
+- Most KRIs are a single snapshot, so the report shows the position on 22 Oct 2026, not a trend.
 
 ## What this does not cover
 
@@ -129,7 +126,7 @@ Incidents and breaches, backup and recovery, security training and phishing, and
 | [screenshots](screenshots) | The data model and each report page |
 | [report](report) | A PDF of the five-page report |
 
-If you have two minutes: read the management summary. For the judgment behind it, read [findings/risk-assessment.md](findings/risk-assessment.md). To see what is wrong with the data, read [findings/data-issues.md](findings/data-issues.md).
+For the judgment behind the summary, read [findings/risk-assessment.md](findings/risk-assessment.md). For what is wrong with the data, read [findings/data-issues.md](findings/data-issues.md).
 
 ## Tools
 
