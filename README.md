@@ -1,90 +1,136 @@
-# InfoSec risk and KRI reporting: financial sector case study
+# InfoSec risk and KRI reporting: a financial sector case study
 
-A self-initiated learning project, not work experience. I built a Power BI risk report for a
-fictional bank, then read it like a risk analyst: what is wrong, why it matters, and what I would
-recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
+A self-initiated learning project, not work experience. I took the role of an information security risk analyst at a fictional bank and built a Power BI report from 18 synthetic data files. Then I read the report as an analyst would: what is wrong, why it matters, and what I would recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
 
-**Scope:** five report pages are built (1 to 5). The other pages were left out on purpose. Five pages checked against the raw data seemed more useful than nine rushed ones.
+**Start here:** [findings/management-summary.md](findings/management-summary.md) lists the five risks I would raise first, each with a number, why it matters, a recommended action and a suggested owner.
 
-**Start here:** [findings/management-summary.md](findings/management-summary.md), the 5 risks I would raise first, each with a number, a recommended action and a suggested owner.
+## Objective
 
-## What I found (Page 1: risk and exception register)
+An information security risk analyst keeps the risk and exception register current, follows up on remediation, and reports key risk indicators (KRIs) to management. The evidence for this sits in many places: registers, vulnerability scans, identity logs, thresholds. It is rarely in one view, and the numbers often disagree with each other.
+
+This project shows how I would bring that evidence into one model and answer five questions a risk function is asked:
+
+1. Is the risk register reliable, and are risk acceptances properly approved?
+2. Where is remediation stuck, and who owns it?
+3. Which KRIs need management's attention, and can the thresholds be trusted?
+4. Are vulnerabilities fixed on time, and where is the exposure highest?
+5. Are identities protected, and is there sign of attack?
+
+It also shows how I deal with weak data: I report gaps as findings, record every assumption, and do not fill in missing values.
+
+## The data
+
+The 18 files are synthetic and fit four groups:
+
+| Group | Files | Purpose |
+|---|---|---|
+| Registers | `risk_governance`, `exception_request_details`, `ai_ml_risk_register`, `security_incidents`, `data_breach_register` | The record of risks, exceptions, incidents and breaches |
+| Activity logs | `vulnerability_findings`, `authentication_events`, `mfa_coverage`, `backup_jobs`, `recovery_tests`, `phishing_simulations`, `security_training` | Evidence of what actually happens in the environment |
+| Lookup lists | `asset_inventory`, `employee_directory`, `illustrative_vulnerability_sla_rules` | Context: which asset, which person, which SLA target |
+| Rulebooks | `kri_thresholds_rag`, `KRI_CATALOGUE`, `control_mapping` | How each KRI is defined, its proposed limits, and links to controls |
+
+Nine files feed the report: the risk register and exception file, vulnerabilities, assets and SLA rules, authentication events, MFA coverage, the employee directory, and the KRI thresholds. `KRI_CATALOGUE` gives the KRI definitions I followed. The other files (incidents, breaches, backup and recovery, training, phishing, AI risk, control mapping) are in [data](data) but not in the report.
+
+## How it is built
+
+One data model with a star schema, so every page uses the same definitions and the numbers agree between pages. Every KRI is recalculated from the raw data. The static values in the threshold file are not used. The report uses a fixed snapshot date and not today's date, so "overdue" gives the same answer whenever someone opens it. The steps are in [method](method).
+
+## The report, page by page
+
+### Page 1: Risk and exception register
+
+**Question:** is the register a reliable record, and are risk acceptances properly governed?
+
+The register is the core record of an information security risk function. An accepted risk is one the organisation chooses to live with. That choice has to be approved, dated and traceable.
 
 - 44 of 64 open risks (68.8%) are past their remediation due date.
-- 11 of 12 accepted risks have no approved exception.
-- 5 exceptions have already expired, and 10 more expire within 30 days. 3 of the 5 were never decided.
-- None of the 34 exceptions records an approver, so no approval can be audited.
+- 11 of 12 accepted risks have no approved exception behind them.
+- 5 exceptions have already expired, and 3 of those were never decided. 10 more expire within 30 days.
+- None of the 34 exceptions records an approver.
+
+**Why it matters:** the register cannot show who decided to accept which risk, or when. In an audit, that is a governance failure, not a data problem.
+
 ![Page 1: risk and exception register](screenshots/01-risk-exception-register.png)
 
-## What I found (Page 2: remediation tracking)
+### Page 2: Remediation tracking
 
-- The 44 overdue risks are 75 days late on average. 28 are more than 60 days late, and 15 are more than 90 days late.
+**Question:** where is remediation stuck, and who owns it?
+
+Page 1 says remediation is late. This page asks how late, and whether the problem sits with a few owners or everywhere.
+
+- The 44 overdue risks are 75 days late on average. 15 are more than 90 days late.
 - All 18 risk owners have at least one overdue risk. No owner has more than 4.
-- None of the 64 open risks has reached the Remediated milestone.
+- No open risk has reached the Remediated milestone. The milestone column only repeats the status, so it cannot show real progress.
+
+**Why it matters:** lateness spread across every owner points to a process problem, not one weak team. Without dated milestones, nobody can tell whether a plan is moving or has stalled.
+
 ![Page 2: remediation tracking](screenshots/02-remediation-tracking.png)
 
-## What I found (Page 3: KRI executive summary)
+### Page 3: KRI executive summary
 
-- 8 of the 18 KRIs have a report page. Under the proposed limits, 7 are Red, 1 is Amber (KRI-04) and none is Green.
-- The 10 KRIs without a page (incidents, breaches, phishing, training, backup and recovery) are shown as Not built and are not rated.
-- Seven Reds may also mean the proposed limits are strict. They need a risk-appetite decision before anyone escalates on them.
-- Every value on this page comes from the measures behind Pages 1, 2, 4 and 5. The static values in the threshold file are not used.
+**Question:** which KRIs need management's attention, and can the thresholds be trusted?
+
+This is the page for management: one table with each KRI's value, its status, its owner and the limits behind the status. It reads the same measures as the other pages, so it cannot contradict them.
+
+- 8 of the 18 KRIs have a page behind them. Under the proposed limits, 7 are Red and 1 is Amber.
+- The other 10 are shown as Not built. They are not hidden and not rated.
+
+**Why it matters:** seven Reds can mean the controls are weak, or that the limits are strict. The limits are proposed and nobody has approved them. So the colours show direction, and a risk-appetite decision has to settle what they mean before anyone escalates.
+
 ![Page 3: KRI executive summary](screenshots/03-kri-executive-summary.png)
 
-## What I found (Page 4: vulnerability and patch risk)
+### Page 4: Vulnerability and patch risk
 
-- 166 of 234 open findings (70.9%) are past their due date. 16 of them are Critical, and 36 are more than 90 days late.
-- Vulnerability SLA compliance (KRI-11) is 35.8% (120 of 335). The proposed green limit is 95%.
-- Only 3 of the 25 risk-accepted findings have an approved exception that has not expired.
+**Question:** are vulnerabilities fixed on time, and where is the exposure highest?
+
+- 166 of 234 open findings (70.9%) are past their due date. 16 of the 18 open Critical findings are overdue.
+- SLA compliance (KRI-11) is 35.8%, against a proposed green limit of 95%.
 - 19 open Critical and High findings sit on internet-facing production assets.
+- Only 3 of the 25 risk-accepted findings have an approved exception that has not expired.
+
+**Why it matters:** late fixes on systems exposed to the internet are the most direct route for an attacker. Accepting a finding without a valid approval repeats the governance gap from Page 1, this time on technical risk.
+
 ![Page 4: vulnerability and patch risk](screenshots/04-vulnerability-patch-risk.png)
 
-## What I found (Page 5: identity and MFA)
+### Page 5: Identity and MFA
 
-- MFA coverage (KRI-07) is 90.6% (261 of 288 eligible entities). The proposed green limit is 98%.
-- 27 eligible entities have no MFA: 18 High, 6 Medium, 3 Low. None is Critical.
-- No Critical entity is without MFA only because three Critical system accounts are marked not eligible, and the file gives no reason.
-- Coverage is lowest in Operations (87.5%) and highest in Customer (95.6%).
-- Suspicious authentication events (KRI-04) were 6.1% in September 2026 (26 of 424), after 8.6% in July and 10.4% in August. What counts as suspicious is my assumption.
+**Question:** are accounts protected, and is there sign of attack?
+
+- MFA coverage (KRI-07) is 90.6% (261 of 288 eligible entities), against a proposed green limit of 98%. 27 eligible entities have none, 18 of them High criticality.
+- No Critical entity lacks MFA, but only because three Critical system accounts are marked not eligible, and the file gives no reason.
+- Suspicious authentication events (KRI-04) were 6.1% in September 2026, after 8.6% in July and 10.4% in August.
+
+**Why it matters:** missing MFA on high-criticality accounts raises the risk of account takeover. The zero for Critical depends on an exemption nobody explains. The suspicious-event definition is my assumption, and the directory has no termination dates, so I cannot judge activity from departed staff.
+
 ![Page 5: identity and MFA](screenshots/05-identity-mfa.png)
 
-Each number can be recounted from the raw files. The steps are in [method/kpi-definitions.md](method/kpi-definitions.md).
+## Judgment calls and limits
+
+- The data is synthetic. Findings describe this dataset, not a real company.
+- KRI thresholds are proposed, not approved. Treat every status colour as provisional.
+- The risk register holds only a severity. The likelihood, impact, threats and treatments in the risk assessment are my assumptions, and they are labelled.
+- KRI-11 leaves risk-accepted findings out, because the rulebook does not say how to treat them. The SLA targets are illustrative.
+- KRI-04 counts four authentication classifications as suspicious. That definition is not confirmed with policy.
+- Several fields in the exception file are empty ("TO FILL"). I report this as a finding and did not fill them in.
+- Regulation references (DORA, ISO 27001, NIST CSF) in `control_mapping.csv` are drafts and need Compliance review.
+- The recommendations and suggested owners in the management summary are my judgment. The data names no owner for them.
+
+## What this does not cover
+
+Incidents and breaches, backup and recovery, security training and phishing, and AI risk with control mapping have data in the repo, but no report page. I left them out to check the five pages above against the raw data. Page 3 shows the KRIs that depend on them as Not built.
 
 ## Where to look
 
 | Folder | What you will find |
 |---|---|
-| [findings](findings) | A risk assessment of 6 risks, and a log of data problems with counts |
-| [method](method) | How the data model is built and how each KPI is calculated |
+| [findings](findings) | The management summary, a risk assessment of 6 risks, and a log of data problems with counts |
+| [method](method) | How the data model is built and how each KPI is calculated, with the DAX |
 | [data](data) | The 18 source files, grouped, with row counts and known issues |
-| [screenshots](screenshots) | Model view and report page screenshots |
-| [report](report) | PDF export of the five report pages |
+| [screenshots](screenshots) | The data model and each report page |
+| [report](report) | A PDF of the five-page report |
 
-If you have two minutes: read [findings/management-summary.md](findings/management-summary.md). For the judgment behind it, read [findings/risk-assessment.md](findings/risk-assessment.md).
+If you have two minutes: read the management summary. For the judgment behind it, read [findings/risk-assessment.md](findings/risk-assessment.md). To see what is wrong with the data, read [findings/data-issues.md](findings/data-issues.md).
 
-## Progress
-
-| Page | Status |
-|---|---|
-| 1 Risk and exception register | done |
-| 2 Remediation tracking | done |
-| 3 KRI executive summary | done |
-| 4 Vulnerability and patch risk | done |
-| 5 Identity and MFA | done |
-| 6 to 9: resilience, incidents and breaches, human risk, AI risk and controls | not built |
-
-## Limits
-
-- The data is synthetic and made up. Findings describe this dataset, not a real company.
-- The main risk register has only a severity. Likelihood, impact, threats and treatments in the risk assessment are my assumptions, and they are labelled.
-- Regulation references (DORA, ISO 27001, NIST CSF) in `control_mapping.csv` are drafts and need Compliance review.
-- Several fields in the exception file are empty ("TO FILL"). I report this as a finding and did not fill them in.
-- The milestone column in the risk register repeats the status column (Open = Plan agreed, In progress = Evidence collected). It is not an independent progress measure.
-- KRI-11 leaves risk-accepted findings out. That is my assumption, because the rulebook does not say. The SLA targets are illustrative.
-- KRI-04 counts four authentication event classifications as suspicious. That definition is my assumption and is not confirmed with policy. The directory has no termination date, so events from Terminated and Leave accounts are not reported as findings.
-- The recommended actions and suggested owners in the management summary are my judgment, not facts from the data. The data names no owner for them.
-- Under the proposed limits, 7 of the 8 rated KRIs are Red. The limits are not approved and may be strict, so the colours show direction, not an approved judgment.
-  
 ## Tools
 
 Power BI (data model, DAX measures, report), Power Query (cleaning), Excel and CSV for checking numbers.
