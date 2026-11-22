@@ -2,10 +2,9 @@
 
 Scenario: a fictional bank. All data is synthetic. Snapshot date: 22 Oct 2026.
 
-Purpose: a list of what is wrong, missing or unclear in the data, how often, and what the report does about it.
-Nothing was silently fixed. Where a value is missing, the report shows it as missing.
+A risk analyst works with data that is never complete. This log records what is wrong, missing or unclear, how often, and what the report does about it. Nothing was silently fixed: where a value is missing, the report shows it as missing.
 
-Note: pages 6 to 9 are not built. For tables used only there (backup, recovery, incident, breach, training, phishing, AI register, control mapping), the issues below come from profiling the files. They are not loaded in the model, so "handling" is the plan.
+The log also covers files that are not in the report (backup, recovery, incident, breach, training, phishing, AI register, control mapping). Their issues come from profiling only, and the handling shown for them is what I would do.
 
 ## A. Governance records: gaps a risk analyst should report
 
@@ -27,7 +26,7 @@ Note: pages 6 to 9 are not built. For tables used only there (backup, recovery, 
 | A14 | `mfa_coverage.csv` | Three Critical system accounts (AST-0021, AST-0043, AST-0064) are marked not eligible for MFA, with no reason documented | 3 of 330 rows | They fall outside KRI-07, so "Critical eligible without MFA" shows 0. A Critical account exempt from MFA without a recorded reason is a governance question |
 | A15 | `authentication_events.csv` vs `employee_directory.csv` | Authentication events exist for accounts whose employee status is Terminated or Leave. The directory has no termination date | 51 events from Terminated accounts, 88 from Leave accounts (of 1,600) | We cannot tell whether activity happened after leaving, so it is not reported as a finding. It needs a termination date to be assessed |
 
-Positive check: 
+What checked out, and so supports trusting the numbers:
 - for all 34 exceptions, category, severity and approval status are the same in `risk_governance.csv` and `exception_request_details.csv`.
 - all 64 open risks have a remediation_due_date, so no open risk is counted as overdue because of a blank date.
 - for all 360 findings, the due date equals the discovery date plus the illustrative SLA target for its severity (Critical 7, High 14, Medium 30, Low 90 days).
@@ -62,12 +61,10 @@ Positive check:
 | C2 | Overdue risk remediation (KRI-12) | Recalculated 68.8%; static value 67.2. |
 | C3 | Training compliance (KRI-05) | Recalculated 85.4%; static value 85.0. |
 | C4 | Suspicious authentication (KRI-04) | Which event classifications count as suspicious. The report counts four: Password spray suspected, Impossible travel, Disabled account attempt, MFA fatigue suspected (140 of 1,600 events). September 2026: 6.1% (26 of 424). Other classifications are not counted. The definition is not confirmed with policy. |
-| C5 | KRI thresholds | Proposed, not approved. |
+| C5 | KRI thresholds | Who approves the limits, and on which risk appetite? Until then every status is provisional. |
 | C6 | Control mapping | Regulation references are draft and need Compliance review. |
 | C7 | Vulnerability SLA targets | Illustrative only (Critical 7, High 14, Medium 30, Low 90 days). |
 | C8 | KRI-15 scope | Should "Exceptions expiring within 30 days" count only Approved exceptions? Of the 10 in the window, 3 are Rejected (EXC-0053, EXC-0024, EXC-0034), 4 are Pending and 3 are Approved. A Rejected exception is not in force, so it is unclear what "expiring" means for it. The report currently counts all 10. |
 | C9 | KRI-15 window | The window (22 Oct to 21 Nov 2026, snapshot date plus 30 days) is set in the DAX measure. The rulebook does not define it. |
 | C10 | KRI limit calibration | Under the proposed limits, 7 of the 8 KRIs with a page are Red and 1 is Amber (KRI-04). None is Green. This may reflect the data, and it may also mean the limits are strict (for example KRI-14 is Red for any accepted risk without approval). The limits need a risk-appetite decision before the status is used for escalation. |
 | C11 | KRI scope | 10 of the 18 KRIs have no report page (KRI-01, 03, 05, 06, 08, 09, 10a to 10d). Page 3 shows them as Not built and does not calculate them. |
-
-Static values are not used. All KRI values are recalculated from the raw data.
