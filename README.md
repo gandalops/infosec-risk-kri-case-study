@@ -4,6 +4,10 @@ A self-initiated learning project, not work experience. I built a Power BI risk 
 fictional bank, then read it like a risk analyst: what is wrong, why it matters, and what I would
 recommend. All data is synthetic. Snapshot date: 22 Oct 2026. KRI thresholds are proposed, not approved.
 
+**Scope:** four report pages are built (1, 2, 4 and 5). The other pages were left out on purpose. Four pages checked against the raw data seemed more useful than nine rushed ones.
+
+**Start here:** [findings/management-summary.md](findings/management-summary.md), the 5 risks I would raise first, each with a number, a recommended action and a suggested owner.
+
 ## What I found (Page 1: risk and exception register)
 
 - 44 of 64 open risks (68.8%) are past their remediation due date.
@@ -46,9 +50,9 @@ Each number can be recounted from the raw files. The steps are in [method/kpi-de
 | [method](method) | How the data model is built and how each KPI is calculated |
 | [data](data) | The 18 source files, grouped, with row counts and known issues |
 | [screenshots](screenshots) | Model view and report page screenshots |
-| [report](report) | The Power BI report file (coming) |
+| [report](report) | PDF export of the four report pages |
 
-If you have two minutes: read the findings above, then [findings/risk-assessment.md](findings/risk-assessment.md).
+If you have two minutes: read [findings/management-summary.md](findings/management-summary.md). For the judgment behind it, read [findings/risk-assessment.md](findings/risk-assessment.md).
 
 ## Progress
 
@@ -59,7 +63,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 | 3 KRI executive summary | planned |
 | 4 Vulnerability and patch risk | done |
 | 5 Identity and MFA | done |
-| 6 to 9: resilience, incidents and breaches, human risk, AI risk and controls | planned |
+| 6 to 9: resilience, incidents and breaches, human risk, AI risk and controls | not built |
 
 ## Limits
 
@@ -70,6 +74,7 @@ If you have two minutes: read the findings above, then [findings/risk-assessment
 - The milestone column in the risk register repeats the status column (Open = Plan agreed, In progress = Evidence collected). It is not an independent progress measure.
 - KRI-11 leaves risk-accepted findings out. That is my assumption, because the rulebook does not say. The SLA targets are illustrative.
 - KRI-04 counts four authentication event classifications as suspicious. That definition is my assumption and is not confirmed with policy. The directory has no termination date, so events from Terminated and Leave accounts are not reported as findings.
+- The recommended actions and suggested owners in the management summary are my judgment, not facts from the data. The data names no owner for them.
   
 ## Tools
 
