@@ -4,7 +4,7 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 
 | File | Page | What it shows | Status |
 |---|---|---|---|
-| [00-model-view.png](00-model-view.png) | Model | Star schema, phase 1 | Done |
+| [00-model-view.png](00-model-view.png) | Model | Star schema with the tables of all five report pages | Done |
 | [01-risk-exception-register.png](01-risk-exception-register.png) | 1 Risk and exception register | Risks, exceptions, KRI-12 to KRI-15 | Done |
 | [02-remediation-tracking.png](02-remediation-tracking.png) | 2 Remediation tracking | Overdue risks by owner, age and milestone stage; KRI-12 drill-down | Done |
 | [03-kri-executive-summary.png](03-kri-executive-summary.png) | 3 KRI executive summary | Status of the 8 KRIs that have a page; the other 10 show as Not built | Done |
@@ -16,13 +16,14 @@ Screenshots of the Power BI report and its data model. All data is synthetic. KR
 
 ![Model view](00-model-view.png)
 
-- Facts in the centre: FactRisk, FactVulnerability.
-- Dimensions around them: DimAsset, DimOwner, DimSeverity, DimDate.
-- Params is a one-row helper table holding the snapshot date. It has no relationships.
+- Facts in the centre: FactRisk, FactVulnerability, FactMFA, FactAuth.
+- Dimensions around them: DimAsset, DimOwner, DimSeverity, DimDate, DimEmployee.
+- Params (one row, the snapshot date) and DimKRI (KRI limits and direction, used by Page 3) are helper tables. They have no relationships.
 - Relationships are one-to-many, single direction, from dimension to fact. Fact tables are not connected to each other.
 - Dotted lines are inactive relationships (DimDate links to several date columns, only one is active per fact).
 - Known gap: the risk register has no asset ID, so FactRisk is not linked to DimAsset.
-- More facts are added in later pages. See [method/data-model.md](../method/data-model.md).
+- FactMFA has two nullable keys, employee_id (to DimEmployee) and asset_id (to DimAsset), because mfa_coverage.csv holds employee and asset IDs in one column. FactAuth relates to DimDate through a date-only column.
+- Facts for Pages 6 to 9 are not built. See [method/data-model.md](../method/data-model.md).
 
 ## 01 Risk and exception register
 
