@@ -1,11 +1,10 @@
 # Risk assessment: 6 worked examples
 
-Scenario: a fictional bank. All data is synthetic. Snapshot date: 22 Oct 2026.
+This shows how I move from a register entry to a judgment: what could go wrong, how bad it would be, which controls exist, and what I would do. The risk register holds only a severity, so the likelihood and impact scores for those risks are my assumptions, and each one is tagged.
 
 Method: each risk is scored on a 1 to 5 scale for likelihood and impact (score = likelihood × impact),
 the scale used in `ai_ml_risk_register.csv`. `risk_governance.csv` has only a severity, so scores for
 those risks are assumptions, chosen to match that severity. Rating bands are also assumed.
-Regulation references in the source files are drafts.
 
 Tags show where each fact comes from:
 - `[filename, row ID]` = copied from that file
